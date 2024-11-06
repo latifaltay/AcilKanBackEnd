@@ -1,0 +1,12 @@
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\bin\Debug\net8.0\AcilKan.Dto.deps.json
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\bin\Debug\net8.0\AcilKan.Dto.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\bin\Debug\net8.0\AcilKan.Dto.pdb
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\AcilKan.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\AcilKan.Dto.AssemblyInfoInputs.cache
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\AcilKan.Dto.AssemblyInfo.cs
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\AcilKan.Dto.csproj.CoreCompileInputs.cache
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\AcilKan.Dto.sourcelink.json
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\AcilKan.Dto.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\refint\AcilKan.Dto.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\AcilKan.Dto.pdb
+C:\Users\ELEYDEV\Desktop\AcilKan\Frontends\AcilKan.Dto\obj\Debug\net8.0\ref\AcilKan.Dto.dll

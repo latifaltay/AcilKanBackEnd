@@ -8,6 +8,85 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\AcilKanVitrin\.git\objects\info\" />
+    <Folder Include="wwwroot\AcilKanVitrin\.git\objects\pack\" />
+    <Folder Include="wwwroot\AcilKanVitrin\.git\refs\tags\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\AcilKanVitrin\.git\COMMIT_EDITMSG" />
+    <None Include="wwwroot\AcilKanVitrin\.git\config" />
+    <None Include="wwwroot\AcilKanVitrin\.git\description" />
+    <None Include="wwwroot\AcilKanVitrin\.git\FETCH_HEAD" />
+    <None Include="wwwroot\AcilKanVitrin\.git\HEAD" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\push-to-checkout.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\hooks\update.sample" />
+    <None Include="wwwroot\AcilKanVitrin\.git\index" />
+    <None Include="wwwroot\AcilKanVitrin\.git\info\exclude" />
+    <None Include="wwwroot\AcilKanVitrin\.git\logs\HEAD" />
+    <None Include="wwwroot\AcilKanVitrin\.git\logs\refs\heads\main" />
+    <None Include="wwwroot\AcilKanVitrin\.git\logs\refs\remotes\origin\main" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\07\c00cd227da09d9e398ec89ae48e5d3c218010d" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\0e\ebdde07fcde8c357f217d71f0412fbdafddc18" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\15\09b68dccf3b88d03f394ce52bee6e7e1d79b37" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\35\acda2fa1196aad98c2adf4378a7611dd713aa3" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\3d\c50881483aae102c37b4673b051cf33ee77201" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\3f\f44a65b6536c033e36bc7e4390bb3a333485e5" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\40\0014a4b06eee3d0c0d54402a47ab2601b2862b" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\40\095de3309b6806305e6e933fc26c1179f54465" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\43\5b5ca97d403c70e312434a9addeb119cb8c175" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\43\c2e24cf2af7bd97d06cd81b16126c12ec1f707" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\48\1b6dd3ac4b2e9ebc5ac260bf9864baea2f9380" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\4c\37d4ec0cf4c8a13f97810a2fcc1f5d99801c40" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\4c\56039f75fcaf5f93f523cc43dd050ff02aa600" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\4d\13fc60404b91e398a37200c4a77b645cfd9586" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\54\0440ce89f2a408aa699b65100e18f15e0f09ca" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\62\2bf09f57adae107ec97834e566ee7ca56b7cc8" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\63\14a56883b0159aa988abf4ef6251efb24e0b35" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\66\9d301a9d6457debcd1ac3e4c029f7332453026" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\6c\89db33ba3201f491fc2010839dbcbc756eec5b" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\6e\5b9c0b25c4c256da1d671b430f2e47f3f0ac65" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\6f\2b300f60a0574f9e0ceb23217800e7de042f8a" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\6f\73bea5e457aa4d2794e50fadea145e113c8bc3" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\6f\9509c88bed7080d496fc5e1d87a9315e30549d" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\6f\db68cec7669934b7c3468a46212f4ca57c6ae0" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\70\d10d41fc7282c30a4088cddba2fd4e56826222" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\73\b8131d7154a0b7bda4bb0317c282ce0aec9fee" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\78\612fe98fbfd50f24513edd980222f6691a2e54" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\7d\8c05398251d97fb031a1e07afc911e9531ca49" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\7f\39f74bf3d1c946ebab0857406cb37756f051ff" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\83\cabda932c41d23c2bfecf5a480d37926af73de" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\8f\4758923aa884eb810ebd68c44c6ec6632c3adf" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\93\3bac5223949d145091b1016ac6d346345427e0" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\af\40b9c6f530f0655d673b74648b7ba29562287a" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\b7\eff19265c0519b27f35eed0baf7faffb7b3318" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\ba\1d9a2777b51523882f74c1044b991c00f6c7c7" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\be\1baa376140bc7a0af2323221f49265f2997947" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\c3\f37ed0f5906a1e6f094cbd662cbcd0766de835" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\c6\9e6d10dd07abf94616e52ee9dccd06504db011" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\df\76a813de5e3c845431ad0f163233c2371d3102" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\df\e0770424b2a19faf507a501ebfc23be8f54e7b" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\e7\86b2699a2c230ea7e9ca1a42634844db0b7aa2" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\e9\cd4222bcc997538576c6897da98c080444a6ba" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\eb\f5ca89fd4456cdf04864d1a6f4f7a552307f95" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\ef\aec300505b8e9791b28b0b0309025c471dd135" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\f1\cc22747d7215a73fb7a62a72b80c18edb9f7e6" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\f8\fc57e15e1c38e1983b0555b218bfa08e89ce29" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\fa\842ac97376fc8452652ca5ee64e84dfd9a1831" />
+    <None Include="wwwroot\AcilKanVitrin\.git\objects\fe\56cc60ae9d7c817c35c344344ba2b4229d24ce" />
+    <None Include="wwwroot\AcilKanVitrin\.git\refs\heads\main" />
+    <None Include="wwwroot\AcilKanVitrin\.git\refs\remotes\origin\main" />
   </ItemGroup>
 
 </Project>

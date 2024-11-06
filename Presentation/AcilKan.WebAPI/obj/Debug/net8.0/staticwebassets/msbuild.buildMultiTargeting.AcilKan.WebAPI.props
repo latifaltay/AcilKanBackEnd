@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AcilKan.WebAPI.props" />
+</Project>
