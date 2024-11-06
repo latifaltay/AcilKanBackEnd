@@ -1,0 +1,6 @@
+@AcilKan.WebAPI_HostAddress = http://localhost:5193
+
+GET {{AcilKan.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
