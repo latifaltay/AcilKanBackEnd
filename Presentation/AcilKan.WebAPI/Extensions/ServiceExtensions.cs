@@ -1,4 +1,5 @@
 ﻿using AcilKan.Application.Features.Mediator.Commands.AboutCommands;
+using AcilKan.Application.Features.Mediator.Queries.AboutQueries;
 using AcilKan.Application.Interfaces;
 using AcilKan.Application.ValidationRules.FluentValidation.AboutValidators;
 using AcilKan.Persistence.Context;
@@ -14,15 +15,26 @@ namespace AcilKan.WebAPI.Extensions
         {
             //Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
+            // MediatR Registration
             Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
 
+            // DbContext Registration
             Services.AddScoped<AcilKanContext>();
-            
-            Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-            Services.AddTransient<IValidator<CreateAboutCommand>, CreateAboutValidator>();
 
-
+            // Repository Registration
             Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+            // Validation Pipeline Registration
+            Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+            // About Validator Registration
+            Services.AddTransient<IValidator<CreateAboutCommand>, CreateAboutCommandValidator>();
+            Services.AddTransient<IValidator<DeleteAboutCommand>, DeleteAboutCommandValidator>();
+            Services.AddTransient<IValidator<UpdateAboutCommand>, UpdateAboutCommandValidator>();
+            Services.AddTransient<IValidator<GetAboutByIdQuery>, GetAboutByIdQueryValidator>();
+            Services.AddTransient<IValidator<GetAboutQuery>, GetAboutQueryValidator>();
+
+
 
 
 

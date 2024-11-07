@@ -28,7 +28,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseMiddleware<ExceptionMiddleware>();
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
+
+app.UseMiddleware<FluentValidationExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 

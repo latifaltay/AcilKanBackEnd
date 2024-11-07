@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="wwwroot\AcilKanVitrin\.git\objects\info\" />
     <Folder Include="wwwroot\AcilKanVitrin\.git\objects\pack\" />
     <Folder Include="wwwroot\AcilKanVitrin\.git\refs\tags\" />
@@ -87,6 +86,14 @@
     <None Include="wwwroot\AcilKanVitrin\.git\objects\fe\56cc60ae9d7c817c35c344344ba2b4229d24ce" />
     <None Include="wwwroot\AcilKanVitrin\.git\refs\heads\main" />
     <None Include="wwwroot\AcilKanVitrin\.git\refs\remotes\origin\main" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcilKan.Dto\AcilKan.Dto.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+
+    @await Component.InvokeAsync("_HeadUILayoutComponentPartial")
+
+    @* navbar kodları normalde body tag'inin içindeydi ben head alanına aldım hata çıkarsa indireceğim *@
+    @await Component.InvokeAsync("_NavbarUILayoutComponentPartial")
+
+<body class="sub_page">
+
+    @RenderBody()
+
+    @await Component.InvokeAsync("_FooterUILayoutComponentPartial")
+
+    @await Component.InvokeAsync("_ScriptUILayoutComponentPartial")
+
+</body>
+
+</html>
+
+

@@ -16,4 +16,13 @@
     <ProjectReference Include="..\AcilKan.Domain\AcilKan.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ValidationRules\FluentValidation\BannerValidators\" />
+    <Folder Include="ValidationRules\FluentValidation\ContactValidators\" />
+    <Folder Include="ValidationRules\FluentValidation\DonationBenefitValidators\" />
+    <Folder Include="ValidationRules\FluentValidation\FooterAddressValidators\" />
+    <Folder Include="ValidationRules\FluentValidation\TestimonialValidators\" />
+    <Folder Include="ValidationRules\FluentValidation\SupporterValidators\" />
+  </ItemGroup>
+
 </Project>

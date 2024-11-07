@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcilKan.Dto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abb6c9af5f414b5e54da5b394c37127abb739865")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f92549f6998c56da5754edc44366265a5dbafc8")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcilKan.Dto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcilKan.Dto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
