@@ -16,3 +16,5 @@ C:\Users\ELEYDEV\Desktop\AcilKan\Infrastructure\AcilKan.Persistence\obj\Debug\ne
 C:\Users\ELEYDEV\Desktop\AcilKan\Infrastructure\AcilKan.Persistence\obj\Debug\net8.0\AcilKan.Persistence.pdb
 C:\Users\ELEYDEV\Desktop\AcilKan\Infrastructure\AcilKan.Persistence\obj\Debug\net8.0\AcilKan.Persistence.genruntimeconfig.cache
 C:\Users\ELEYDEV\Desktop\AcilKan\Infrastructure\AcilKan.Persistence\obj\Debug\net8.0\ref\AcilKan.Persistence.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Infrastructure\AcilKan.Persistence\bin\Debug\net8.0\AcilKan.Application.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Infrastructure\AcilKan.Persistence\bin\Debug\net8.0\AcilKan.Application.pdb

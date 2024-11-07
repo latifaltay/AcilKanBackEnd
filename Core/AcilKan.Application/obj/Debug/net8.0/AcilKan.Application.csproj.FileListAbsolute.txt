@@ -10,3 +10,7 @@ C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\obj\Debug\net8.0\AcilK
 C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\obj\Debug\net8.0\refint\AcilKan.Application.dll
 C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\obj\Debug\net8.0\AcilKan.Application.pdb
 C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\obj\Debug\net8.0\ref\AcilKan.Application.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\bin\Debug\net8.0\AcilKan.Domain.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\bin\Debug\net8.0\AcilKan.Domain.pdb
+C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\obj\Debug\net8.0\AcilKan.Application.csproj.AssemblyReference.cache
+C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Application\obj\Debug\net8.0\AcilKan..048A5696.Up2Date

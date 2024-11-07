@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241106093008_initial_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\AcilKan.Persistence\\Migrations\\20241106093008_initial_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkan\\core\\acilkan.application\\validationrules\\fluentvalidation\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\validationrules\\fluentvalidation\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|c:\\users\\eleydev\\desktop\\acilkan\\infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|solutionrelative:infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkan\\core\\acilkan.application\\validationrules\\fluentvalidation\\aboutvalidators\\createaboutvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\validationrules\\fluentvalidation\\aboutvalidators\\createaboutvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkan\\presentation\\acilkan.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkan\\presentation\\acilkan.webapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkan\\presentation\\acilkan.webapi\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\extensions\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkan\\presentation\\acilkan.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkan\\core\\acilkan.application\\constants\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\constants\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241106093008_initial_mig.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241106093008_initial_mig.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241106093008_initial_mig.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241106093008_initial_mig.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241106093008_initial_mig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\Program.cs",
+              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:30:08.193Z",
+              "WhenOpened": "2024-11-06T23:53:50.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\appsettings.json",
-              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-06T09:23:46.58Z",
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T23:53:05.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Messages.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Application\\Constants\\Messages.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Constants\\Messages.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Application\\Constants\\Messages.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Constants\\Messages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T23:49:26.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AcilKanContext.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCMAAAAuAAAAAAAAAA==",
+              "Title": "CreateAboutValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\AboutValidators\\CreateAboutValidator.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\AboutValidators\\CreateAboutValidator.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\AboutValidators\\CreateAboutValidator.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\AboutValidators\\CreateAboutValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T09:21:31.39Z",
+              "WhenOpened": "2024-11-06T23:48:09.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\Extensions\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Extensions\\ServiceExtensions.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Presentation\\AcilKan.WebAPI\\Extensions\\ServiceExtensions.cs",
+              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Extensions\\ServiceExtensions.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T23:45:29.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\ValidationBehavior.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\ValidationBehavior.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\ValidationRules\\FluentValidation\\ValidationBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T23:44:43.155Z",
               "EditorCaption": ""
             }
           ]

@@ -145,3 +145,9 @@ C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\Ac
 C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\AcilKan.Persistence.dll
 C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\AcilKan.Persistence.pdb
 C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\AcilKan.Domain.pdb
+C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\MediatR.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\AcilKan.Application.dll
+C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\AcilKan.Application.pdb
+C:\Users\ELEYDEV\Desktop\AcilKan\Presentation\AcilKan.WebAPI\bin\Debug\net8.0\FluentValidation.dll
