@@ -8,7 +8,7 @@ namespace AcilKan.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BannersController(IMediator _mediator) : ControllerBase
+    public class BannerController(IMediator _mediator) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> BannerList()

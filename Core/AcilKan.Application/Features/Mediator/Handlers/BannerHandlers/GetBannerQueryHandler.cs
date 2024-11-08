@@ -20,8 +20,9 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BannerHandlers
             return values.Select(x => new GetBannerQueryResult
             {
                 Id = x.Id,
-                Description = x.Description,
                 Title = x.Title,
+                Description = x.Description,
+                CoverImageUrl = x.CoverImageUrl,
             }).ToList();
         }
     }

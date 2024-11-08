@@ -74,9 +74,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BannersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "BannerList",
-    "RelativePath": "api/Banners",
+    "RelativePath": "api/Banner",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -84,9 +84,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BannersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "CreateBanner",
-    "RelativePath": "api/Banners",
+    "RelativePath": "api/Banner",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -100,9 +100,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BannersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "RemoveBanner",
-    "RelativePath": "api/Banners",
+    "RelativePath": "api/Banner",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -116,9 +116,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BannersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "UpdateBanner",
-    "RelativePath": "api/Banners",
+    "RelativePath": "api/Banner",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -132,9 +132,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BannersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "GetBanner",
-    "RelativePath": "api/Banners/{id}",
+    "RelativePath": "api/Banner/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

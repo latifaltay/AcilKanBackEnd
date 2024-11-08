@@ -19,8 +19,9 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BannerHandlers
             return new GetBannerByIdQueryResult 
             {
                 Id = value.Id,
-                Description = value.Description,
                 Title = value.Title,
+                Description = value.Description,
+                CoverImageUrl = value.CoverImageUrl,
             };
         }
     }

@@ -16,8 +16,9 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BannerHandlers
         {
             await _repository.CreateAsync(new Banner 
             {
-                Description = request.Description,
                 Title = request.Title,
+                Description = request.Description,
+                CoverImageUrl = request.CoverImageUrl,
             });
         }
     }

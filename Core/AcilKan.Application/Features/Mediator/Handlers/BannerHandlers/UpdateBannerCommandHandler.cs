@@ -15,8 +15,9 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BannerHandlers
         public async Task Handle(UpdateBannerCommand request, CancellationToken cancellationToken)
         {
             var value = await _repository.GetByIdAsync(request.Id);
-            value.Description = request.Description;
             value.Title = request.Title;
+            value.Description = request.Description;
+            value.CoverImageUrl = request.CoverImageUrl;
             await _repository.UpdateAsync(value);
         }
     }
