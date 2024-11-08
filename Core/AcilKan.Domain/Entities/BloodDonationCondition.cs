@@ -10,7 +10,5 @@ namespace AcilKan.Domain.Entities
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public GeneralConditionsForBloodDonation GeneralConditionsForBloodDonation { get; set; }
-        public HealthConditionsForBloodDonation HealthConditionsForBloodDonation { get; set; }
     }
 }

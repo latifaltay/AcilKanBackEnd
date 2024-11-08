@@ -148,6 +148,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
+    "Method": "BloodDonationConditionList",
+    "RelativePath": "api/BloodDonationCondition",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
+    "Method": "CreateBloodDonationCondition",
+    "RelativePath": "api/BloodDonationCondition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDonationConditionCommands.CreateBloodDonationConditionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
+    "Method": "RemoveBloodDonationCondition",
+    "RelativePath": "api/BloodDonationCondition",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
+    "Method": "UpdateBloodDonationCondition",
+    "RelativePath": "api/BloodDonationCondition",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDonationConditionCommands.UpdateBloodDonationConditionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
+    "Method": "GetBloodDonationCondition",
+    "RelativePath": "api/BloodDonationCondition/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.ContactsController",
     "Method": "ContactList",
     "RelativePath": "api/Contacts",

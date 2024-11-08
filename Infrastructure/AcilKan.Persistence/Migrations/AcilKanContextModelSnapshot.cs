@@ -113,21 +113,11 @@ namespace AcilKan.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("GeneralConditionsForBloodDonationId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("HealthConditionsForBloodDonationId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("GeneralConditionsForBloodDonationId");
-
-                    b.HasIndex("HealthConditionsForBloodDonationId");
 
                     b.ToTable("BloodDonationConditions");
                 });
@@ -420,25 +410,6 @@ namespace AcilKan.Persistence.Migrations
                     b.Navigation("DonationBenefit");
 
                     b.Navigation("Mission");
-                });
-
-            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonationCondition", b =>
-                {
-                    b.HasOne("AcilKan.Domain.Entities.GeneralConditionsForBloodDonation", "GeneralConditionsForBloodDonation")
-                        .WithMany()
-                        .HasForeignKey("GeneralConditionsForBloodDonationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AcilKan.Domain.Entities.HealthConditionsForBloodDonation", "HealthConditionsForBloodDonation")
-                        .WithMany()
-                        .HasForeignKey("HealthConditionsForBloodDonationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("GeneralConditionsForBloodDonation");
-
-                    b.Navigation("HealthConditionsForBloodDonation");
                 });
 #pragma warning restore 612, 618
         }

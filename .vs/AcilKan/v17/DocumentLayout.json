@@ -3,44 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\controllers\\bannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\queries\\blooddonationconditionqueries\\getblooddonationconditionbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\queries\\blooddonationconditionqueries\\getblooddonationconditionbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\updatebannercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\updatebannercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\getblooddonationconditionbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\getblooddonationconditionbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\getbannerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\getbannerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\results\\blooddonationconditionresults\\getblooddonationconditionbyidqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\results\\blooddonationconditionresults\\getblooddonationconditionbyidqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\getbannerbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\getbannerbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\createbannercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\bannerhandlers\\createbannercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\controllers\\blooddonationconditioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\controllers\\blooddonationconditioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\commands\\bannercommands\\updatebannercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\commands\\bannercommands\\updatebannercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241108153913_mig_for_about_page3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\AcilKan.Persistence\\Migrations\\20241108153913_mig_for_about_page3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\commands\\bannercommands\\createbannercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\commands\\bannercommands\\createbannercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\blooddonationcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\blooddonationcondition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\results\\bannerresults\\getbannerqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\results\\bannerresults\\getbannerqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\deleteblooddonationconditioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\deleteblooddonationconditioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\results\\bannerresults\\getbannerbyidqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\results\\bannerresults\\getbannerbyidqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\queries\\blooddonationconditionqueries\\getblooddonationconditionquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\queries\\blooddonationconditionqueries\\getblooddonationconditionquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\banner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\createblooddonationconditioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\createblooddonationconditioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\commands\\blooddonationconditioncommands\\createblooddonationconditioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\commands\\blooddonationconditioncommands\\createblooddonationconditioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\getblooddonationconditionqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\getblooddonationconditionqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\updateblooddonationconditioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\blooddonationconditionhandlers\\updateblooddonationconditioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\commands\\blooddonationconditioncommands\\updateblooddonationconditioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\commands\\blooddonationconditioncommands\\updateblooddonationconditioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\commands\\blooddonationconditioncommands\\deleteblooddonationconditioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\commands\\blooddonationconditioncommands\\deleteblooddonationconditioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,45 +70,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BannerController.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\BannerController.cs",
-              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Controllers\\BannerController.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\BannerController.cs",
-              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Controllers\\BannerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:01:55.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateBannerCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\UpdateBannerCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\UpdateBannerCommandHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\UpdateBannerCommandHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\UpdateBannerCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "Title": "GetBloodDonationConditionByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionByIdQueryHandler.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionByIdQueryHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAA4AAACgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:01:10.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetBannerQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\GetBannerQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\GetBannerQueryHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\GetBannerQueryHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\GetBannerQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:01:00.441Z",
+              "WhenOpened": "2024-11-08T15:13:41.559Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -99,87 +94,179 @@
               "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\GetBannerByIdQueryHandler.cs",
               "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\GetBannerByIdQueryHandler.cs",
               "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\GetBannerByIdQueryHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:00:48.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateBannerCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\CreateBannerCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\CreateBannerCommandHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\CreateBannerCommandHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BannerHandlers\\CreateBannerCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:00:34.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateBannerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\UpdateBannerCommand.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\UpdateBannerCommand.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\UpdateBannerCommand.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\UpdateBannerCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:00:24.368Z",
+              "WhenOpened": "2024-11-08T15:41:11.151Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CreateBannerCommand.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\CreateBannerCommand.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\CreateBannerCommand.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\CreateBannerCommand.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BannerCommands\\CreateBannerCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Title": "BloodDonationCondition.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodDonationCondition.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\BloodDonationCondition.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodDonationCondition.cs",
+              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\BloodDonationCondition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T15:00:18.907Z",
+              "WhenOpened": "2024-11-08T15:05:10.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241108153913_mig_for_about_page3.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241108153913_mig_for_about_page3.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241108153913_mig_for_about_page3.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241108153913_mig_for_about_page3.cs",
+              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241108153913_mig_for_about_page3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:39:14.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BloodDonationConditionController.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationConditionController.cs",
+              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationConditionController.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationConditionController.cs",
+              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationConditionController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:25:27.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetBloodDonationConditionQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionQueryHandler.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionQueryHandler.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionQueryHandler.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\GetBloodDonationConditionQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:13:52.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateBloodDonationConditionCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\UpdateBloodDonationConditionCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\UpdateBloodDonationConditionCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\UpdateBloodDonationConditionCommandHandler.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\UpdateBloodDonationConditionCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:13:20.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "GetBannerQueryResult.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerQueryResult.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerQueryResult.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerQueryResult.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerQueryResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Title": "DeleteBloodDonationConditionCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\DeleteBloodDonationConditionCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\DeleteBloodDonationConditionCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\DeleteBloodDonationConditionCommandHandler.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\DeleteBloodDonationConditionCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T14:59:57.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetBannerByIdQueryResult.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerByIdQueryResult.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerByIdQueryResult.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerByIdQueryResult.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\BannerResults\\GetBannerByIdQueryResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T14:59:50.064Z",
+              "WhenOpened": "2024-11-08T15:13:12.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Banner.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\Banner.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\Banner.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\Banner.cs",
-              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\Banner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "CreateBloodDonationConditionCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\CreateBloodDonationConditionCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\CreateBloodDonationConditionCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\CreateBloodDonationConditionCommandHandler.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDonationConditionHandlers\\CreateBloodDonationConditionCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAACiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T14:59:35.161Z",
+              "WhenOpened": "2024-11-08T15:12:59.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DeleteBloodDonationConditionCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\DeleteBloodDonationConditionCommand.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\DeleteBloodDonationConditionCommand.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\DeleteBloodDonationConditionCommand.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\DeleteBloodDonationConditionCommand.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:10:14.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateBloodDonationConditionCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\UpdateBloodDonationConditionCommand.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\UpdateBloodDonationConditionCommand.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\UpdateBloodDonationConditionCommand.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\UpdateBloodDonationConditionCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:10:07.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateBloodDonationConditionCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\CreateBloodDonationConditionCommand.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\CreateBloodDonationConditionCommand.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\CreateBloodDonationConditionCommand.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\BloodDonationConditionCommands\\CreateBloodDonationConditionCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:10:00.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetBloodDonationConditionQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionQuery.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionQuery.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionQuery.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:07:57.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetBloodDonationConditionByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionByIdQuery.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionByIdQuery.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionByIdQuery.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Queries\\BloodDonationConditionQueries\\GetBloodDonationConditionByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:07:48.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetBloodDonationConditionByIdQueryResult.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\BloodDonationConditionResults\\GetBloodDonationConditionByIdQueryResult.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\BloodDonationConditionResults\\GetBloodDonationConditionByIdQueryResult.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\BloodDonationConditionResults\\GetBloodDonationConditionByIdQueryResult.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\BloodDonationConditionResults\\GetBloodDonationConditionByIdQueryResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T15:07:09.285Z",
               "EditorCaption": ""
             }
           ]
