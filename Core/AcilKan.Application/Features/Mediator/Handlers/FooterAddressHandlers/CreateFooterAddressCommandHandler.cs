@@ -16,9 +16,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.FooterAddressHandlers
         {
             await _repository.CreateAsync(new FooterAddress
             {
-                Email = request.Email,
-                Phone = request.Phone,
-                Title = request.Title,
+
             });
         }
     }

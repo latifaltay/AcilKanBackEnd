@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.ContactHandlers
 {
-    public class UpdateContactCommandHandler(IRepository<Contact> _repository) : IRequestHandler<UpdateContactCommand>
+    public class UpdateContactCommandHandler(IRepository<ContactPage> _repository) : IRequestHandler<UpdateContactCommand>
     {
         public async Task Handle(UpdateContactCommand request, CancellationToken cancellationToken)
         {

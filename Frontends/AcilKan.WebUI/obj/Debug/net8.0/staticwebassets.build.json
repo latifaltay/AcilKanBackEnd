@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uhuhiQQIpzOvNNgBkWvlfzbkjVzapN9/QA/nUT34DH0=",
+  "Hash": "p/tYKad7idA201o3xUoHazJkrtHxCDUZ5idMjJg0tQg=",
   "Source": "AcilKan.WebUI",
   "BasePath": "_content/AcilKan.WebUI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AcilKan.WebUI\\wwwroot",
       "Source": "AcilKan.WebUI",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AcilKan.WebUI.styles.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AcilKan.WebUI.styles.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKan.WebUI.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AcilKan.WebUI.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AcilKan.WebUI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AcilKan.WebUI.bundle.scp.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AcilKan.WebUI.bundle.scp.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKan.WebUI.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AcilKan.WebUI.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AcilKan.WebUI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\.gitattributes",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\.gitattributes",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/.gitattributes",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\.gitattributes"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\about.html",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\about.html",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/about.html",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\about.html"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\contact.html",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\contact.html",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/contact.html",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\contact.html"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\bootstrap.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/css/bootstrap.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\font-awesome.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\font-awesome.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/css/font-awesome.min.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\css\\font-awesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\responsive.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\responsive.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/css/responsive.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\css\\responsive.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\style.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\style.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/css/style.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\style.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\style.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/css/style.css.map",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\css\\style.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\style.scss",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\css\\style.scss",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/css/style.scss",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\css\\style.scss"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\departments.html",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\departments.html",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/departments.html",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\departments.html"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\doctors.html",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\doctors.html",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/doctors.html",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\doctors.html"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.ttf",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.ttf",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/fonts/fontawesome-webfont.ttf",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.woff",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.woff",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/fonts/fontawesome-webfont.woff",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.woff2",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.woff2",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/fonts/fontawesome-webfont.woff2",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\about-img.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\about-img.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/about-img.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\about-img.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\client.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\client.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/client.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\client.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\d1.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\d1.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/d1.jpg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\d1.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\d2.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\d2.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/d2.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\d2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\d3.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\d3.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/d3.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\d3.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\favicon.png",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\favicon.png",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/favicon.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\hero-bg.png",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\hero-bg.png",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/hero-bg.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\hero-bg.png"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s1.png",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s1.png",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/s1.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\s1.png"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s2.png",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s2.png",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/s2.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\s2.png"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s3.png",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s3.png",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/s3.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\s3.png"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s4.png",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\s4.png",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/s4.png",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\s4.png"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t1.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t1.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/t1.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\t1.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t2.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t2.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/t2.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\t2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t3.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t3.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/t3.jpg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\t3.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t4.jpg",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\images\\t4.jpg",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/images/t4.jpg",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\images\\t4.jpg"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\index.html",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\index.html",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/index.html",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\index.html"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\js\\bootstrap.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/js/bootstrap.js",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\js\\custom.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\js\\custom.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/js/custom.js",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\js\\jquery-3.4.1.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\AcilKanVitrin\\js\\jquery-3.4.1.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "AcilKanVitrin/js/jquery-3.4.1.min.js",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\AcilKanVitrin\\js\\jquery-3.4.1.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\css\\site.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\favicon.ico",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\js\\site.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "AcilKan.WebUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\wwwroot\\",
       "BasePath": "_content/AcilKan.WebUI",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

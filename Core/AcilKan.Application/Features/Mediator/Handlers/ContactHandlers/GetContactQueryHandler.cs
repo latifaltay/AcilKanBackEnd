@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.ContactHandlers
 {
-    public class GetContactQueryHandler(IRepository<Contact> _repository) : IRequestHandler<GetContactQuery, List<GetContactQueryResult>>
+    public class GetContactQueryHandler(IRepository<ContactPage> _repository) : IRequestHandler<GetContactQuery, List<GetContactQueryResult>>
     {
         public async Task<List<GetContactQueryResult>> Handle(GetContactQuery request, CancellationToken cancellationToken)
         {

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcilKan.Application.Features.Mediator.Commands.AboutCommands
+namespace AcilKan.Application.Features.Mediator.Commands.AboutUsCommands
 {
-    public class DeleteAboutCommand(int id) : IRequest
+    public class DeleteAboutUsCommand(int id) : IRequest
     {
         public int Id { get; set; } = id;
     }

@@ -27,11 +27,18 @@ namespace AcilKan.Persistence.Context
             }
         }
 
-        public DbSet<About> Abouts { get; set; }
+        public DbSet<AboutUs> Abouts { get; set; }
+        public DbSet<AboutBloodDonation> AboutBloodDonations { get; set; }
+        public DbSet<AboutUs> AboutUses { get; set; }
         public DbSet<Banner> Banners { get; set; }
-        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<BloodDonationCondition> BloodDonationConditions { get; set; }
+        public DbSet<ContactForAboutPage> ContactForAboutPages { get; set; }
+        public DbSet<ContactPage> ContactPages { get; set; }
         public DbSet<DonationBenefit> DonationBenefits { get; set; }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
+        public DbSet<GeneralConditionsForBloodDonation> GeneralConditionsForBloodDonations { get; set; }
+        public DbSet<HealthConditionsForBloodDonation> HealthConditionsForBloodDonations { get; set; }
+        public DbSet<Mission> Missions { get; set; }
         public DbSet<Supporter> Supporters { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
     }

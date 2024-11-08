@@ -16,11 +16,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.DonationBenefitHandlers
         {
             var value = await _repository.GetByIdAsync(request.Id);
 
-            value.Description = request.Description;
-            value.SubDescription = request.SubDescription;
+            value.Article = request.Article;
             value.Title = request.Title;
-            value.IconUrl = request.IconUrl;
-            value.SubTitle = request.SubTitle;
 
             await _repository.UpdateAsync(value);
         }

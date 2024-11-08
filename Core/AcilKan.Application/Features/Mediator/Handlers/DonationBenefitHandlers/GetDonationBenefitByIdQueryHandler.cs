@@ -19,10 +19,6 @@ namespace AcilKan.Application.Features.Mediator.Handlers.DonationBenefitHandlers
             return new GetDonationBenefitByIdQueryResult 
             {
                 Id = value.Id,
-                Description = value.Description,
-                IconUrl = value.IconUrl,
-                SubDescription = value.SubDescription,
-                SubTitle = value.SubTitle,
                 Title = value.Title,
             };
         }

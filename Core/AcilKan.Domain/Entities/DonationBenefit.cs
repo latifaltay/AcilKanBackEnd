@@ -10,9 +10,7 @@ namespace AcilKan.Domain.Entities
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Description { get; set; }
-        public string IconUrl { get; set; }
-        public string SubTitle { get; set; }
-        public string SubDescription { get; set; }
+        public string Article { get; set; }
+
     }
 }

@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.ContactHandlers
 {
-    public class CreateContactCommandHandler(IRepository<Contact> _repository) : IRequestHandler<CreateContactCommand>
+    public class CreateContactCommandHandler(IRepository<ContactPage> _repository) : IRequestHandler<CreateContactCommand>
     {
         public async Task Handle(CreateContactCommand request, CancellationToken cancellationToken)
         {
-            await _repository.CreateAsync(new Contact
+            await _repository.CreateAsync(new ContactPage
             {
                 Name = request.Name,
                 Email = request.Email,

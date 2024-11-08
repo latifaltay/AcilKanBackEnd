@@ -16,9 +16,6 @@ namespace AcilKan.Application.Features.Mediator.Handlers.FooterAddressHandlers
         {
             var value = await _repository.GetByIdAsync(request.Id);
 
-            value.Phone = request.Phone;
-            value.Email = request.Email;
-            value.Title = request.Title;
 
             await _repository.UpdateAsync(value);
         }

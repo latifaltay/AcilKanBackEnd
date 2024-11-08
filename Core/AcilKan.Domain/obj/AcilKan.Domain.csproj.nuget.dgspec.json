@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj": {}
+    "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj": {
+    "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj",
         "projectName": "AcilKan.Domain",
-        "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj",
+        "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\AcilKan.Domain.csproj",
         "packagesPath": "C:\\Users\\ELEYDEV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Core\\AcilKan.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

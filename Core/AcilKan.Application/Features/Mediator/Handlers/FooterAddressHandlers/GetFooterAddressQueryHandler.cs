@@ -19,9 +19,6 @@ namespace AcilKan.Application.Features.Mediator.Handlers.FooterAddressHandlers
             return value.Select(x => new GetFooterAddressQueryResult
             {
                 Id = x.Id,
-                Title = x.Title,
-                Email = x.Email,
-                Phone = x.Phone,
             }).ToList();
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F0mTHTn8jho=",
+  "dgSpecHash": "W87UMeLpgt0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ELEYDEV\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\ELEYDEV\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

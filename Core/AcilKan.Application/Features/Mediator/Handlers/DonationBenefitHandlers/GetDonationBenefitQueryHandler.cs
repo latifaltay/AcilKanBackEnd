@@ -18,11 +18,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.DonationBenefitHandlers
             var value = await _repository.GetAllAsync();
             return value.Select(x => new GetDonationBenefitQueryResult 
             {
-                Description = x.Description,
-                IconUrl = x.IconUrl,
                 Id = x.Id,
-                SubDescription = x.SubDescription,
-                SubTitle = x.SubTitle,
                 Title = x.Title,
             }).ToList();
         }

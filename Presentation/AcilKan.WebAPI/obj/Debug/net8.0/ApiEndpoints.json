@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AboutsController",
-    "Method": "AboutList",
-    "RelativePath": "api/Abouts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutUsController",
+    "Method": "AboutUsList",
+    "RelativePath": "api/AboutUs",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,25 +10,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AboutsController",
-    "Method": "CreateAbout",
-    "RelativePath": "api/Abouts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutUsController",
+    "Method": "CreateAboutUs",
+    "RelativePath": "api/AboutUs",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "command",
-        "Type": "AcilKan.Application.Features.Mediator.Commands.AboutCommands.CreateAboutCommand",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AboutUsCommands.CreateAboutUsCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AboutsController",
-    "Method": "RemoveAbout",
-    "RelativePath": "api/Abouts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutUsController",
+    "Method": "RemoveAboutUs",
+    "RelativePath": "api/AboutUs",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -42,25 +42,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AboutsController",
-    "Method": "UpdateAbout",
-    "RelativePath": "api/Abouts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutUsController",
+    "Method": "UpdateAboutUs",
+    "RelativePath": "api/AboutUs",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "command",
-        "Type": "AcilKan.Application.Features.Mediator.Commands.AboutCommands.UpdateAboutCommand",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AboutUsCommands.UpdateAboutUsCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AboutsController",
-    "Method": "GetAbout",
-    "RelativePath": "api/Abouts/{id}",
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutUsController",
+    "Method": "GetAboutUs",
+    "RelativePath": "api/AboutUs/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

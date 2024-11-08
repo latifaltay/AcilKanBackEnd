@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.ContactHandlers
 {
-    public class DeleteContactCommandHandler(IRepository<Contact> _repository) : IRequestHandler<DeleteContactCommand>
+    public class DeleteContactCommandHandler(IRepository<ContactPage> _repository) : IRequestHandler<DeleteContactCommand>
     {
         public async Task Handle(DeleteContactCommand request, CancellationToken cancellationToken)
         {

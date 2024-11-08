@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj": {}
+    "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj": {
+    "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj",
+        "projectUniqueName": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj",
         "projectName": "AcilKan.Dto",
-        "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj",
+        "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj",
         "packagesPath": "C:\\Users\\ELEYDEV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.Dto\\obj\\",
+        "outputPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj": {
+    "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj",
+        "projectUniqueName": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj",
         "projectName": "AcilKan.WebUI",
-        "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj",
+        "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\AcilKan.WebUI.csproj",
         "packagesPath": "C:\\Users\\ELEYDEV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.WebUI\\obj\\",
+        "outputPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,8 +98,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj": {
-                "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKan\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj"
+              "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj": {
+                "projectPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Frontends\\AcilKan.Dto\\AcilKan.Dto.csproj"
               }
             }
           }

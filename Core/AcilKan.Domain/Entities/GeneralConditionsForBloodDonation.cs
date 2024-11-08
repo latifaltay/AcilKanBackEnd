@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcilKan.Application.Features.Mediator.Results.AboutResults
+namespace AcilKan.Domain.Entities
 {
-    public class GetAboutByIdQueryResult
+    public class GeneralConditionsForBloodDonation
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Description { get; set; }
-        public string ImageUrl { get; set; }
+        public string Article { get; set; }
     }
 }

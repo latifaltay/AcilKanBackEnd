@@ -16,9 +16,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.SupporterHandlers
         {
             var value = await _repository.GetByIdAsync(request.Id);
 
-            value.InstitutionName = request.InstitutionName;
-            value.Description = request.Description;
-            value.Title = request.Title;
+
+            value.CompanyName = request.Title;
             value.ImageUrl = request.ImageUrl;
 
             await _repository.UpdateAsync(value);
