@@ -1,14 +1,36 @@
 using AcilKan.Application.Interfaces;
+using AcilKan.Domain.Entities;
 using AcilKan.Persistence.Context;
 using AcilKan.Persistence.Repositories;
 using AcilKan.WebAPI.Extensions;
 using MediatR;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddDbContext<AcilKanContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("sqlcon"));
+});
+
+builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options => 
+{
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 1;
+
+    options.User.RequireUniqueEmail = true;
+
+    options.SignIn.RequireConfirmedEmail = true;
+    options.Lockout.MaxFailedAccessAttempts = 3;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
+
+}).AddEntityFrameworkStores<AcilKanContext>();
 
 builder.Services.AddServiceExtentions();
 

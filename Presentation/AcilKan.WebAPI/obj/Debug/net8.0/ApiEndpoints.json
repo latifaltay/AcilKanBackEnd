@@ -222,6 +222,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
+    "Method": "Register",
+    "RelativePath": "api/Authentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "BannerList",
     "RelativePath": "api/Banner",
@@ -518,9 +534,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressesController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressController",
     "Method": "FooterAddressList",
-    "RelativePath": "api/FooterAddresses",
+    "RelativePath": "api/FooterAddress",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -528,9 +544,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressesController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressController",
     "Method": "CreateFooterAddress",
-    "RelativePath": "api/FooterAddresses",
+    "RelativePath": "api/FooterAddress",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -544,9 +560,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressesController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressController",
     "Method": "RemoveFooterAddress",
-    "RelativePath": "api/FooterAddresses",
+    "RelativePath": "api/FooterAddress",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -560,9 +576,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressesController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressController",
     "Method": "UpdateFooterAddress",
-    "RelativePath": "api/FooterAddresses",
+    "RelativePath": "api/FooterAddress",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -576,9 +592,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressesController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.FooterAddressController",
     "Method": "GetFooterAddress",
-    "RelativePath": "api/FooterAddresses/{id}",
+    "RelativePath": "api/FooterAddress/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -666,9 +682,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.SupportersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.SupporterController",
     "Method": "SupporterList",
-    "RelativePath": "api/Supporters",
+    "RelativePath": "api/Supporter",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -676,9 +692,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.SupportersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.SupporterController",
     "Method": "CreateSupporter",
-    "RelativePath": "api/Supporters",
+    "RelativePath": "api/Supporter",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -692,9 +708,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.SupportersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.SupporterController",
     "Method": "RemoveSupporter",
-    "RelativePath": "api/Supporters",
+    "RelativePath": "api/Supporter",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -708,9 +724,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.SupportersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.SupporterController",
     "Method": "UpdateSupporter",
-    "RelativePath": "api/Supporters",
+    "RelativePath": "api/Supporter",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -724,9 +740,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.SupportersController",
+    "ContainingType": "AcilKan.WebAPI.Controllers.SupporterController",
     "Method": "GetSupporter",
-    "RelativePath": "api/Supporters/{id}",
+    "RelativePath": "api/Supporter/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

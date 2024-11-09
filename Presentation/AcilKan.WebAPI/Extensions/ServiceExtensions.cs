@@ -4,6 +4,7 @@ using AcilKan.Persistence.Context;
 using AcilKan.Persistence.Repositories;
 using FluentValidation;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace AcilKan.WebAPI.Extensions
 {

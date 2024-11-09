@@ -1,4 +1,6 @@
 ﻿using AcilKan.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -9,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Persistence.Context
 {
-    public class AcilKanContext : DbContext
+    public class AcilKanContext : IdentityDbContext<AppUser,IdentityRole<int>, int>
     {
         private readonly IConfiguration _configuration;
 
-        public AcilKanContext(IConfiguration configuration)
+        public AcilKanContext(DbContextOptions<AcilKanContext> options, IConfiguration configuration) : base(options)
         {
             _configuration = configuration;
         }
