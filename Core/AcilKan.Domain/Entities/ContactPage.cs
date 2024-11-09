@@ -9,12 +9,7 @@ namespace AcilKan.Domain.Entities
     public class ContactPage
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string SurName { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Email { get; set; }
-        public string Title { get; set; }
-        public string Message { get; set; }
-        public DateTime SendDate { get; set; }
+        public ContactUs ContactUs { get; set; }
+        public ContactInformation ContactInformation { get; set; }
     }
 }

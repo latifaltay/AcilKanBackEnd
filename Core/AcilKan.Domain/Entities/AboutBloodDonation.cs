@@ -12,7 +12,7 @@ namespace AcilKan.Domain.Entities
         public Mission Mission { get; set; }
         public DonationBenefit DonationBenefit { get; set; }
         public BloodDonationCondition BloodDonationConditions { get; set; }
-        public ContactForAboutPage ContactForAboutPage { get; set; }
+        public ContactInformation ContactForAboutPage { get; set; }
 
     }
 }

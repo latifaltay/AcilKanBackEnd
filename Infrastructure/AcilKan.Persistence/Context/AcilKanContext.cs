@@ -32,7 +32,7 @@ namespace AcilKan.Persistence.Context
         public DbSet<AboutUs> AboutUses { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<BloodDonationCondition> BloodDonationConditions { get; set; }
-        public DbSet<ContactForAboutPage> ContactForAboutPages { get; set; }
+        public DbSet<ContactInformation> ContactForAboutPages { get; set; }
         public DbSet<ContactPage> ContactPages { get; set; }
         public DbSet<DonationBenefit> DonationBenefits { get; set; }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
