@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutBloodDonationController",
+    "Method": "AboutBloodDonationList",
+    "RelativePath": "api/AboutBloodDonation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutBloodDonationController",
+    "Method": "CreateAboutBloodDonation",
+    "RelativePath": "api/AboutBloodDonation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AboutBloodDonationCommands.CreateAboutBloodDonationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutBloodDonationController",
+    "Method": "RemoveAboutBloodDonation",
+    "RelativePath": "api/AboutBloodDonation",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutBloodDonationController",
+    "Method": "UpdateAboutBloodDonation",
+    "RelativePath": "api/AboutBloodDonation",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AboutBloodDonationCommands.UpdateAboutBloodDonationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AboutBloodDonationController",
+    "Method": "GetAboutBloodDonation",
+    "RelativePath": "api/AboutBloodDonation/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.AboutUsController",
     "Method": "AboutUsList",
     "RelativePath": "api/AboutUs",
@@ -61,6 +135,80 @@
     "ContainingType": "AcilKan.WebAPI.Controllers.AboutUsController",
     "Method": "GetAboutUs",
     "RelativePath": "api/AboutUs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ArticlesForAboutPageController",
+    "Method": "GeneralConditionsForBloodDonationList",
+    "RelativePath": "api/ArticlesForAboutPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ArticlesForAboutPageController",
+    "Method": "CreateGeneralConditionsForBloodDonation",
+    "RelativePath": "api/ArticlesForAboutPage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.ArticlesForAboutPageCommands.CreateArticlesForAboutPageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ArticlesForAboutPageController",
+    "Method": "RemoveGeneralConditionsForBloodDonation",
+    "RelativePath": "api/ArticlesForAboutPage",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ArticlesForAboutPageController",
+    "Method": "UpdateGeneralConditionsForBloodDonation",
+    "RelativePath": "api/ArticlesForAboutPage",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.ArticlesForAboutPageCommands.UpdateArticlesForAboutPageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ArticlesForAboutPageController",
+    "Method": "GetGeneralConditionsForBloodDonation",
+    "RelativePath": "api/ArticlesForAboutPage/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -148,80 +296,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
-    "Method": "BloodDonationConditionList",
-    "RelativePath": "api/BloodDonationCondition",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
-    "Method": "CreateBloodDonationCondition",
-    "RelativePath": "api/BloodDonationCondition",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDonationConditionCommands.CreateBloodDonationConditionCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
-    "Method": "RemoveBloodDonationCondition",
-    "RelativePath": "api/BloodDonationCondition",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
-    "Method": "UpdateBloodDonationCondition",
-    "RelativePath": "api/BloodDonationCondition",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDonationConditionCommands.UpdateBloodDonationConditionCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationConditionController",
-    "Method": "GetBloodDonationCondition",
-    "RelativePath": "api/BloodDonationCondition/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "AcilKan.WebAPI.Controllers.ContactInformationController",
     "Method": "AboutUsList",
     "RelativePath": "api/ContactInformation",
@@ -296,9 +370,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.ContactsController",
-    "Method": "ContactList",
-    "RelativePath": "api/Contacts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.ContactUsController",
+    "Method": "ContactUsList",
+    "RelativePath": "api/ContactUs",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -306,25 +380,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.ContactsController",
-    "Method": "CreateContact",
-    "RelativePath": "api/Contacts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.ContactUsController",
+    "Method": "CreateContactUs",
+    "RelativePath": "api/ContactUs",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "command",
-        "Type": "AcilKan.Application.Features.Mediator.Commands.ContactCommands.CreateContactCommand",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.ContactUsCommands.CreateContactUsCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.ContactsController",
-    "Method": "RemoveContact",
-    "RelativePath": "api/Contacts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.ContactUsController",
+    "Method": "RemoveContactUs",
+    "RelativePath": "api/ContactUs",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -338,25 +412,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.ContactsController",
-    "Method": "UpdateContact",
-    "RelativePath": "api/Contacts",
+    "ContainingType": "AcilKan.WebAPI.Controllers.ContactUsController",
+    "Method": "UpdateContactUs",
+    "RelativePath": "api/ContactUs",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "command",
-        "Type": "AcilKan.Application.Features.Mediator.Commands.ContactCommands.UpdateContactCommand",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.ContactUsCommands.UpdateContactUsCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.ContactsController",
-    "Method": "GetContact",
-    "RelativePath": "api/Contacts/{id}",
+    "ContainingType": "AcilKan.WebAPI.Controllers.ContactUsController",
+    "Method": "GetContactUs",
+    "RelativePath": "api/ContactUs/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -518,6 +592,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.MissionController",
+    "Method": "MissionList",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.MissionController",
+    "Method": "CreateMission",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.MissionCommands.CreateMissionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.MissionController",
+    "Method": "RemoveMission",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.MissionController",
+    "Method": "UpdateMission",
+    "RelativePath": "api/Mission",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.MissionCommands.UpdateMissionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.MissionController",
+    "Method": "GetMission",
+    "RelativePath": "api/Mission/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.SupportersController",
     "Method": "SupporterList",
     "RelativePath": "api/Supporters",
@@ -653,6 +801,80 @@
     "ContainingType": "AcilKan.WebAPI.Controllers.TestimonialsController",
     "Method": "GetTestimonial",
     "RelativePath": "api/Testimonials/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.TitlesForAboutPageController",
+    "Method": "TitlesForAboutPageList",
+    "RelativePath": "api/TitlesForAboutPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.TitlesForAboutPageController",
+    "Method": "CreateTitlesForAboutPage",
+    "RelativePath": "api/TitlesForAboutPage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.TitlesForAboutPageCommands.CreateTitlesForAboutPageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.TitlesForAboutPageController",
+    "Method": "RemoveTitlesForAboutPage",
+    "RelativePath": "api/TitlesForAboutPage",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.TitlesForAboutPageController",
+    "Method": "UpdateTitlesForAboutPage",
+    "RelativePath": "api/TitlesForAboutPage",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.TitlesForAboutPageCommands.UpdateTitlesForAboutPageCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.TitlesForAboutPageController",
+    "Method": "GetTitlesForAboutPage",
+    "RelativePath": "api/TitlesForAboutPage/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

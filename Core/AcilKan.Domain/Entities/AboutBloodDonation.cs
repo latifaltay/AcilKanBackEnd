@@ -9,10 +9,11 @@ namespace AcilKan.Domain.Entities
     public class AboutBloodDonation
     {
         public int Id { get; set; }
-        public Mission Mission { get; set; }
-        public DonationBenefit DonationBenefit { get; set; }
-        public BloodDonationCondition BloodDonationConditions { get; set; }
-        public ContactInformation ContactForAboutPage { get; set; }
+        public string ImageUrl { get; set; }
+        //public Mission Mission { get; set; }
+        //public DonationBenefit DonationBenefit { get; set; }
+        //public BloodDonationCondition BloodDonationConditions { get; set; }
+        //public ContactInformation ContactForAboutPage { get; set; }
 
     }
 }

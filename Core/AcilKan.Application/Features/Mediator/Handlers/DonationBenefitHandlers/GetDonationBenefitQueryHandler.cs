@@ -20,6 +20,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.DonationBenefitHandlers
             {
                 Id = x.Id,
                 Title = x.Title,
+                Article = x.Article,
             }).ToList();
         }
     }

@@ -17,6 +17,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.DonationBenefitHandlers
             await _repository.CreateAsync(new DonationBenefit 
             {
                 Title = request.Title,
+                Article = request.Article,
             });
         }
     }
