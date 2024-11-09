@@ -16,8 +16,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.SupporterHandlers
         {
             await _repository.CreateAsync(new Supporter
             {
-                CompanyName = request.Title,
                 ImageUrl = request.ImageUrl,
+                CompanyName = request.CompanyName
             });
         }
     }

@@ -30,11 +30,13 @@ public class GlobalExceptionHandlingMiddleware
         context.Response.ContentType = "application/json";
         context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
+        Console.WriteLine(exception.ToString());
         var errorResponse = new
         {
             Message = "An unexpected error occurred.",
             Details = exception.Message
         };
+
 
         await context.Response.WriteAsync(JsonSerializer.Serialize(errorResponse));
     }

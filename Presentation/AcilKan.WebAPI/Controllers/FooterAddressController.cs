@@ -8,7 +8,7 @@ namespace AcilKan.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FooterAddressesController(IMediator _mediator) : ControllerBase
+    public class FooterAddressController(IMediator _mediator) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> FooterAddressList()

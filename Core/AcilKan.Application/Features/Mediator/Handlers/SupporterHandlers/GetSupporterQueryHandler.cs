@@ -19,7 +19,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.SupporterHandlers
             return value.Select(x => new GetSupporterQueryResult
             {
                 Id = x.Id,
-                Title = x.CompanyName,
+                CompanyName = x.CompanyName,
                 ImageUrl = x.ImageUrl,
 
             }).ToList();

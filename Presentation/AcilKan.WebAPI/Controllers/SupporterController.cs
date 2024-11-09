@@ -8,7 +8,7 @@ namespace AcilKan.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SupportersController(IMediator _mediator) : ControllerBase
+    public class SupporterController(IMediator _mediator) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> SupporterList()

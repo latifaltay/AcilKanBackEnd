@@ -4,6 +4,7 @@ using AcilKan.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcilKan.Persistence.Migrations
 {
     [DbContext(typeof(AcilKanContext))]
-    partial class AcilKanContextModelSnapshot : ModelSnapshot
+    [Migration("20241109091510_mig2")]
+    partial class mig2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -99,12 +102,12 @@ namespace AcilKan.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TitlesForAboutPageId")
+                    b.Property<int>("TitleId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TitlesForAboutPageId");
+                    b.HasIndex("TitleId");
 
                     b.ToTable("ArticlesForAboutPages");
                 });
@@ -382,10 +385,6 @@ namespace AcilKan.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Key")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -416,13 +415,13 @@ namespace AcilKan.Persistence.Migrations
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ArticlesForAboutPage", b =>
                 {
-                    b.HasOne("AcilKan.Domain.Entities.TitlesForAboutPage", "TitlesForAboutPage")
-                        .WithMany("ArticlesForAboutPage")
-                        .HasForeignKey("TitlesForAboutPageId")
+                    b.HasOne("AcilKan.Domain.Entities.TitlesForAboutPage", "Title")
+                        .WithMany("Articles")
+                        .HasForeignKey("TitleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("TitlesForAboutPage");
+                    b.Navigation("Title");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ContactPage", b =>
@@ -446,7 +445,7 @@ namespace AcilKan.Persistence.Migrations
 
             modelBuilder.Entity("AcilKan.Domain.Entities.TitlesForAboutPage", b =>
                 {
-                    b.Navigation("ArticlesForAboutPage");
+                    b.Navigation("Articles");
                 });
 #pragma warning restore 612, 618
         }

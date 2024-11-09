@@ -14,10 +14,12 @@ namespace AcilKan.Application.Features.Mediator.Handlers.ArticlesForAboutPageHan
     {
         public async Task Handle(CreateArticlesForAboutPageCommand request, CancellationToken cancellationToken)
         {
-            await _repository.CreateAsync(new ArticlesForAboutPage 
+            var value = new ArticlesForAboutPage
             {
                 Article = request.Article,
-            });
+                TitlesForAboutPageId = request.TitleId,
+            };
+            await _repository.CreateAsync(value);
         }
     }
 }

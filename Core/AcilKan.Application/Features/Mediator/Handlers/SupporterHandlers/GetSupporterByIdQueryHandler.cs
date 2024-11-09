@@ -20,7 +20,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.SupporterHandlers
             {
                 Id = value.Id,
                 ImageUrl = value.ImageUrl,
-                Title = value.CompanyName
+                CompanyName = value.CompanyName
             };
         }
     }

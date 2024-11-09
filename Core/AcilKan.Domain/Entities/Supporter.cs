@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class Supporter
+    public class Supporter // Ana sayfadaki destekleyen kurumların logolarının slider alanı
     {
         public int Id { get; set; }
         public string CompanyName { get; set; }

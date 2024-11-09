@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class ContactInformation
+    public class ContactInformation // About sayfasındaki iletişim alanı - Contact sayfasındaki iletişim alanı
     {
         public int Id { get; set; }
         public string Title { get; set; }

@@ -9,9 +9,7 @@ namespace AcilKan.Application.Features.Mediator.Commands.SupporterCommands
 {
     public class CreateSupporterCommand : IRequest
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
+        public string CompanyName { get; set; }
         public string ImageUrl { get; set; }
-        public string InstitutionName { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class Banner
+    public class Banner // Anasayfadaki banner alanı
     {
         public int Id { get; set; }
         public string Title { get; set; }

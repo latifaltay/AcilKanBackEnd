@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class DonationBenefit
+    public class DonationBenefit // hatalı Kullanılmayacak About sayfasındaki neden kan bağışı alanı
     {
         public int Id { get; set; }
         public string Title { get; set; }

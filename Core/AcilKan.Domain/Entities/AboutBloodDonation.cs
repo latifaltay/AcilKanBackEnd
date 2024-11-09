@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class AboutBloodDonation
+    public class AboutBloodDonation // About sayfasındaki 2. chart alanı
     {
         public int Id { get; set; }
         public string ImageUrl { get; set; }
-        //public Mission Mission { get; set; }
-        //public DonationBenefit DonationBenefit { get; set; }
-        //public BloodDonationCondition BloodDonationConditions { get; set; }
-        //public ContactInformation ContactForAboutPage { get; set; }
-
     }
 }

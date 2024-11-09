@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class Mission
+    public class Mission // About sayfasındaki misyonumuz alanı
     {
         public int Id { get; set; }
         public string Title { get; set; } 

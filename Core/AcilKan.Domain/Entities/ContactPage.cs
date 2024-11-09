@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class ContactPage
+    public class ContactPage // iletişim sayfasının genel tablosu
     {
         public int Id { get; set; }
         public ContactUs ContactUs { get; set; }

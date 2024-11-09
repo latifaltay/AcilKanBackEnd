@@ -9,7 +9,7 @@ namespace AcilKan.Application.Features.Mediator.Commands.ArticlesForAboutPageCom
 {
     public class CreateArticlesForAboutPageCommand : IRequest
     {
-        public string Title { get; set; }
+        public int TitleId { get; set; }
         public string Article { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class About
+    public class About // Hakkımda sayfasının genel tablosu
     {
         public int Id { get; set; }
         public AboutUs AboutUs { get; set; }
