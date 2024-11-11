@@ -2,10 +2,15 @@ using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
 using AcilKan.Persistence.Context;
 using AcilKan.Persistence.Repositories;
+using AcilKan.Persistence.Services;
+using AcilKan.Persistence.Utilities;
 using AcilKan.WebAPI.Extensions;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +21,30 @@ builder.Services.AddDbContext<AcilKanContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("sqlcon"));
 });
 
-builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options => 
+
+// JWT Bearer Authentication için yap?land?rma
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,  // Issuer (Token'? veren)
+            ValidateAudience = true,  // Audience (Token'? alacak)
+            ValidateLifetime = true,  // Token'?n süresi dolmu? mu
+            ClockSkew = TimeSpan.Zero,  // Token'?n geçerlilik süresi için tolerans (iste?e ba?l?)
+
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],  // appsettings.json'dan al?yoruz
+            ValidAudience = builder.Configuration["Jwt:Audience"],  // appsettings.json'dan al?yoruz
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"])) // Secret key'i kullanarak imzalama
+        };
+    });
+
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+
+
+builder.Services.AddIdentity<AppUser, AppRole>(options => 
 {
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireDigit = false;
@@ -26,12 +54,15 @@ builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options =>
 
     options.User.RequireUniqueEmail = true;
 
-    options.SignIn.RequireConfirmedEmail = true;
-    options.Lockout.MaxFailedAccessAttempts = 3;
-    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
+    //options.SignIn.RequireConfirmedEmail = true;
+    //options.Lockout.MaxFailedAccessAttempts = 3;
+    //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
 
-}).AddEntityFrameworkStores<AcilKanContext>();
+}).AddEntityFrameworkStores<AcilKanContext>().AddDefaultTokenProviders();
 
+builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+
+builder.Services.AddScoped<JwtTokenService>();
 builder.Services.AddServiceExtentions();
 
 

@@ -13,6 +13,7 @@ C:\Users\ELEYDEV\Desktop\AcilKan\Core\AcilKan.Domain\obj\Debug\net8.0\ref\AcilKa
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\bin\Debug\net8.0\AcilKan.Domain.deps.json
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\bin\Debug\net8.0\AcilKan.Domain.dll
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\bin\Debug\net8.0\AcilKan.Domain.pdb
+C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\AcilKan.Domain.csproj.AssemblyReference.cache
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\AcilKan.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\AcilKan.Domain.AssemblyInfoInputs.cache
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\AcilKan.Domain.AssemblyInfo.cs
@@ -22,4 +23,3 @@ C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\Aci
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\refint\AcilKan.Domain.dll
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\AcilKan.Domain.pdb
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\ref\AcilKan.Domain.dll
-C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Core\AcilKan.Domain\obj\Debug\net8.0\AcilKan.Domain.csproj.AssemblyReference.cache

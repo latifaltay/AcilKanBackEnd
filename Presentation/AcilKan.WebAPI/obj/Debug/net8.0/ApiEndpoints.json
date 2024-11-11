@@ -148,6 +148,160 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "ChangePasswordUsingToken",
+    "RelativePath": "api/AppUser/ChangePasswordUsingToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AppUserCommands.ChangePasswordUsingTokenCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "CreateUser",
+    "RelativePath": "api/AppUser/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AppUserCommands.CreateAppUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/AppUser/DeleteUser",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AppUserCommands.DeleteAppUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/AppUser/ForgotPassword",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/AppUser/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/AppUser/GetUserById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "Login",
+    "RelativePath": "api/AppUser/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginCommand",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AppUserCommands.LoginCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/AppUser/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AcilKan.Application.DTOs.TokenDtos.RefreshTokenRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/AppUser/UpdatePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AppUserCommands.UpdatePasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
+    "Method": "UpdateUserInfo",
+    "RelativePath": "api/AppUser/UpdateUserInfo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.AppUserCommands.UpdateAppUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.ArticlesForAboutPageController",
     "Method": "GeneralConditionsForBloodDonationList",
     "RelativePath": "api/ArticlesForAboutPage",
@@ -223,8 +377,88 @@
   },
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Authentication/ChangePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changePasswordDto",
+        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
+    "Method": "ChangePasswordUsingToken",
+    "RelativePath": "api/Authentication/ChangePasswordUsingToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changePasswordUsingTokenDto",
+        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.ChangePasswordUsingTokenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Authentication/ForgotPassword",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/Authentication/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
+    "Method": "LoginWithSignInManager",
+    "RelativePath": "api/Authentication/LoginWithSignInManager",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
     "Method": "Register",
-    "RelativePath": "api/Authentication",
+    "RelativePath": "api/Authentication/Register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -299,6 +533,64 @@
     "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "GetBanner",
     "RelativePath": "api/Banner/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.CityController",
+    "Method": "GetAllCity",
+    "RelativePath": "api/City/GetAllCity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.CityController",
+    "Method": "GetCityById",
+    "RelativePath": "api/City/GetCityById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.CityController",
+    "Method": "GetDistrictsByCityId",
+    "RelativePath": "api/City/GetDistrictsByCityId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.CityController",
+    "Method": "GetHospitalsByCityId",
+    "RelativePath": "api/City/GetHospitalsByCityId/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -682,6 +974,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.RoleController",
+    "Method": "CreateAppRole",
+    "RelativePath": "api/Role/CreateAppRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.RoleController",
+    "Method": "GetAllAppRole",
+    "RelativePath": "api/Role/GetAllAppRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.SupporterController",
     "Method": "SupporterList",
     "RelativePath": "api/Supporter",
@@ -899,6 +1217,32 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.UserRoleController",
+    "Method": "Create",
+    "RelativePath": "api/UserRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "roleId",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -1,0 +1,151 @@
+﻿using AcilKan.Application.Features.Mediator.Results.AppUserResults;
+using AcilKan.Application.Interfaces;
+using AcilKan.Domain.Entities;
+using AcilKan.Persistence.Utilities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AcilKan.Persistence.Services
+{
+    public class JwtTokenService : IJwtTokenService
+    {
+        private readonly JwtSettings _jwtSettings;
+        private readonly UserManager<AppUser> _userManager; // UserManager eklenmeli
+        private readonly IConfiguration _configuration;
+
+        public JwtTokenService(IOptions<JwtSettings> jwtSettings, UserManager<AppUser> userManager, IConfiguration configuration)
+        {
+            _jwtSettings = jwtSettings.Value;
+            _userManager = userManager; // Constructor'a UserManager eklenmeli
+            _configuration = configuration;
+        }
+
+        // Token oluşturma
+        public async Task<TokenResult> GenerateTokens(AppUser user)
+        {
+            var claims = GetClaims(user);
+            var accessToken = GenerateAccessToken(claims);
+            var refreshToken = GenerateRefreshToken(claims);
+
+            return new TokenResult
+            {
+                AccessToken = accessToken,
+                RefreshToken = refreshToken
+            };
+        }
+
+        public async Task<TokenResult> RefreshAccessToken(string refreshToken)
+        {
+            // Refresh Token'ı doğrula ve geçerliliğini kontrol et
+            var principal = GetPrincipalFromExpiredToken(refreshToken);
+            var email = principal.FindFirstValue(ClaimTypes.Email); // Email bilgisini claim'den alıyoruz
+
+            // Kullanıcıyı email ile bul
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                throw new SecurityTokenException("Geçersiz refresh token.");
+            }
+
+            // Yeni Access Token üret
+            var newAccessToken = GenerateAccessToken(principal.Claims.ToList());
+
+            // Eski Refresh Token'ı aynı tutabiliriz veya yeni bir tane de üretebiliriz.
+            var newRefreshToken = GenerateRefreshToken(principal.Claims.ToList());
+
+            return new TokenResult
+            {
+                AccessToken = newAccessToken,
+                RefreshToken = newRefreshToken // Yeni refresh token da eklenebilir
+            };
+        }
+
+
+
+        // Kullanıcı bilgilerini claim olarak döndürme
+        private List<Claim> GetClaims(AppUser user)
+        {
+            return new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
+            };
+        }
+
+        // Access Token üretme
+        private string GenerateAccessToken(List<Claim> claims)
+        {
+            var signingCredentials = GetSigningCredentials();
+            var expirationTime = DateTime.UtcNow.AddMinutes(_jwtSettings.AccessTokenExpirationMinutes);
+
+            var token = new JwtSecurityToken(
+                issuer: _jwtSettings.Issuer,
+                audience: _jwtSettings.Audience,
+                claims: claims,
+                expires: expirationTime,
+                signingCredentials: signingCredentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        // Refresh Token üretme
+        private string GenerateRefreshToken(List<Claim> claims)
+        {
+            var signingCredentials = GetSigningCredentials();
+            var expirationTime = DateTime.UtcNow.AddDays(_jwtSettings.RefreshTokenExpirationDays);
+
+            var token = new JwtSecurityToken(
+                issuer: _jwtSettings.Issuer,
+                audience: _jwtSettings.Audience,
+                claims: claims,
+                expires: expirationTime,
+                signingCredentials: signingCredentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        // Signing credentials (imza işlemi için anahtar)
+        private SigningCredentials GetSigningCredentials()
+        {
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
+            return new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+        }
+
+        // Expired token'dan principal (kimlik) alma işlemi
+        private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var jsonToken = tokenHandler.ReadToken(token) as JwtSecurityToken;
+
+            if (jsonToken == null)
+            {
+                throw new SecurityTokenException("Geçersiz token.");
+            }
+
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateLifetime = false, // Refresh token zaten geçerliliği var, burayı kontrol etmiyoruz.
+                ValidIssuer = _jwtSettings.Issuer,
+                ValidAudience = _jwtSettings.Audience,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey)),
+            };
+
+            var principal = tokenHandler.ValidateToken(token, validationParameters, out var validatedToken);
+            return principal;
+        }
+    }
+}

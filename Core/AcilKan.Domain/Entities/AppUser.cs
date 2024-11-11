@@ -13,5 +13,6 @@ namespace AcilKan.Domain.Entities
         public string Surname { get; set; }
         public string BloodGroup { get; set; }
         public bool Gender { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

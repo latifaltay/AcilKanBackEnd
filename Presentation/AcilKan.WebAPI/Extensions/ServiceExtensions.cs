@@ -2,6 +2,8 @@
 using AcilKan.Application.ValidationRules.FluentValidation.AboutValidators;
 using AcilKan.Persistence.Context;
 using AcilKan.Persistence.Repositories;
+using AcilKan.Persistence.Services;
+using AcilKan.Persistence.Utilities;
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -23,9 +25,10 @@ namespace AcilKan.WebAPI.Extensions
             // Repository Registration
             Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
+            Services.AddScoped<ICityRepository, CityRepository>();
+
             // Validation Pipeline Registration
             Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-
 
 
 
