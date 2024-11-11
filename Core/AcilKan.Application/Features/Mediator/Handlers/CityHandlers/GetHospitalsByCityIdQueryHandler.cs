@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.CityHandlers
 {
-    public class GetHospitalsByCityIdQueryHandler(ICityRepository _cityRepository) : IRequestHandler<GetHospitalsByCityIdQuery, List<GetHospitalsByCityIdQueryResult>>
+    public class GetHospitalsByCityIdQueryHandler(ICityService _cityRepository) : IRequestHandler<GetHospitalsByCityIdQuery, List<GetHospitalsByCityIdQueryResult>>
     {
         public async Task<List<GetHospitalsByCityIdQueryResult>> Handle(GetHospitalsByCityIdQuery request, CancellationToken cancellationToken)
         {

@@ -546,6 +546,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodGroupController",
+    "Method": "GetAll",
+    "RelativePath": "api/BloodGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.CityController",
     "Method": "GetAllCity",
     "RelativePath": "api/City/GetAllCity",
@@ -739,6 +749,32 @@
     "ContainingType": "AcilKan.WebAPI.Controllers.ContactUsController",
     "Method": "GetContactUs",
     "RelativePath": "api/ContactUs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.DistrictController",
+    "Method": "GetAllDistrict",
+    "RelativePath": "api/District",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.DistrictController",
+    "Method": "GetAllHospitalByDistrictId",
+    "RelativePath": "api/District/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

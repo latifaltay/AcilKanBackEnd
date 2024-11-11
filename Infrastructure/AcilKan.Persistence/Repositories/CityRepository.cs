@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Persistence.Repositories
 {
-    public class CityRepository(AcilKanContext _context) : ICityRepository
+    public class CityRepository(AcilKanContext _context) : ICityService
     {
         public async Task<List<District>> GetAllDistrictsByCityIdAsync(int id)
         {

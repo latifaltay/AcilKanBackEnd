@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Interfaces
 {
-    public interface ICityRepository
+    public interface ICityService
     {
         Task<List<District>> GetAllDistrictsByCityIdAsync(int id);
         Task<List<Hospital>> GetAllHospitalsByCityIdAsync(int id);

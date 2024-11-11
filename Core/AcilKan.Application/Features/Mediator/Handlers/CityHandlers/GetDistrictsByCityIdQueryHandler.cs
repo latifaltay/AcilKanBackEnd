@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.CityHandlers
 {
-    public class GetDistrictsByCityIdQueryHandler(ICityRepository _cityRepository) : IRequestHandler<GetDistrictsByCityIdQuery, List<GetDistrictsByCityIdQueryResult>>
+    public class GetDistrictsByCityIdQueryHandler(ICityService _cityRepository) : IRequestHandler<GetDistrictsByCityIdQuery, List<GetDistrictsByCityIdQueryResult>>
     {
         public async Task<List<GetDistrictsByCityIdQueryResult>> Handle(GetDistrictsByCityIdQuery request, CancellationToken cancellationToken)
         {
