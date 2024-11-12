@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcilKan.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44612c940200d47aa904fd5b80881ebaac52caf2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62a51f8795f59332c5186974b1ef27eeb772ab4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcilKan.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcilKan.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

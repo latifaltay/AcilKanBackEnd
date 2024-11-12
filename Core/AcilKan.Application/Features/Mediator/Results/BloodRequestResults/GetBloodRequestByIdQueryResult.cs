@@ -9,8 +9,7 @@ namespace AcilKan.Application.Features.Mediator.Results.BloodRequestResults
     public class GetBloodRequestByIdQueryResult
     {
         public int Id { get; set; }
-        public string AppUserName { get; set; }
-        public string AppUserSurName { get; set; }         
+        public string AppUserFullName { get; set; }
         public string BloodGroupName { get; set; }       
         public string HospitalName { get; set; }
         public string City { get; set; }

@@ -15,9 +15,11 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
     {
         public async Task<List<GetBloodRequestQueryResult>> Handle(GetBloodRequestQuery request, CancellationToken cancellationToken)
         {
+
             var values = await _repository.GetAllAsync();
-            return values.Select(x => new GetBloodRequestQueryResult 
+            return values.Select(x => new GetBloodRequestQueryResult
             {
+                Id = x.Id,
                 AppUserId = x.AppUserId,
                 BloodGroupId = x.BloodGroupId,
                 CreatedDate = x.CreatedDate,

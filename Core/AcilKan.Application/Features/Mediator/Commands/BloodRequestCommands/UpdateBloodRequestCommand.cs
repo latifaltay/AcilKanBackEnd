@@ -12,7 +12,7 @@ namespace AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands
         public int Id { get; set; }
         public int HospitalId { get; set; }
         public int BloodGroupId { get; set; }
-        public int PatientName { get; set; }
-        public int PatientSurname { get; set; }
+        public string PatientName { get; set; }
+        public string PatientSurname { get; set; }
     }
 }

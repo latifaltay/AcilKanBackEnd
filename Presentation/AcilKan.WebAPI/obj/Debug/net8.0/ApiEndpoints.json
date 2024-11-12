@@ -556,6 +556,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
+    "Method": "GetAllBloodRequest",
+    "RelativePath": "api/BloodRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
+    "Method": "CreateBloodRequest",
+    "RelativePath": "api/BloodRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands.CreateBloodRequestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
+    "Method": "UpdateBloodRequest",
+    "RelativePath": "api/BloodRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands.UpdateBloodRequestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
+    "Method": "GetBloodRequest",
+    "RelativePath": "api/BloodRequest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.CityController",
     "Method": "GetAllCity",
     "RelativePath": "api/City/GetAllCity",

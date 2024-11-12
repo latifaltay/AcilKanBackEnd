@@ -14,11 +14,12 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
     {
         public async Task Handle(CreateBloodRequestCommand request, CancellationToken cancellationToken)
         {
+            var userId = await _repository.GetCurrentUserIdAsync();
             var value = new BloodRequest 
             {
-                AppUserId = request.AppUserId,
-                BloodGroupId = request.BloodGroupId,
+                AppUserId = userId,
                 HospitalId = request.HospitalId,
+                BloodGroupId = request.BloodGroupId,
                 PatientName = request.PatientName,
                 PatientSurname = request.PatientSurname,
                 CreatedDate = DateTime.UtcNow,

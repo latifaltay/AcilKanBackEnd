@@ -22,29 +22,8 @@ builder.Services.AddDbContext<AcilKanContext>(options =>
 });
 
 
-// JWT Bearer Authentication için yap?land?rma
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,  // Issuer (Token'? veren)
-            ValidateAudience = true,  // Audience (Token'? alacak)
-            ValidateLifetime = true,  // Token'?n süresi dolmu? mu
-            ClockSkew = TimeSpan.Zero,  // Token'?n geçerlilik süresi için tolerans (iste?e ba?l?)
 
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],  // appsettings.json'dan al?yoruz
-            ValidAudience = builder.Configuration["Jwt:Audience"],  // appsettings.json'dan al?yoruz
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"])) // Secret key'i kullanarak imzalama
-        };
-    });
-
-builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
-
-builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
-
-
-builder.Services.AddIdentity<AppUser, AppRole>(options => 
+builder.Services.AddIdentity<AppUser, AppRole>(options =>
 {
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireDigit = false;
@@ -59,6 +38,52 @@ builder.Services.AddIdentity<AppUser, AppRole>(options =>
     //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
 
 }).AddEntityFrameworkStores<AcilKanContext>().AddDefaultTokenProviders();
+
+
+
+
+//// JWT Bearer Authentication için yap?land?rma
+//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//    .AddJwtBearer(options =>
+//    {
+//        options.TokenValidationParameters = new TokenValidationParameters
+//        {
+//            ValidateIssuer = true,  // Issuer (Token'? veren)
+//            ValidateAudience = true,  // Audience (Token'? alacak)
+//            ValidateLifetime = true,  // Token'?n süresi dolmu? mu
+//            ClockSkew = TimeSpan.Zero,  // Token'?n geçerlilik süresi için tolerans (iste?e ba?l?)
+
+//            ValidIssuer = builder.Configuration["Jwt:Issuer"],  // appsettings.json'dan al?yoruz
+//            ValidAudience = builder.Configuration["Jwt:Audience"],  // appsettings.json'dan al?yoruz
+//            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"])) // Secret key'i kullanarak imzalama
+//        };
+//    });
+
+
+builder.Services.AddAuthentication(options => {
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))
+        };
+    });
+
+
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+
 
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 
@@ -87,8 +112,9 @@ app.UseMiddleware<FluentValidationExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseAuthentication();
 
+app.UseAuthorization();
 
 app.MapControllers();
 

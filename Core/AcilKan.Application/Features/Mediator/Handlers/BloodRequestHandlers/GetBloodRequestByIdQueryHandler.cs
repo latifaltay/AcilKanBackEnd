@@ -31,36 +31,37 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
             _hospitalRepository = hospitalRepository;
         }
 
-        public Task<GetBloodRequestByIdQueryResult> Handle(GetBloodRequestByIdQuery request, CancellationToken cancellationToken)
+        public async Task<GetBloodRequestByIdQueryResult> Handle(GetBloodRequestByIdQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var bloodRequest = await _bloodRequestRepository.GetByIdAsync(request.Id);
+
+            var appUser = await _userRepository.GetByIdAsync(bloodRequest.AppUserId);
+            var appUserFullName = appUser.UserName + " " + appUser.Surname;
+
+            var bloodGroup = await _bloodGroupRepository.GetByIdAsync(bloodRequest.BloodGroupId);
+
+            var hospital = await _hospitalRepository.GetByIdAsync(bloodRequest.HospitalId);
+
+
+
+
+            var patientFullName = bloodRequest.PatientName + " " + bloodRequest.PatientSurname;
+
+            return new GetBloodRequestByIdQueryResult
+            {
+                Id = request.Id,
+                AppUserFullName = appUserFullName,
+                BloodGroupName = bloodGroup.GroupName,
+                HospitalName = hospital.Name,
+                City = hospital.District.City.Name,
+                //City = "hospital.District.City.Name",
+                District = hospital.District.Name,
+                //District = "hospital.District.Name",
+                IsActive = bloodRequest.IsActive,
+                CreatedDate = bloodRequest.CreatedDate,
+                PatientName = patientFullName,
+            };
         }
 
-        //public async Task<GetBloodRequestByIdQueryResult> Handle(GetBloodRequestByIdQuery request, CancellationToken cancellationToken)
-        //{
-        //    var bloodRequest = await _bloodRequestRepository.GetByIdAsync(request.Id);
-
-        //    var appUser = await _userRepository.GetByIdAsync(bloodRequest.AppUserId);
-
-        //    var bloodGroup = await _bloodGroupRepository.GetByIdAsync(bloodRequest.BloodGroupId);
-        //    var hospital = await _hospitalRepository.GetByIdAsync(bloodRequest.HospitalId);
-
-        //    return new GetBloodRequestByIdQueryResult
-        //    {
-        //        Id = bloodRequest.Id,
-        //        AppUserId = bloodRequest.AppUserId,
-        //        AppUserName = appUser?.FirstName,
-        //        AppUserSurName = appUser?.LastName,
-        //        BloodGroupId = bloodRequest.BloodGroupId,
-        //        BloodGroupName = bloodGroup?.GroupName,
-        //        HospitalId = bloodRequest.HospitalId,
-        //        HospitalName = hospital?.Name,
-        //        IsActive = bloodRequest.IsActive,
-        //        CreatedDate = bloodRequest.CreatedDate,
-        //        PatientName = bloodRequest.PatientName,
-        //        PatientSurname = bloodRequest.PatientSurname,
-        //    };
-
-        //}
     }
 }

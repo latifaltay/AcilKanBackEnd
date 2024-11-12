@@ -31,7 +31,8 @@ namespace AcilKan.WebAPI.Extensions
             // Validation Pipeline Registration
             Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
-
+            // Kullanıcı id'sini almak için kullandım
+            Services.AddHttpContextAccessor();
 
 
 
