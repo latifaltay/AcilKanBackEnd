@@ -16,7 +16,6 @@ namespace AcilKan.Application.Features.Mediator.Results.BloodRequestResults
         public string District { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatedDate { get; set; }
-        public string PatientName { get; set; }
-        public string PatientSurname { get; set; }
+        public string PatientFullName { get; set; }
     }
 }

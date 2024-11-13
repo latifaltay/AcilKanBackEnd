@@ -11,22 +11,23 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
 {
-    public class GetBloodRequestQueryHandler(IRepository<BloodRequest> _repository) : IRequestHandler<GetBloodRequestQuery, List<GetBloodRequestQueryResult>>
+    public class GetBloodRequestQueryHandler(IBloodRequestService _service) : IRequestHandler<GetBloodRequestQuery, List<GetBloodRequestQueryResult>>
     {
         public async Task<List<GetBloodRequestQueryResult>> Handle(GetBloodRequestQuery request, CancellationToken cancellationToken)
         {
-
-            var values = await _repository.GetAllAsync();
-            return values.Select(x => new GetBloodRequestQueryResult
+            var values = await _service.GetBloodRequestsAsync();
+            return values.Select(x => new GetBloodRequestQueryResult 
             {
+                
                 Id = x.Id,
-                AppUserId = x.AppUserId,
-                BloodGroupId = x.BloodGroupId,
+                AppUserFullName = x.AppUser.Name + " " + x.AppUser.Surname,
+                BloodGroupName = x.BloodGroup.GroupName,
+                City = x.Hospital.District.City.Name,
+                District = x.Hospital.District.Name,
+                HospitalName = x.Hospital.Name,
                 CreatedDate = x.CreatedDate,
-                HospitalId = x.HospitalId,
                 IsActive = x.IsActive,
-                PatientName = x.PatientName,
-                PatientSurname = x.PatientSurname,
+                PatientFullName = x.PatientName + " " + x.PatientSurname,
             }).ToList();
         }
     }

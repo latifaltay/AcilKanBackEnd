@@ -20,8 +20,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
             return new GetAppUserByIdQueryResult
             {
                 Id = appUser.Id,
-                Name = appUser.Name,
-                Surname = appUser.Surname,
+                FullName = appUser.Name + " " +appUser.Surname,
                 UserName = appUser.UserName,
                 Email = appUser.Email,
                 PhoneNumber = appUser.PhoneNumber,  

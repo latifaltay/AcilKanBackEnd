@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcilKan.Persistence.Migrations
 {
     [DbContext(typeof(AcilKanContext))]
-    [Migration("20241112200107_test-mig")]
-    partial class testmig
+    [Migration("20241113173923_initial_mig")]
+    partial class initial_mig
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -470,12 +470,16 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<int>("DonationStatusId")
                         .HasColumnType("int");
 
-                    b.Property<string>("HopitalId")
+                    b.Property<int>("HospitalId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PatientName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("HospitalId")
-                        .HasColumnType("int");
+                    b.Property<string>("PatientSurname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");

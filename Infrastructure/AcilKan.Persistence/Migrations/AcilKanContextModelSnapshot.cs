@@ -467,12 +467,16 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<int>("DonationStatusId")
                         .HasColumnType("int");
 
-                    b.Property<string>("HopitalId")
+                    b.Property<int>("HospitalId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PatientName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("HospitalId")
-                        .HasColumnType("int");
+                    b.Property<string>("PatientSurname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");

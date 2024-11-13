@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AcilKan.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class initialmig : Migration
+    public partial class initial_mig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -68,21 +68,6 @@ namespace AcilKan.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "BloodRequests",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CityId = table.Column<int>(type: "int", nullable: false),
-                    DistrictId = table.Column<int>(type: "int", nullable: false),
-                    HospitalId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_BloodRequests", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Cities",
                 columns: table => new
                 {
@@ -131,19 +116,6 @@ namespace AcilKan.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Districts",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Districts", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "DonationBenefits",
                 columns: table => new
                 {
@@ -181,19 +153,6 @@ namespace AcilKan.Persistence.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_FooterAddresses", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Hospitals",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Hospitals", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -339,6 +298,26 @@ namespace AcilKan.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Districts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CityId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Districts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Districts_Cities_CityId",
+                        column: x => x.CityId,
+                        principalTable: "Cities",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ContactPages",
                 columns: table => new
                 {
@@ -385,15 +364,74 @@ namespace AcilKan.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Hospitals",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DistrictId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Hospitals", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Hospitals_Districts_DistrictId",
+                        column: x => x.DistrictId,
+                        principalTable: "Districts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BloodRequests",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    AppUserId = table.Column<int>(type: "int", nullable: false),
+                    HospitalId = table.Column<int>(type: "int", nullable: false),
+                    BloodGroupId = table.Column<int>(type: "int", nullable: false),
+                    PatientName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PatientSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BloodRequests", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_BloodRequests_BloodGroups_BloodGroupId",
+                        column: x => x.BloodGroupId,
+                        principalTable: "BloodGroups",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_BloodRequests_Hospitals_HospitalId",
+                        column: x => x.HospitalId,
+                        principalTable: "Hospitals",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_BloodRequests_Users_AppUserId",
+                        column: x => x.AppUserId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "DonationHistories",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    PatientName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PatientSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    HospitalId = table.Column<int>(type: "int", nullable: false),
                     DonationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DonationLocation = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DonationStatusId = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    DonationStatusId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -402,6 +440,12 @@ namespace AcilKan.Persistence.Migrations
                         name: "FK_DonationHistories_DonationStatuses_DonationStatusId",
                         column: x => x.DonationStatusId,
                         principalTable: "DonationStatuses",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_DonationHistories_Hospitals_HospitalId",
+                        column: x => x.HospitalId,
+                        principalTable: "Hospitals",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -428,6 +472,21 @@ namespace AcilKan.Persistence.Migrations
                 column: "TitlesForAboutPageId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_BloodRequests_AppUserId",
+                table: "BloodRequests",
+                column: "AppUserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BloodRequests_BloodGroupId",
+                table: "BloodRequests",
+                column: "BloodGroupId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BloodRequests_HospitalId",
+                table: "BloodRequests",
+                column: "HospitalId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ContactPages_ContactInformationId",
                 table: "ContactPages",
                 column: "ContactInformationId");
@@ -438,14 +497,29 @@ namespace AcilKan.Persistence.Migrations
                 column: "ContactUsId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Districts_CityId",
+                table: "Districts",
+                column: "CityId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_DonationHistories_DonationStatusId",
                 table: "DonationHistories",
                 column: "DonationStatusId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_DonationHistories_HospitalId",
+                table: "DonationHistories",
+                column: "HospitalId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_DonationHistories_UserId",
                 table: "DonationHistories",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Hospitals_DistrictId",
+                table: "Hospitals",
+                column: "DistrictId");
         }
 
         /// <inheritdoc />
@@ -461,19 +535,10 @@ namespace AcilKan.Persistence.Migrations
                 name: "Banners");
 
             migrationBuilder.DropTable(
-                name: "BloodGroups");
-
-            migrationBuilder.DropTable(
                 name: "BloodRequests");
 
             migrationBuilder.DropTable(
-                name: "Cities");
-
-            migrationBuilder.DropTable(
                 name: "ContactPages");
-
-            migrationBuilder.DropTable(
-                name: "Districts");
 
             migrationBuilder.DropTable(
                 name: "DonationBenefits");
@@ -483,9 +548,6 @@ namespace AcilKan.Persistence.Migrations
 
             migrationBuilder.DropTable(
                 name: "FooterAddresses");
-
-            migrationBuilder.DropTable(
-                name: "Hospitals");
 
             migrationBuilder.DropTable(
                 name: "Missions");
@@ -512,6 +574,9 @@ namespace AcilKan.Persistence.Migrations
                 name: "TitlesForAboutPages");
 
             migrationBuilder.DropTable(
+                name: "BloodGroups");
+
+            migrationBuilder.DropTable(
                 name: "ContactInformations");
 
             migrationBuilder.DropTable(
@@ -521,7 +586,16 @@ namespace AcilKan.Persistence.Migrations
                 name: "DonationStatuses");
 
             migrationBuilder.DropTable(
+                name: "Hospitals");
+
+            migrationBuilder.DropTable(
                 name: "Users");
+
+            migrationBuilder.DropTable(
+                name: "Districts");
+
+            migrationBuilder.DropTable(
+                name: "Cities");
         }
     }
 }

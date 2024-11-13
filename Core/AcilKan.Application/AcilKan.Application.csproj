@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Mediator\Results\DonationHistoryResults\" />
     <Folder Include="ValidationRules\FluentValidation\BannerValidators\" />
     <Folder Include="ValidationRules\FluentValidation\ContactValidators\" />
     <Folder Include="ValidationRules\FluentValidation\DonationBenefitValidators\" />

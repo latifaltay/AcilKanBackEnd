@@ -18,7 +18,6 @@ namespace AcilKan.Application.Features.Mediator.Handlers.DistrictHandlers
             return values.Select(x => new GetHospitalsByDistrictIdQueryResult 
             {
                 Id = x.Id,
-                Name = x.Name,
                 HospitalName = x.Name,
             }).ToList();
         }
