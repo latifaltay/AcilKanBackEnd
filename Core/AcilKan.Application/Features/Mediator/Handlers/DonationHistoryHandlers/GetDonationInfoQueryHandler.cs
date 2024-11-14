@@ -13,22 +13,20 @@ namespace AcilKan.Application.Features.Mediator.Handlers.DonationHistoryHandlers
 {
     public class GetDonationInfoQueryHandler(IDonationHistoryService _service, IRepository<DonationHistory> _repository) : IRequestHandler<GetDonationInfoQuery, GetDonationInfoQueryResult>
     {
-        //public async Task<GetDonationInfoQueryResult> Handle(GetDonationInfoQuery request, CancellationToken cancellationToken)
-        //{
-        //    var userId = await _repository.GetCurrentUserIdAsync();
-
-        //    var value = await _service.GetAllDonationHistoryByUserIdAsync(userId);
-
-        //    return new GetDonationInfoQueryResult 
-        //    {
-        //        TotalDonation = value.TotalDonations,
-        //        LastDonationDate = value.
-        //    };
-
-        //}
-        public Task<GetDonationInfoQueryResult> Handle(GetDonationInfoQuery request, CancellationToken cancellationToken)
+        public async Task<GetDonationInfoQueryResult> Handle(GetDonationInfoQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var userId = await _repository.GetCurrentUserIdAsync();
+
+            var (totalDonations, lastDonationDate) = await _service.GetDonationInfoByUserIdAsync(userId);
+
+            var nextDonationDate = lastDonationDate.HasValue ? lastDonationDate.Value.AddMonths(3) : (DateTime?)null;
+
+            return new GetDonationInfoQueryResult
+            {
+                TotalDonation = totalDonations,
+                LastDonationDate = lastDonationDate ?? DateTime.MinValue,
+                NextDonationDate = nextDonationDate ?? DateTime.MinValue
+            };
         }
     }
 }

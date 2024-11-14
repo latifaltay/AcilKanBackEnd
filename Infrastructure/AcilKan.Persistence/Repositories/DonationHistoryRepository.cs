@@ -17,7 +17,6 @@ namespace AcilKan.Persistence.Repositories
         {
             return await _context.DonationHistories
                 .Where(x => x.UserId == id)
-                //.Include(x => x.Hospital.Name) 
                 .Include(x => x.Hospital)
                 .Include(x => x.DonationStatus)
                 .ToListAsync();
@@ -39,6 +38,22 @@ namespace AcilKan.Persistence.Repositories
             return result != null ? (result.TotalDonations, result.LastDonationDate) : (0, null);
         }
 
+        public async Task<List<DonationHistory>> GetRequestDonationsByUserIdAsync(int userId)
+        {
+            return await _context.DonationHistories
+                .Where(x => x.UserId == userId && x.DonationType == true)
+                .Include(x => x.Hospital)
+                .Include(x => x.DonationStatus)
+                .ToListAsync();
+        }
 
+        public async Task<List<DonationHistory>> GetSentDonationsByUserIdAsync(int userId)
+        {
+            return await _context.DonationHistories
+                .Where(x => x.UserId == userId && x.DonationType == false)
+                .Include(x => x.Hospital)
+                .Include(x => x.DonationStatus)
+                .ToListAsync();
+        }
     }
 }

@@ -22,8 +22,9 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
                 BloodGroupId = request.BloodGroupId,
                 PatientName = request.PatientName,
                 PatientSurname = request.PatientSurname,
-                CreatedDate = DateTime.UtcNow,
+                CreatedDate = DateTime.UtcNow.Date,
                 IsActive = true,
+                DonationType = false,
             };
             await _repository.CreateAsync(value);
         }

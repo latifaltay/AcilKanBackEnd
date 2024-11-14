@@ -16,9 +16,13 @@ namespace AcilKan.Domain.Entities
         public string PatientSurname { get; set; }
         public DateTime CreatedDate { get; set; }
         public bool IsActive { get; set; }
+        public int DonationStatusId { get; set; }
+        public bool DonationType { get; set; }
 
+        public DonationStatus DonationStatus { get; set; }
         public Hospital Hospital { get; set; }
         public BloodGroup BloodGroup { get; set; }
         public AppUser AppUser { get; set; }
+
     }
 }

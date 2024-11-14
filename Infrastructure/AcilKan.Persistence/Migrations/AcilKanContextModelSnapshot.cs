@@ -277,6 +277,12 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("DonationStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("DonationType")
+                        .HasColumnType("bit");
+
                     b.Property<int>("HospitalId")
                         .HasColumnType("int");
 
@@ -296,6 +302,8 @@ namespace AcilKan.Persistence.Migrations
                     b.HasIndex("AppUserId");
 
                     b.HasIndex("BloodGroupId");
+
+                    b.HasIndex("DonationStatusId");
 
                     b.HasIndex("HospitalId");
 
@@ -466,6 +474,9 @@ namespace AcilKan.Persistence.Migrations
 
                     b.Property<int>("DonationStatusId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("DonationType")
+                        .HasColumnType("bit");
 
                     b.Property<int>("HospitalId")
                         .HasColumnType("int");
@@ -684,6 +695,12 @@ namespace AcilKan.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("AcilKan.Domain.Entities.DonationStatus", "DonationStatus")
+                        .WithMany()
+                        .HasForeignKey("DonationStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("AcilKan.Domain.Entities.Hospital", "Hospital")
                         .WithMany()
                         .HasForeignKey("HospitalId")
@@ -693,6 +710,8 @@ namespace AcilKan.Persistence.Migrations
                     b.Navigation("AppUser");
 
                     b.Navigation("BloodGroup");
+
+                    b.Navigation("DonationStatus");
 
                     b.Navigation("Hospital");
                 });

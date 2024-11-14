@@ -922,7 +922,7 @@
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
     "Method": "GetAllDonationHistory",
-    "RelativePath": "api/DonationHistory",
+    "RelativePath": "api/DonationHistory/GetAllDonationHistory",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -933,6 +933,48 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
+    "Method": "GetAllDonationRequestHistory",
+    "RelativePath": "api/DonationHistory/GetAllDonationRequestHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
+    "Method": "GetAllDonationSentHistory",
+    "RelativePath": "api/DonationHistory/GetAllDonationSentHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
+    "Method": "GetDonationInfoHistory",
+    "RelativePath": "api/DonationHistory/GetDonationInfoHistory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

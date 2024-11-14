@@ -13,6 +13,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
 {
     public class GetBloodRequestByIdQueryHandler(IBloodRequestService _service) : IRequestHandler<GetBloodRequestByIdQuery, GetBloodRequestByIdQueryResult>
     {
+
         public async Task<GetBloodRequestByIdQueryResult> Handle(GetBloodRequestByIdQuery request, CancellationToken cancellationToken)
         {
             var value = await _service.GetBloodRequestWithDetailsByIdAsync(request.Id);

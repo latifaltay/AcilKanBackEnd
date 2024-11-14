@@ -15,6 +15,7 @@ namespace AcilKan.Domain.Entities
         public int HospitalId{ get; set; }
         public DateTime DonationDate { get; set; }
         public int DonationStatusId { get; set; }
+        public bool DonationType { get; set; }
         public Hospital Hospital{ get; set; }
         public DonationStatus DonationStatus { get; set; }
         public AppUser User { get; set; }

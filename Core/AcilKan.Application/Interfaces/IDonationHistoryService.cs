@@ -11,6 +11,8 @@ namespace AcilKan.Application.Interfaces
     public interface IDonationHistoryService
     {
         Task<List<DonationHistory>> GetAllDonationHistoryByUserIdAsync(int id);
+        Task<List<DonationHistory>> GetSentDonationsByUserIdAsync(int userId);
+        Task<List<DonationHistory>> GetRequestDonationsByUserIdAsync(int userId);
         Task<(int TotalDonations, DateTime? LastDonationDate)> GetDonationInfoByUserIdAsync(int userId);
     }
 }
