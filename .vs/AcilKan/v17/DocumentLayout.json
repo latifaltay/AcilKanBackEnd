@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\donationhistoryhandlers\\getdonationrequesthistorybyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\donationhistoryhandlers\\getdonationrequesthistorybyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241115180910_mig_add_district_Prop_For_appUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\AcilKan.Persistence\\Migrations\\20241115180910_mig_add_district_Prop_For_appUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\infrastructure\\acilkan.persistence\\repositories\\donationhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|solutionrelative:infrastructure\\acilkan.persistence\\repositories\\donationhistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\donationhistoryhandlers\\getdonationsenthistorybyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\donationhistoryhandlers\\getdonationsenthistorybyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\interfaces\\idonationhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\interfaces\\idonationhistoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\blooddontaion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\blooddontaion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\donationhistoryhandlers\\getdonationhistorybyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\donationhistoryhandlers\\getdonationhistorybyuseridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\bloodrequestapprove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\bloodrequestapprove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\controllers\\donationhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\controllers\\donationhistorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\blooddonationapprove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\blooddonationapprove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|solutionrelative:infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 228,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IDonationHistoryService.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Interfaces\\IDonationHistoryService.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Interfaces\\IDonationHistoryService.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Interfaces\\IDonationHistoryService.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Interfaces\\IDonationHistoryService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvw4AAABEAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AcilKanContext.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
+              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAIBAwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:56:22.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DonationHistoryController.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\DonationHistoryController.cs",
-              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Controllers\\DonationHistoryController.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\DonationHistoryController.cs",
-              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Controllers\\DonationHistoryController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:12:38.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetDonationHistoryByUserIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationHistoryByUserIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationHistoryByUserIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationHistoryByUserIdQueryHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationHistoryByUserIdQueryHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:09:57.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DonationHistoryRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Repositories\\DonationHistoryRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Repositories\\DonationHistoryRepository.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Repositories\\DonationHistoryRepository.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Repositories\\DonationHistoryRepository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAtwDMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:09:42.24Z",
+              "WhenOpened": "2024-11-15T18:00:26.6Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetDonationRequestHistoryByUserIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationRequestHistoryByUserIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationRequestHistoryByUserIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationRequestHistoryByUserIdQueryHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationRequestHistoryByUserIdQueryHandler.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBIAAAAAAAAAAAAAAA==",
+              "Title": "20241115180910_mig_add_district_Prop_For_appUser.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241115180910_mig_add_district_Prop_For_appUser.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241115180910_mig_add_district_Prop_For_appUser.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241115180910_mig_add_district_Prop_For_appUser.cs",
+              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241115180910_mig_add_district_Prop_For_appUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:09:25.192Z",
+              "WhenOpened": "2024-11-15T18:09:11.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "District.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\District.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\District.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\District.cs",
+              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\District.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:08:56.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetDonationSentHistoryByUserIdQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationSentHistoryByUserIdQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationSentHistoryByUserIdQueryHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationSentHistoryByUserIdQueryHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\DonationHistoryHandlers\\GetDonationSentHistoryByUserIdQueryHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBMAAAAvAAAAAAAAAA==",
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\AppUser.cs",
+              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:09:13.524Z",
+              "WhenOpened": "2024-11-15T18:07:54.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BloodDonationApprove.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodDonationApprove.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\BloodDonationApprove.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodDonationApprove.cs",
+              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\BloodDonationApprove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:52:55.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BloodRequestApprove.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodRequestApprove.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\BloodRequestApprove.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodRequestApprove.cs",
+              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\BloodRequestApprove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T17:52:17.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BloodDontaion.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodDontaion.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\BloodDontaion.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\BloodDontaion.cs",
+              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\BloodDontaion.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T13:14:39.009Z",
               "EditorCaption": ""
             }
           ]

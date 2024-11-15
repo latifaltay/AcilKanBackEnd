@@ -17,6 +17,6 @@ namespace AcilKan.Domain.Entities
 
         // İlçedeki hastanelerle olan ilişki
         public List<Hospital> Hospitals { get; set; }  // Bir ilçe birden fazla hastaneye sahip
-        //public List<AppUser> AppUsers { get; set; }  // Bir ilçe birden fazla kullanıcıya sahip
+        public List<AppUser> AppUsers { get; set; }  // Bir ilçe birden fazla kullanıcıya sahip
     }
 }

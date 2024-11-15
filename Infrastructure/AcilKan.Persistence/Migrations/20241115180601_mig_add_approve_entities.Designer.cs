@@ -4,6 +4,7 @@ using AcilKan.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcilKan.Persistence.Migrations
 {
     [DbContext(typeof(AcilKanContext))]
-    partial class AcilKanContextModelSnapshot : ModelSnapshot
+    [Migration("20241115180601_mig_add_approve_entities")]
+    partial class mig_add_approve_entities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,7 +45,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("AboutUsId");
 
-                    b.ToTable("Abouts", (string)null);
+                    b.ToTable("Abouts");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.AboutBloodDonation", b =>
@@ -59,7 +62,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AboutBloodDonations", (string)null);
+                    b.ToTable("AboutBloodDonations");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.AboutUs", b =>
@@ -84,7 +87,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AboutUses", (string)null);
+                    b.ToTable("AboutUses");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.AppRole", b =>
@@ -106,7 +109,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Roles", (string)null);
+                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.AppUser", b =>
@@ -180,7 +183,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.AppUserRole", b =>
@@ -193,7 +196,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("RoleId", "UserId");
 
-                    b.ToTable("UserRoles", (string)null);
+                    b.ToTable("UserRoles");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ArticlesForAboutPage", b =>
@@ -215,7 +218,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("TitlesForAboutPageId");
 
-                    b.ToTable("ArticlesForAboutPages", (string)null);
+                    b.ToTable("ArticlesForAboutPages");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.Banner", b =>
@@ -240,7 +243,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Banners", (string)null);
+                    b.ToTable("Banners");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonationApprove", b =>
@@ -261,7 +264,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("BloodDonationId");
 
-                    b.ToTable("BloodDonationApproves", (string)null);
+                    b.ToTable("BloodDonationApproves");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodDontaion", b =>
@@ -282,7 +285,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("BloodRequestId");
 
-                    b.ToTable("BloodDontaions", (string)null);
+                    b.ToTable("BloodDontaions");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodGroup", b =>
@@ -299,7 +302,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("BloodGroups", (string)null);
+                    b.ToTable("BloodGroups");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodRequest", b =>
@@ -349,7 +352,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("HospitalId");
 
-                    b.ToTable("BloodRequests", (string)null);
+                    b.ToTable("BloodRequests");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodRequestApprove", b =>
@@ -370,7 +373,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("BloodRequestId");
 
-                    b.ToTable("BloodRequestApproves", (string)null);
+                    b.ToTable("BloodRequestApproves");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.City", b =>
@@ -387,7 +390,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cities", (string)null);
+                    b.ToTable("Cities");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ContactInformation", b =>
@@ -415,7 +418,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContactInformations", (string)null);
+                    b.ToTable("ContactInformations");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ContactPage", b =>
@@ -438,7 +441,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("ContactUsId");
 
-                    b.ToTable("ContactPages", (string)null);
+                    b.ToTable("ContactPages");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ContactUs", b =>
@@ -478,7 +481,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContactUses", (string)null);
+                    b.ToTable("ContactUses");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.District", b =>
@@ -500,7 +503,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("CityId");
 
-                    b.ToTable("Districts", (string)null);
+                    b.ToTable("Districts");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.DonationBenefit", b =>
@@ -521,7 +524,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DonationBenefits", (string)null);
+                    b.ToTable("DonationBenefits");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.DonationHistory", b =>
@@ -563,7 +566,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("DonationHistories", (string)null);
+                    b.ToTable("DonationHistories");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.DonationStatus", b =>
@@ -580,7 +583,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("DonationStatuses", (string)null);
+                    b.ToTable("DonationStatuses");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.FooterAddress", b =>
@@ -597,7 +600,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FooterAddresses", (string)null);
+                    b.ToTable("FooterAddresses");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.Hospital", b =>
@@ -619,7 +622,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("DistrictId");
 
-                    b.ToTable("Hospitals", (string)null);
+                    b.ToTable("Hospitals");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.Mission", b =>
@@ -640,7 +643,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Missions", (string)null);
+                    b.ToTable("Missions");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.Supporter", b =>
@@ -661,7 +664,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Supporters", (string)null);
+                    b.ToTable("Supporters");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.Testimonial", b =>
@@ -690,7 +693,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Testimonials", (string)null);
+                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.TitlesForAboutPage", b =>
@@ -711,7 +714,7 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TitlesForAboutPages", (string)null);
+                    b.ToTable("TitlesForAboutPages");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.About", b =>
