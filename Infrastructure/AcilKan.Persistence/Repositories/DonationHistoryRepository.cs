@@ -13,10 +13,10 @@ namespace AcilKan.Persistence.Repositories
 {
     public class DonationHistoryRepository(AcilKanContext _context) : IDonationHistoryService
     {
-        public async Task<List<DonationHistory>> GetAllDonationHistoryByUserIdAsync(int id)
+        public async Task<List<BloodDontaion>> GetAllDonationHistoryByUserIdAsync(int id)
         {
             return await _context.DonationHistories
-                .Where(x => x.UserId == id)
+                .Where(x => x.DonorId == id)
                 .Include(x => x.Hospital)
                 .Include(x => x.DonationStatus)
                 .ToListAsync();
@@ -26,8 +26,8 @@ namespace AcilKan.Persistence.Repositories
         public async Task<(int TotalDonations, DateTime? LastDonationDate)> GetDonationInfoByUserIdAsync(int userId)
         {
             var result = await _context.DonationHistories
-                .Where(x => x.UserId == userId && x.DonationStatusId == 2)
-                .GroupBy(x => x.UserId)
+                .Where(x => x.DonorId == userId && x.DonationStatusId == 2)
+                .GroupBy(x => x.DonorId)
                 .Select(g => new
                 {
                     TotalDonations = g.Count(),
@@ -38,19 +38,19 @@ namespace AcilKan.Persistence.Repositories
             return result != null ? (result.TotalDonations, result.LastDonationDate) : (0, null);
         }
 
-        public async Task<List<DonationHistory>> GetRequestDonationsByUserIdAsync(int userId)
+        public async Task<List<BloodDontaion>> GetRequestDonationsByUserIdAsync(int userId)
         {
             return await _context.DonationHistories
-                .Where(x => x.UserId == userId && x.DonationType == true)
+                .Where(x => x.DonorId == userId && x.DonationType == true)
                 .Include(x => x.Hospital)
                 .Include(x => x.DonationStatus)
                 .ToListAsync();
         }
 
-        public async Task<List<DonationHistory>> GetSentDonationsByUserIdAsync(int userId)
+        public async Task<List<BloodDontaion>> GetSentDonationsByUserIdAsync(int userId)
         {
             return await _context.DonationHistories
-                .Where(x => x.UserId == userId && x.DonationType == false)
+                .Where(x => x.DonorId == userId && x.DonationType == false)
                 .Include(x => x.Hospital)
                 .Include(x => x.DonationStatus)
                 .ToListAsync();

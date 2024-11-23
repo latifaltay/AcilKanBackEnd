@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcilKan.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c740f60de798e6a46c2c75da2ba170d2f29a6ac9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4943f938b5a3ebf4f280a3aaf10562e742feb034")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcilKan.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcilKan.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

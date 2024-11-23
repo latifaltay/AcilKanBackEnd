@@ -241,37 +241,6 @@ namespace AcilKan.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Users",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BloodGroup = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Gender = table.Column<bool>(type: "bit", nullable: false),
-                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NormalizedUserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NormalizedEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
-                    AccessFailedCount = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Users", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Abouts",
                 columns: table => new
                 {
@@ -315,6 +284,43 @@ namespace AcilKan.Persistence.Migrations
                         principalTable: "Cities",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BloodGroup = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Gender = table.Column<bool>(type: "bit", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CityId = table.Column<int>(type: "int", nullable: false),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
+                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    AccessFailedCount = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Users_Cities_CityId",
+                        column: x => x.CityId,
+                        principalTable: "Cities",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -395,7 +401,9 @@ namespace AcilKan.Persistence.Migrations
                     PatientName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PatientSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false)
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    DonationStatusId = table.Column<int>(type: "int", nullable: false),
+                    DonationType = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -404,6 +412,12 @@ namespace AcilKan.Persistence.Migrations
                         name: "FK_BloodRequests_BloodGroups_BloodGroupId",
                         column: x => x.BloodGroupId,
                         principalTable: "BloodGroups",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_BloodRequests_DonationStatuses_DonationStatusId",
+                        column: x => x.DonationStatusId,
+                        principalTable: "DonationStatuses",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -431,7 +445,8 @@ namespace AcilKan.Persistence.Migrations
                     PatientSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HospitalId = table.Column<int>(type: "int", nullable: false),
                     DonationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DonationStatusId = table.Column<int>(type: "int", nullable: false)
+                    DonationStatusId = table.Column<int>(type: "int", nullable: false),
+                    DonationType = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -456,6 +471,66 @@ namespace AcilKan.Persistence.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "BloodDontaions",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    BloodRequestId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BloodDontaions", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_BloodDontaions_BloodRequests_BloodRequestId",
+                        column: x => x.BloodRequestId,
+                        principalTable: "BloodRequests",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BloodRequestApproves",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Approve = table.Column<bool>(type: "bit", nullable: false),
+                    BloodRequestId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BloodRequestApproves", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_BloodRequestApproves_BloodRequests_BloodRequestId",
+                        column: x => x.BloodRequestId,
+                        principalTable: "BloodRequests",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BloodDonationApproves",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Approve = table.Column<bool>(type: "bit", nullable: false),
+                    BloodDonationId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BloodDonationApproves", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_BloodDonationApproves_BloodDontaions_BloodDonationId",
+                        column: x => x.BloodDonationId,
+                        principalTable: "BloodDontaions",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Abouts_AboutBloodDonationId",
                 table: "Abouts",
@@ -472,6 +547,21 @@ namespace AcilKan.Persistence.Migrations
                 column: "TitlesForAboutPageId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_BloodDonationApproves_BloodDonationId",
+                table: "BloodDonationApproves",
+                column: "BloodDonationId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BloodDontaions_BloodRequestId",
+                table: "BloodDontaions",
+                column: "BloodRequestId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BloodRequestApproves_BloodRequestId",
+                table: "BloodRequestApproves",
+                column: "BloodRequestId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_BloodRequests_AppUserId",
                 table: "BloodRequests",
                 column: "AppUserId");
@@ -480,6 +570,11 @@ namespace AcilKan.Persistence.Migrations
                 name: "IX_BloodRequests_BloodGroupId",
                 table: "BloodRequests",
                 column: "BloodGroupId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BloodRequests_DonationStatusId",
+                table: "BloodRequests",
+                column: "DonationStatusId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BloodRequests_HospitalId",
@@ -520,6 +615,11 @@ namespace AcilKan.Persistence.Migrations
                 name: "IX_Hospitals_DistrictId",
                 table: "Hospitals",
                 column: "DistrictId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Users_CityId",
+                table: "Users",
+                column: "CityId");
         }
 
         /// <inheritdoc />
@@ -535,7 +635,10 @@ namespace AcilKan.Persistence.Migrations
                 name: "Banners");
 
             migrationBuilder.DropTable(
-                name: "BloodRequests");
+                name: "BloodDonationApproves");
+
+            migrationBuilder.DropTable(
+                name: "BloodRequestApproves");
 
             migrationBuilder.DropTable(
                 name: "ContactPages");
@@ -574,13 +677,19 @@ namespace AcilKan.Persistence.Migrations
                 name: "TitlesForAboutPages");
 
             migrationBuilder.DropTable(
-                name: "BloodGroups");
+                name: "BloodDontaions");
 
             migrationBuilder.DropTable(
                 name: "ContactInformations");
 
             migrationBuilder.DropTable(
                 name: "ContactUses");
+
+            migrationBuilder.DropTable(
+                name: "BloodRequests");
+
+            migrationBuilder.DropTable(
+                name: "BloodGroups");
 
             migrationBuilder.DropTable(
                 name: "DonationStatuses");

@@ -16,7 +16,11 @@ namespace AcilKan.Domain.Entities
         public string ImageUrl { get; set; }
 
         // Kullanıcının ait olduğu ilçe
-        public int DistrictId { get; set; }  // Foreign key to District
-        public District District { get; set; }  // Navigation property for District
+        //public int DistrictId { get; set; }  // Foreign key to District
+        //public District District { get; set; }  // Navigation property for District
+
+        public int CityId { get; set; }
+        public City City { get; set; }
+
     }
 }

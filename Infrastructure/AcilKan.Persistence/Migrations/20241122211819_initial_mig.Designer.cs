@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcilKan.Persistence.Migrations
 {
     [DbContext(typeof(AcilKanContext))]
-    [Migration("20241113173923_initial_mig")]
+    [Migration("20241122211819_initial_mig")]
     partial class initial_mig
     {
         /// <inheritdoc />
@@ -127,6 +127,9 @@ namespace AcilKan.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("CityId")
+                        .HasColumnType("int");
+
                     b.Property<string>("ConcurrencyStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -182,6 +185,8 @@ namespace AcilKan.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CityId");
 
                     b.ToTable("Users");
                 });
@@ -246,6 +251,48 @@ namespace AcilKan.Persistence.Migrations
                     b.ToTable("Banners");
                 });
 
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonationApprove", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Approve")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("BloodDonationId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BloodDonationId");
+
+                    b.ToTable("BloodDonationApproves");
+                });
+
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDontaion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BloodRequestId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BloodRequestId");
+
+                    b.ToTable("BloodDontaions");
+                });
+
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodGroup", b =>
                 {
                     b.Property<int>("Id")
@@ -280,6 +327,12 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("DonationStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("DonationType")
+                        .HasColumnType("bit");
+
                     b.Property<int>("HospitalId")
                         .HasColumnType("int");
 
@@ -300,9 +353,32 @@ namespace AcilKan.Persistence.Migrations
 
                     b.HasIndex("BloodGroupId");
 
+                    b.HasIndex("DonationStatusId");
+
                     b.HasIndex("HospitalId");
 
                     b.ToTable("BloodRequests");
+                });
+
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodRequestApprove", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Approve")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("BloodRequestId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BloodRequestId");
+
+                    b.ToTable("BloodRequestApproves");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.City", b =>
@@ -469,6 +545,9 @@ namespace AcilKan.Persistence.Migrations
 
                     b.Property<int>("DonationStatusId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("DonationType")
+                        .HasColumnType("bit");
 
                     b.Property<int>("HospitalId")
                         .HasColumnType("int");
@@ -662,6 +741,17 @@ namespace AcilKan.Persistence.Migrations
                     b.Navigation("AboutUs");
                 });
 
+            modelBuilder.Entity("AcilKan.Domain.Entities.AppUser", b =>
+                {
+                    b.HasOne("AcilKan.Domain.Entities.City", "City")
+                        .WithMany("AppUsers")
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("City");
+                });
+
             modelBuilder.Entity("AcilKan.Domain.Entities.ArticlesForAboutPage", b =>
                 {
                     b.HasOne("AcilKan.Domain.Entities.TitlesForAboutPage", "TitlesForAboutPage")
@@ -671,6 +761,28 @@ namespace AcilKan.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("TitlesForAboutPage");
+                });
+
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonationApprove", b =>
+                {
+                    b.HasOne("AcilKan.Domain.Entities.BloodDontaion", "BloodDonation")
+                        .WithMany()
+                        .HasForeignKey("BloodDonationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BloodDonation");
+                });
+
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDontaion", b =>
+                {
+                    b.HasOne("AcilKan.Domain.Entities.BloodRequest", "BloodRequest")
+                        .WithMany()
+                        .HasForeignKey("BloodRequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BloodRequest");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodRequest", b =>
@@ -687,6 +799,12 @@ namespace AcilKan.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("AcilKan.Domain.Entities.DonationStatus", "DonationStatus")
+                        .WithMany()
+                        .HasForeignKey("DonationStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("AcilKan.Domain.Entities.Hospital", "Hospital")
                         .WithMany()
                         .HasForeignKey("HospitalId")
@@ -697,7 +815,20 @@ namespace AcilKan.Persistence.Migrations
 
                     b.Navigation("BloodGroup");
 
+                    b.Navigation("DonationStatus");
+
                     b.Navigation("Hospital");
+                });
+
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodRequestApprove", b =>
+                {
+                    b.HasOne("AcilKan.Domain.Entities.BloodRequest", "BloodRequest")
+                        .WithMany()
+                        .HasForeignKey("BloodRequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("BloodRequest");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ContactPage", b =>
@@ -770,6 +901,8 @@ namespace AcilKan.Persistence.Migrations
 
             modelBuilder.Entity("AcilKan.Domain.Entities.City", b =>
                 {
+                    b.Navigation("AppUsers");
+
                     b.Navigation("Districts");
                 });
 

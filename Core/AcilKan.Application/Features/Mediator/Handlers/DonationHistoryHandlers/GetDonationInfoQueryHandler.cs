@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.DonationHistoryHandlers
 {
-    public class GetDonationInfoQueryHandler(IDonationHistoryService _service, IRepository<DonationHistory> _repository) : IRequestHandler<GetDonationInfoQuery, GetDonationInfoQueryResult>
+    public class GetDonationInfoQueryHandler(IDonationHistoryService _service, IRepository<BloodDontaion> _repository) : IRequestHandler<GetDonationInfoQuery, GetDonationInfoQueryResult>
     {
         public async Task<GetDonationInfoQueryResult> Handle(GetDonationInfoQuery request, CancellationToken cancellationToken)
         {

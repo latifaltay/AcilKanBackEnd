@@ -31,14 +31,13 @@ namespace AcilKan.Persistence.Context
         public DbSet<BloodDontaion> BloodDontaions { get; set; }
         public DbSet<BloodGroup> BloodGroups { get; set; }
         public DbSet<BloodRequest> BloodRequests { get; set; }
-        public DbSet<BloodRequestApprove> BloodRequestApproves { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<ContactInformation> ContactInformations { get; set; }
         public DbSet<ContactPage> ContactPages { get; set; }
         public DbSet<ContactUs> ContactUses { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<DonationBenefit> DonationBenefits { get; set; }
-        public DbSet<DonationHistory> DonationHistories { get; set; }
+        public DbSet<BloodDontaion> DonationHistories { get; set; }
         public DbSet<DonationStatus> DonationStatuses { get; set; }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Hospital> Hospitals { get; set; }
@@ -68,23 +67,41 @@ namespace AcilKan.Persistence.Context
             modelBuilder.Ignore<IdentityRoleClaim<int>>();
             modelBuilder.Ignore<IdentityUserRole<int>>();
 
-            //modelBuilder.Entity<BloodRequest>()
-            //    .HasOne(br => br.City)
-            //    .WithMany()
-            //    .HasForeignKey(br => br.CityId)
-            //    .OnDelete(DeleteBehavior.NoAction);
 
-            //modelBuilder.Entity<BloodRequest>()
-            //    .HasOne(br => br.District)
-            //    .WithMany()
-            //    .HasForeignKey(br => br.DistrictId)
-            //    .OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<AppUser>()
+                .HasOne(a => a.City)
+                .WithMany(c => c.AppUsers)
+                .HasForeignKey(a => a.CityId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            //modelBuilder.Entity<BloodRequest>()
-            //    .HasOne(br => br.Hospital)
-            //    .WithMany()
-            //    .HasForeignKey(br => br.HospitalId)
-            //    .OnDelete(DeleteBehavior.NoAction);
+
+
+            modelBuilder.Entity<BloodDonationApprove>()
+                .HasOne(bda => bda.Donor) // BloodDonationApprove tablosundaki Donor ile ilişki
+                .WithMany() // AppUser tablosunda bir koleksiyon yok
+                .HasForeignKey(bda => bda.DonorId) // Foreign Key tanımı
+                .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
+
+            modelBuilder.Entity<BloodDonationApprove>()
+                .HasOne(bda => bda.RequestCreator) // BloodDonationApprove tablosundaki Donor ile ilişki
+                .WithMany() // AppUser tablosunda bir koleksiyon yok
+                .HasForeignKey(bda => bda.RequestCreatorId) // Foreign Key tanımı
+                .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
+
+
+            modelBuilder.Entity<BloodDontaion>()
+                .HasOne(bda => bda.Donor) // BloodDonationApprove tablosundaki Donor ile ilişki
+                .WithMany() // AppUser tablosunda bir koleksiyon yok
+                .HasForeignKey(bda => bda.DonorId) // Foreign Key tanımı
+                .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
+
+            modelBuilder.Entity<BloodDontaion>()
+                .HasOne(bda => bda.DonationStatus) // BloodDonationApprove tablosundaki Donor ile ilişki
+                .WithMany() // AppUser tablosunda bir koleksiyon yok
+                .HasForeignKey(bda => bda.DonationStatusId) // Foreign Key tanımı
+                .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
+
+
 
         }
 

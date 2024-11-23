@@ -11,5 +11,6 @@ namespace AcilKan.Domain.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public List<District> Districts { get; set; }
+        public List<AppUser> AppUsers { get; set; }  // Bir il birden fazla kullanıcıya sahip
     }
 }

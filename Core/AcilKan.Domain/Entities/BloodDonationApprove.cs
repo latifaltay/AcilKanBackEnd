@@ -9,8 +9,17 @@ namespace AcilKan.Domain.Entities
     public class BloodDonationApprove
     {
         public int Id { get; set; }
-        public bool Approve { get; set; }
-        public int BloodDonationId { get; set; }
-        public BloodDontaion BloodDonation { get; set; }
+
+        // Kan talebi bilgisi
+        public int BloodDontaionId { get; set; }
+        public BloodDontaion BloodDontaion { get; set; }
+
+        // Talebi oluşturan kullanıcı (Kan ihtiyacını bildiren kişi)
+        public int RequestCreatorId { get; set; }
+        public AppUser RequestCreator { get; set; }
+
+        // Bağışı yapan kullanıcı (Kan veren kişi)
+        public int DonorId { get; set; }
+        public AppUser Donor { get; set; }
     }
 }
