@@ -28,7 +28,6 @@ namespace AcilKan.WebAPI.Extensions
             Services.AddScoped<ICityService, CityRepository>();
             Services.AddScoped<IDistrictService, DistrictRepository>();
             Services.AddScoped<IBloodRequestService, BloodRequestRepository>();
-            Services.AddScoped<IDonationHistoryService, DonationHistoryRepository>();
 
             // Validation Pipeline Registration
             Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));

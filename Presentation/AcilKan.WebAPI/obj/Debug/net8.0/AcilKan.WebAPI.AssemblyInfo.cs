@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcilKan.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4943f938b5a3ebf4f280a3aaf10562e742feb034")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+321739c1b8bcf64a3b81ab2416da8ec383298956")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcilKan.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcilKan.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
