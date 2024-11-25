@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcilKan.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+321739c1b8bcf64a3b81ab2416da8ec383298956")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85202eb73c51479807f2fdd732488e8f2a3f5b07")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcilKan.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcilKan.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

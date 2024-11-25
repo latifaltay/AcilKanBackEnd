@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AcilKan.WebAPI.Controllers
 {
     [Authorize]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class BloodRequestController(IMediator _mediator) : ControllerBase
     {
@@ -43,6 +43,14 @@ namespace AcilKan.WebAPI.Controllers
         {
             await _mediator.Send(command);
             return Ok("Kan talebi güncellendi");
+        }
+
+
+        [HttpPut]
+        public async Task<IActionResult> CancelBloodRequest(CancelBloodRequestCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Kan talebi iptal edildi");
         }
 
     }

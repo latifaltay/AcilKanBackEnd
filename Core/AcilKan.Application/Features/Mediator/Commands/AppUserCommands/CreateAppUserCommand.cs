@@ -17,6 +17,8 @@ namespace AcilKan.Application.Features.Mediator.Commands.AppUserCommands
         public string Surname { get; set; }
         public string BloodGroup { get; set; }
         public string ImageUrl { get; set; }
+        public int CityId { get; set; }
+        public int DistrictId { get; set; }
         public bool Gender { get; set; }
     }
 }

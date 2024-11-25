@@ -17,7 +17,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
             var value = await _repository.GetByIdAsync(request.Id);
 
             value.IsActive = false;
-
+            value.Status = "İptal Edildi";
             await _repository.UpdateAsync(value);
         }
     }

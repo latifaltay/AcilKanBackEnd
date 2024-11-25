@@ -24,7 +24,9 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
                 BloodGroup = request.BloodGroup,
                 Gender = request.Gender,
                 UserName = request.UserName,
-                ImageUrl = request.ImageUrl
+                ImageUrl = request.ImageUrl,
+                CityId = request.CityId,
+                DistrictId = request.DistrictId,
             };
 
             var result = await _userManager.CreateAsync(appUser, request.Password);

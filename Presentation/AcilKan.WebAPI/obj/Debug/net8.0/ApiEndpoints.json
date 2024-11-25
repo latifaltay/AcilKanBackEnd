@@ -546,6 +546,126 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationController",
+    "Method": "GetBloodDonations",
+    "RelativePath": "api/BloodDonation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationController",
+    "Method": "CreateBloodDonation",
+    "RelativePath": "api/BloodDonation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDontaionCommands.CreateBloodDontaionCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationController",
+    "Method": "CancelBloodDonation",
+    "RelativePath": "api/BloodDonation",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDontaionCommands.CancelBloodDonationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationApproveController",
+    "Method": "CreateBloodDonationApproveForDonor",
+    "RelativePath": "api/BloodDonationApprove/CreateBloodDonationApproveForDonor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDonationApproveCommands.CreateBloodDonationApproveCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationApproveController",
+    "Method": "GetBloodDonationApprove",
+    "RelativePath": "api/BloodDonationApprove/GetBloodDonationApprove",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationApproveController",
+    "Method": "GetBloodDonationApproveByDonorId",
+    "RelativePath": "api/BloodDonationApprove/GetBloodDonationApproveByDonorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationApproveController",
+    "Method": "GetBloodDonationApproveByRequesterId",
+    "RelativePath": "api/BloodDonationApprove/GetBloodDonationApproveByRequesterId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationApproveController",
+    "Method": "UpdateBloodDonationApproveForDonor",
+    "RelativePath": "api/BloodDonationApprove/UpdateBloodDonationApproveForDonor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDonationApproveCommands.UpdateBloodDonationApproveForDonorCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodDonationApproveController",
+    "Method": "UpdateBloodDonationApproveForRequester",
+    "RelativePath": "api/BloodDonationApprove/UpdateBloodDonationApproveForRequester",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodDonationApproveCommands.UpdateBloodDonationApproveForRequesterCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AcilKan.WebAPI.Controllers.BloodGroupController",
     "Method": "GetAll",
     "RelativePath": "api/BloodGroup",
@@ -557,18 +677,24 @@
   },
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
-    "Method": "GetAllBloodRequest",
-    "RelativePath": "api/BloodRequest",
-    "HttpMethod": "GET",
+    "Method": "CancelBloodRequest",
+    "RelativePath": "api/BloodRequest/CancelBloodRequest",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands.CancelBloodRequestCommand",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
     "Method": "CreateBloodRequest",
-    "RelativePath": "api/BloodRequest",
+    "RelativePath": "api/BloodRequest/CreateBloodRequest",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -583,24 +709,18 @@
   },
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
-    "Method": "UpdateBloodRequest",
-    "RelativePath": "api/BloodRequest",
-    "HttpMethod": "PUT",
+    "Method": "GetAllBloodRequest",
+    "RelativePath": "api/BloodRequest/GetAllBloodRequest",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands.UpdateBloodRequestCommand",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
     "Method": "GetBloodRequest",
-    "RelativePath": "api/BloodRequest/{id}",
+    "RelativePath": "api/BloodRequest/GetBloodRequest/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -608,6 +728,22 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
+    "Method": "UpdateBloodRequest",
+    "RelativePath": "api/BloodRequest/UpdateBloodRequest",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands.UpdateBloodRequestCommand",
         "IsRequired": true
       }
     ],
@@ -917,64 +1053,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
-    "Method": "GetAllDonationHistory",
-    "RelativePath": "api/DonationHistory/GetAllDonationHistory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
-    "Method": "GetAllDonationRequestHistory",
-    "RelativePath": "api/DonationHistory/GetAllDonationRequestHistory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
-    "Method": "GetAllDonationSentHistory",
-    "RelativePath": "api/DonationHistory/GetAllDonationSentHistory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.DonationHistoryController",
-    "Method": "GetDonationInfoHistory",
-    "RelativePath": "api/DonationHistory/GetDonationInfoHistory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

@@ -25,9 +25,10 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
                 City = x.Hospital.District.City.Name,
                 District = x.Hospital.District.Name,
                 HospitalName = x.Hospital.Name,
-                CreatedDate = x.CreatedDate,
+                CreatedDate = x.RequestDate,
                 IsActive = x.IsActive,
                 PatientFullName = x.PatientName + " " + x.PatientSurname,
+                Status = x.Status,
             }).ToList();
         }
     }

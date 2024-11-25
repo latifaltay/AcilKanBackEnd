@@ -28,15 +28,15 @@ namespace AcilKan.WebAPI.Extensions
             Services.AddScoped<ICityService, CityRepository>();
             Services.AddScoped<IDistrictService, DistrictRepository>();
             Services.AddScoped<IBloodRequestService, BloodRequestRepository>();
+            Services.AddScoped<IBloodDonationService, BloodDonationRepository>();
+            Services.AddScoped<IAppUserService, AppUserRepository>();
+            Services.AddScoped<IBloodDonationApproveService, BloodDonationApproveRepository>();
 
             // Validation Pipeline Registration
             Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
             // Kullanıcı id'sini almak için kullandım
             Services.AddHttpContextAccessor();
-
-
-
 
         }
     }

@@ -13,6 +13,8 @@ namespace AcilKan.Application.Features.Mediator.Commands.AppUserCommands
         public string Email { get; set; }    // IdentityUser'dan gelen e-posta
         public string PhoneNumber { get; set; }
         public string ImageUrl { get; set; }
+        public int CityId { get; set; }
+        public int DistrictId { get; set; }
 
     }
 }

@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Domain.Entities
 {
-    public class BloodDontaion
+    public class BloodDonation
     {
         public int Id { get; set; }
         public int DonorId { get; set; }
-        public string PatientName { get; set; }
-        public string PatientSurname { get; set; }
-        public int? HospitalId{ get; set; }
         public DateTime DonationDate { get; set; }
-        public int DonationStatusId { get; set; }
-        public bool DonationType { get; set; }
         public int BloodRequestId { get; set; }
-        public BloodRequest BloodRequest { get; set; }
-        public Hospital Hospital{ get; set; }
-        public DonationStatus DonationStatus { get; set; }
-        public AppUser Donor { get; set; }
+        public bool IsActive { get; set; }
+        public string Status { get; set; }
 
+        public BloodRequest BloodRequest { get; set; }
+        public AppUser Donor { get; set; }
     }
 }

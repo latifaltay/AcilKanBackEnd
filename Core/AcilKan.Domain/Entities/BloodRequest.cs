@@ -14,12 +14,9 @@ namespace AcilKan.Domain.Entities
         public int BloodGroupId { get; set; }
         public string PatientName { get; set; }
         public string PatientSurname { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public DateTime RequestDate { get; set; }
         public bool IsActive { get; set; }
-        public int DonationStatusId { get; set; }
-        public bool DonationType { get; set; }
-
-        public DonationStatus DonationStatus { get; set; }
+        public string Status { get; set; }
         public Hospital Hospital { get; set; }
         public BloodGroup BloodGroup { get; set; }
         public AppUser AppUser { get; set; }

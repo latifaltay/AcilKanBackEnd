@@ -1,5 +1,6 @@
 ﻿using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
 using AcilKan.Application.Features.Mediator.Results.AppUserResults;
+using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -12,12 +13,12 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
 {
-    public class GetAppUserQueryHandler(UserManager<AppUser> _userManager) : IRequestHandler<GetAppUserQuery, List<GetAppUserQueryResult>>
+    public class GetAppUserQueryHandler(IAppUserService _service) : IRequestHandler<GetAppUserQuery, List<GetAppUserQueryResult>>
     {
         public async Task<List<GetAppUserQueryResult>> Handle(GetAppUserQuery request, CancellationToken cancellationToken)
         {
-            var users = await _userManager.Users.ToListAsync(cancellationToken);
-
+            //var users = await _userManager.Users.ToListAsync(cancellationToken);
+            var users = await _service.GetUsersWithDetailsAsync();
             var result = users.Select(user => new GetAppUserQueryResult
             {
                 Id = user.Id,
@@ -29,6 +30,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
                 BloodGroup = user.BloodGroup,
                 Gender = user.Gender,
                 ImageUrl = user.ImageUrl,
+                City = user.City.Name,
+                District = user.District.Name,
             }).ToList();
 
             return result;

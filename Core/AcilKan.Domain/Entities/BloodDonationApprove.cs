@@ -12,7 +12,7 @@ namespace AcilKan.Domain.Entities
 
         // Kan talebi bilgisi
         public int BloodDontaionId { get; set; }
-        public BloodDontaion BloodDontaion { get; set; }
+        public BloodDonation BloodDontaion { get; set; }
 
         // Talebi oluşturan kullanıcı (Kan ihtiyacını bildiren kişi)
         public int RequestCreatorId { get; set; }
@@ -21,5 +21,9 @@ namespace AcilKan.Domain.Entities
         // Bağışı yapan kullanıcı (Kan veren kişi)
         public int DonorId { get; set; }
         public AppUser Donor { get; set; }
+
+        // Onaylar
+        public bool? IsDonorApproved { get; set; } // Donor'ün onayı
+        public bool? IsRequestCreatorApproved { get; set; } // Request creator'ın onayı
     }
 }

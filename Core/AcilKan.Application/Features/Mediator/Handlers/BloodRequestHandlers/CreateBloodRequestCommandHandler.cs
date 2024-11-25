@@ -15,16 +15,16 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
         public async Task Handle(CreateBloodRequestCommand request, CancellationToken cancellationToken)
         {
             var userId = await _repository.GetCurrentUserIdAsync();
-            var value = new BloodRequest 
+            var value = new BloodRequest
             {
                 AppUserId = userId,
                 HospitalId = request.HospitalId,
                 BloodGroupId = request.BloodGroupId,
                 PatientName = request.PatientName,
                 PatientSurname = request.PatientSurname,
-                CreatedDate = DateTime.UtcNow.Date,
+                RequestDate = DateTime.UtcNow.Date,
                 IsActive = true,
-                DonationType = false,
+                Status = "Beklemede"
             };
             await _repository.CreateAsync(value);
         }

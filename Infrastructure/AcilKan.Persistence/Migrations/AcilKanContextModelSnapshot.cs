@@ -130,6 +130,9 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("DistrictId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
@@ -184,6 +187,8 @@ namespace AcilKan.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("DistrictId");
 
                     b.ToTable("Users");
                 });
@@ -248,6 +253,39 @@ namespace AcilKan.Persistence.Migrations
                     b.ToTable("Banners");
                 });
 
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BloodRequestId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DonationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DonorId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BloodRequestId");
+
+                    b.HasIndex("DonorId");
+
+                    b.ToTable("BloodDonation");
+                });
+
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonationApprove", b =>
                 {
                     b.Property<int>("Id")
@@ -262,6 +300,12 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<int>("DonorId")
                         .HasColumnType("int");
 
+                    b.Property<bool?>("IsDonorApproved")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsRequestCreatorApproved")
+                        .HasColumnType("bit");
+
                     b.Property<int>("RequestCreatorId")
                         .HasColumnType("int");
 
@@ -274,53 +318,6 @@ namespace AcilKan.Persistence.Migrations
                     b.HasIndex("RequestCreatorId");
 
                     b.ToTable("BloodDonationApproves");
-                });
-
-            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDontaion", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BloodRequestId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DonationDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("DonationStatusId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("DonationType")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("DonorId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("HospitalId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PatientName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PatientSurname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BloodRequestId");
-
-                    b.HasIndex("DonationStatusId");
-
-                    b.HasIndex("DonorId");
-
-                    b.HasIndex("HospitalId");
-
-                    b.ToTable("BloodDontaion");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodGroup", b =>
@@ -354,15 +351,6 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<int>("BloodGroupId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("DonationStatusId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("DonationType")
-                        .HasColumnType("bit");
-
                     b.Property<int>("HospitalId")
                         .HasColumnType("int");
 
@@ -377,13 +365,18 @@ namespace AcilKan.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("RequestDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AppUserId");
 
                     b.HasIndex("BloodGroupId");
-
-                    b.HasIndex("DonationStatusId");
 
                     b.HasIndex("HospitalId");
 
@@ -539,23 +532,6 @@ namespace AcilKan.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("DonationBenefits");
-                });
-
-            modelBuilder.Entity("AcilKan.Domain.Entities.DonationStatus", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("DonationStatuses");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.FooterAddress", b =>
@@ -716,7 +692,15 @@ namespace AcilKan.Persistence.Migrations
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
+                    b.HasOne("AcilKan.Domain.Entities.District", "District")
+                        .WithMany()
+                        .HasForeignKey("DistrictId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.Navigation("City");
+
+                    b.Navigation("District");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ArticlesForAboutPage", b =>
@@ -730,9 +714,28 @@ namespace AcilKan.Persistence.Migrations
                     b.Navigation("TitlesForAboutPage");
                 });
 
+            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonation", b =>
+                {
+                    b.HasOne("AcilKan.Domain.Entities.BloodRequest", "BloodRequest")
+                        .WithMany()
+                        .HasForeignKey("BloodRequestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AcilKan.Domain.Entities.AppUser", "Donor")
+                        .WithMany()
+                        .HasForeignKey("DonorId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("BloodRequest");
+
+                    b.Navigation("Donor");
+                });
+
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodDonationApprove", b =>
                 {
-                    b.HasOne("AcilKan.Domain.Entities.BloodDontaion", "BloodDontaion")
+                    b.HasOne("AcilKan.Domain.Entities.BloodDonation", "BloodDontaion")
                         .WithMany()
                         .HasForeignKey("BloodDontaionId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -757,39 +760,6 @@ namespace AcilKan.Persistence.Migrations
                     b.Navigation("RequestCreator");
                 });
 
-            modelBuilder.Entity("AcilKan.Domain.Entities.BloodDontaion", b =>
-                {
-                    b.HasOne("AcilKan.Domain.Entities.BloodRequest", "BloodRequest")
-                        .WithMany()
-                        .HasForeignKey("BloodRequestId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("AcilKan.Domain.Entities.DonationStatus", "DonationStatus")
-                        .WithMany()
-                        .HasForeignKey("DonationStatusId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("AcilKan.Domain.Entities.AppUser", "Donor")
-                        .WithMany()
-                        .HasForeignKey("DonorId")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
-
-                    b.HasOne("AcilKan.Domain.Entities.Hospital", "Hospital")
-                        .WithMany()
-                        .HasForeignKey("HospitalId");
-
-                    b.Navigation("BloodRequest");
-
-                    b.Navigation("DonationStatus");
-
-                    b.Navigation("Donor");
-
-                    b.Navigation("Hospital");
-                });
-
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodRequest", b =>
                 {
                     b.HasOne("AcilKan.Domain.Entities.AppUser", "AppUser")
@@ -804,12 +774,6 @@ namespace AcilKan.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AcilKan.Domain.Entities.DonationStatus", "DonationStatus")
-                        .WithMany()
-                        .HasForeignKey("DonationStatusId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("AcilKan.Domain.Entities.Hospital", "Hospital")
                         .WithMany()
                         .HasForeignKey("HospitalId")
@@ -819,8 +783,6 @@ namespace AcilKan.Persistence.Migrations
                     b.Navigation("AppUser");
 
                     b.Navigation("BloodGroup");
-
-                    b.Navigation("DonationStatus");
 
                     b.Navigation("Hospital");
                 });
