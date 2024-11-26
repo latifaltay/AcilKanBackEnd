@@ -11,5 +11,7 @@ namespace AcilKan.Application.Interfaces
     public interface IJwtTokenService
     {
         Task<TokenResult> GenerateTokens(AppUser user);
+        Task<TokenResult> RefreshAccessToken(string refreshToken);
+        Task InvalidateTokens(string accessToken, string refreshToken);
     }
 }

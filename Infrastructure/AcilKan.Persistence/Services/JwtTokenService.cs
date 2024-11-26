@@ -148,5 +148,10 @@ namespace AcilKan.Persistence.Services
             var principal = tokenHandler.ValidateToken(token, validationParameters, out var validatedToken);
             return principal;
         }
+
+        public Task InvalidateTokens(string accessToken, string refreshToken)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

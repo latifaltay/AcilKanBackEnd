@@ -14,10 +14,7 @@ namespace AcilKan.Domain.Entities
         public string BloodGroup { get; set; }
         public bool Gender { get; set; }
         public string ImageUrl { get; set; }
-
-        // Kullanıcının ait olduğu ilçe
-        //public int DistrictId { get; set; }  // Foreign key to District
-        //public District District { get; set; }  // Navigation property for District
+        public bool IsOnline { get; set; }
 
         public int CityId { get; set; }
         public City City { get; set; }

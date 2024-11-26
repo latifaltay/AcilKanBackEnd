@@ -44,6 +44,7 @@ namespace AcilKan.Persistence.Context
         public DbSet<Supporter> Supporters { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<TitlesForAboutPage> TitlesForAboutPages { get; set; }
+        public DbSet<Chat> Chats { get; set; }
 
 
 

@@ -61,7 +61,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
             {
                 Message = "Giriş başarılı.",
                 AccessToken = tokenResult.AccessToken,
-                RefreshToken = tokenResult.RefreshToken
+                RefreshToken = tokenResult.RefreshToken,
+                IsOnline = true
             };
         }
     }
