@@ -17,14 +17,13 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
         {
             AppUser appUser = new AppUser 
             {
+                UserName = request.Email,
                 Name = request.Name,
                 Surname = request.Surname,
                 Email = request.Email,
                 PhoneNumber = request.PhoneNumber,
                 BloodGroup = request.BloodGroup,
                 Gender = request.Gender,
-                UserName = request.UserName,
-                ImageUrl = request.ImageUrl,
                 CityId = request.CityId,
                 DistrictId = request.DistrictId,
             };

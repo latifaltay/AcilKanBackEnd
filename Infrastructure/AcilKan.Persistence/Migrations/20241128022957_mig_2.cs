@@ -5,25 +5,32 @@
 namespace AcilKan.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class mig_for_user_isOnline : Migration
+    public partial class mig_2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<bool>(
+            migrationBuilder.AlterColumn<bool>(
                 name: "IsOnline",
                 table: "Users",
                 type: "bit",
-                nullable: false,
-                defaultValue: false);
+                nullable: true,
+                oldClrType: typeof(bool),
+                oldType: "bit");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
+            migrationBuilder.AlterColumn<bool>(
                 name: "IsOnline",
-                table: "Users");
+                table: "Users",
+                type: "bit",
+                nullable: false,
+                defaultValue: false,
+                oldClrType: typeof(bool),
+                oldType: "bit",
+                oldNullable: true);
         }
     }
 }

@@ -68,7 +68,7 @@ namespace AcilKan.WebAPI.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> ForgotPassword(string email)
         {
             var result = await _mediator.Send(new ForgotPasswordQuery(email));

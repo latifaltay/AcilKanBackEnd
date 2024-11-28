@@ -5,6 +5,7 @@ using AcilKan.Persistence.Repositories;
 using AcilKan.Persistence.Services;
 using AcilKan.Persistence.Utilities;
 using AcilKan.WebAPI.Extensions;
+using AcilKan.WebAPI.Hubs;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -84,11 +85,23 @@ builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"))
 
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 
+builder.Services.AddSignalR();
 
 builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
 
 builder.Services.AddScoped<JwtTokenService>();
 builder.Services.AddServiceExtentions();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
 
 
 
@@ -105,6 +118,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowFrontend");  
+
+app.MapHub<ChatHub>("/chatHub");
+
 
 app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 

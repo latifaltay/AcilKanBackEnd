@@ -12,6 +12,6 @@ namespace AcilKan.Domain.Entities
         public int UserId { get; set; }
         public int ToUserId { get; set; }
         public string Message { get; set; } = string.Empty;
-        public DateTime DateTime { get; set; }
+        public DateTime SendDate { get; set; }
     }
 }

@@ -68,7 +68,6 @@ namespace AcilKan.Persistence.Context
             modelBuilder.Ignore<IdentityRoleClaim<int>>();
             modelBuilder.Ignore<IdentityUserRole<int>>();
 
-
             modelBuilder.Entity<AppUser>()
                 .HasOne(a => a.City)
                 .WithMany(c => c.AppUsers)
@@ -79,7 +78,22 @@ namespace AcilKan.Persistence.Context
                 .HasOne(u => u.District)
                 .WithMany()
                 .HasForeignKey(u => u.DistrictId)
-                .OnDelete(DeleteBehavior.NoAction); 
+                .OnDelete(DeleteBehavior.NoAction);
+
+
+            //modelBuilder.Entity<AppUser>()
+            //    .Property(u => u.UserName)
+            //    .HasDefaultValueSql("Email"); // Email ile eşleşmesini sağlıyoruz.
+
+            //// Email alanının benzersiz olmasını sağlıyoruz
+            //modelBuilder.Entity<AppUser>()
+            //    .HasIndex(u => u.Email)
+            //    .IsUnique();
+
+
+            modelBuilder.Entity<AppUser>()
+                .Property(u => u.UserName)
+                .HasComputedColumnSql("[Email]"); // Email'den türetilen bir hesaplanmış kolonu belirtir
 
 
             modelBuilder.Entity<BloodDonationApprove>()

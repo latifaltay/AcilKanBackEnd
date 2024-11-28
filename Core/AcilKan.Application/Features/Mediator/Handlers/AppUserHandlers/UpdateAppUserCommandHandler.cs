@@ -18,7 +18,6 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
 
             user.Email = request.Email;
             user.PhoneNumber = request.PhoneNumber;
-            user.ImageUrl = request.ImageUrl;
             user.CityId = request.CityId;
             user.DistrictId = request.DistrictId;
             await _userManager.UpdateAsync(user);

@@ -199,7 +199,7 @@
     "ContainingType": "AcilKan.WebAPI.Controllers.AppUserController",
     "Method": "ForgotPassword",
     "RelativePath": "api/AppUser/ForgotPassword",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -744,6 +744,38 @@
       {
         "Name": "command",
         "Type": "AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands.UpdateBloodRequestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ChatController",
+    "Method": "GetChats",
+    "RelativePath": "api/Chat/GetChats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "toUserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ChatController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Chat/SendMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AcilKan.Application.Features.Mediator.Commands.ChatCommands.SendMessageCommand",
         "IsRequired": true
       }
     ],

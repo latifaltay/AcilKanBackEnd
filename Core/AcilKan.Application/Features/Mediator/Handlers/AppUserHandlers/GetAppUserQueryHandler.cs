@@ -29,7 +29,6 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
                 PhoneNumber = user.PhoneNumber,
                 BloodGroup = user.BloodGroup,
                 Gender = user.Gender,
-                ImageUrl = user.ImageUrl,
                 City = user.City.Name,
                 District = user.District.Name,
             }).ToList();

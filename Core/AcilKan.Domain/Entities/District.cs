@@ -20,3 +20,5 @@ namespace AcilKan.Domain.Entities
         //public List<AppUser> AppUsers { get; set; }  // Bir ilçe birden fazla kullanıcıya sahip
     }
 }
+
+
