@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241129075152_initial_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\AcilKan.Persistence\\Migrations\\20241129075152_initial_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|solutionrelative:infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\controllers\\blooddonationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\controllers\\blooddonationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\appuserhandlers\\createappusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\appuserhandlers\\createappusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\commands\\appusercommands\\createappusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\commands\\appusercommands\\createappusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\controllers\\appusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\blooddontaionhandlers\\createblooddontaioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\blooddontaionhandlers\\createblooddontaioncommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,88 +35,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Hubs\\ChatHub.cs",
-              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Hubs\\ChatHub.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Hubs\\ChatHub.cs",
-              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Title": "20241129075152_initial_mig.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241129075152_initial_mig.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241129075152_initial_mig.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241129075152_initial_mig.cs",
+              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241129075152_initial_mig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T17:25:41.839Z",
+              "WhenOpened": "2024-11-29T07:51:52.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BloodDonationController.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationController.cs",
+              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationController.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationController.cs",
+              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Controllers\\BloodDonationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T07:45:51.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CreateAppUserCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\AppUserHandlers\\CreateAppUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\AppUserHandlers\\CreateAppUserCommandHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\AppUserHandlers\\CreateAppUserCommandHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\AppUserHandlers\\CreateAppUserCommandHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Title": "CreateBloodDontaionCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDontaionHandlers\\CreateBloodDontaionCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDontaionHandlers\\CreateBloodDontaionCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDontaionHandlers\\CreateBloodDontaionCommandHandler.cs",
+              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\BloodDontaionHandlers\\CreateBloodDontaionCommandHandler.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIA0wAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T02:39:35.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AcilKanContext.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAA0wFoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T02:32:00.725Z",
+              "WhenOpened": "2024-11-29T07:43:14.191Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\AppUser.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\AppUser.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\AppUser.cs",
-              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T01:18:02.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateAppUserCommand.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\AppUserCommands\\CreateAppUserCommand.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\AppUserCommands\\CreateAppUserCommand.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Commands\\AppUserCommands\\CreateAppUserCommand.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Commands\\AppUserCommands\\CreateAppUserCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T01:19:24.491Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Program.cs",
-              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA0wBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:52:51.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppUserController.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\AppUserController.cs",
-              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Controllers\\AppUserController.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\AppUserController.cs",
-              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Controllers\\AppUserController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAzwEAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:49:51.446Z"
             }
           ]
         }

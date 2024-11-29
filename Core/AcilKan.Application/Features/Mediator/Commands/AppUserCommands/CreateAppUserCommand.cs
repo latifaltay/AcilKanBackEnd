@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using AcilKan.Domain.Enums;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,11 @@ namespace AcilKan.Application.Features.Mediator.Commands.AppUserCommands
         public string Password { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public string BloodGroup { get; set; }
+        public BloodGroupType BloodGroup { get; set; }
         public int CityId { get; set; }
         public int DistrictId { get; set; }
         public bool Gender { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 }
 

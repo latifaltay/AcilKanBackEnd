@@ -21,7 +21,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
             {
                 Id = value.Id,
                 AppUserFullName = value.AppUser.Name + " " + value.AppUser.Surname,
-                BloodGroupName = value.BloodGroup.GroupName,
+                //BloodGroupName = value.BloodGroup.GroupName,
                 City = value.Hospital.District.City.Name,
                 District = value.Hospital.District.Name,
                 HospitalName = value.Hospital.Name,

@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AcilKan.WebAPI.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class BloodRequestController(IMediator _mediator) : ControllerBase

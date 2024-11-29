@@ -120,9 +120,11 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
-                    b.Property<string>("BloodGroup")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("BirthDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("BloodGroup")
+                        .HasColumnType("int");
 
                     b.Property<int>("CityId")
                         .HasColumnType("int");
@@ -170,6 +172,9 @@ namespace AcilKan.Persistence.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<DateTime>("RegisterDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
@@ -351,8 +356,9 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<int>("AppUserId")
                         .HasColumnType("int");
 
-                    b.Property<int>("BloodGroupId")
-                        .HasColumnType("int");
+                    b.Property<string>("BloodGroup")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("HospitalId")
                         .HasColumnType("int");
@@ -378,8 +384,6 @@ namespace AcilKan.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AppUserId");
-
-                    b.HasIndex("BloodGroupId");
 
                     b.HasIndex("HospitalId");
 
@@ -797,12 +801,6 @@ namespace AcilKan.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AcilKan.Domain.Entities.BloodGroup", "BloodGroup")
-                        .WithMany()
-                        .HasForeignKey("BloodGroupId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("AcilKan.Domain.Entities.Hospital", "Hospital")
                         .WithMany()
                         .HasForeignKey("HospitalId")
@@ -810,8 +808,6 @@ namespace AcilKan.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("AppUser");
-
-                    b.Navigation("BloodGroup");
 
                     b.Navigation("Hospital");
                 });

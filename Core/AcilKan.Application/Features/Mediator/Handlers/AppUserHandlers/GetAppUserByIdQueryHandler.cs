@@ -1,4 +1,5 @@
-﻿using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
+﻿using AcilKan.Application.Extensions;
+using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
 using AcilKan.Application.Features.Mediator.Results.AppUserResults;
 using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
@@ -27,10 +28,11 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
                 UserName = appUser.UserName,
                 Email = appUser.Email,
                 PhoneNumber = appUser.PhoneNumber,  
-                BloodGroup = appUser.BloodGroup,
+                BloodGroup = appUser.BloodGroup.GetDescription(),
                 Gender = appUser.Gender,
                 City = appUser.City.Name,
-                District = appUser.District.Name,   
+                District = appUser.District.Name,
+                BirthDate = appUser.BirthDate,
             };
         }
     }

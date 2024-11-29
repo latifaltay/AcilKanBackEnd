@@ -1,4 +1,5 @@
-﻿using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
+﻿using AcilKan.Application.Extensions;
+using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
 using AcilKan.Application.Features.Mediator.Results.AppUserResults;
 using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
@@ -27,10 +28,11 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
                 UserName = user.UserName,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
-                BloodGroup = user.BloodGroup,
+                BloodGroup = user.BloodGroup.GetDescription(),
                 Gender = user.Gender,
                 City = user.City.Name,
                 District = user.District.Name,
+                BirthDate = user.BirthDate,
             }).ToList();
 
             return result;

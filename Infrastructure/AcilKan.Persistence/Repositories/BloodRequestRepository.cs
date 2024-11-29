@@ -19,7 +19,6 @@ namespace AcilKan.Persistence.Repositories
                     .ThenInclude(x => x.District)
                     .ThenInclude(x => x.City)
                 .Include(x => x.AppUser)
-                .Include(x => x.BloodGroup)
                 .ToListAsync();
             return bloodRequest;
         }
@@ -31,7 +30,6 @@ namespace AcilKan.Persistence.Repositories
                     .ThenInclude(x => x.District)
                     .ThenInclude(x => x.City)
                 .Include(x => x.AppUser)
-                .Include(x => x.BloodGroup)
                 .FirstOrDefaultAsync(x => x.Id == id);
             return bloodRequest;
         }

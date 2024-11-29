@@ -17,5 +17,6 @@ namespace AcilKan.Application.Features.Mediator.Results.AppUserResults
         public string City { get; set; }
         public string District { get; set; }
         public bool Gender { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 }

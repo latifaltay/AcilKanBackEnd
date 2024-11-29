@@ -1,4 +1,5 @@
 ﻿using AcilKan.Domain.Entities;
+using AcilKan.Domain.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -90,6 +91,13 @@ namespace AcilKan.Persistence.Context
             //    .HasIndex(u => u.Email)
             //    .IsUnique();
 
+            // Kan grubu enumunu string olarak veritabanında tutmak
+            modelBuilder.Entity<BloodRequest>()
+                .Property(b => b.BloodGroup)
+                .HasConversion(
+                    v => v.ToString(),  // Enum'ı string olarak saklama
+                    v => (BloodGroupType)Enum.Parse(typeof(BloodGroupType), v)  // String'i Enum'a dönüştürme
+                );
 
             modelBuilder.Entity<AppUser>()
                 .Property(u => u.UserName)

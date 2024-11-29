@@ -21,7 +21,7 @@ namespace AcilKan.WebAPI.Controllers
                 Surname = registerDto.Surname,
                 Email = registerDto.Email,
                 PhoneNumber = registerDto.PhoneNumber,
-                BloodGroup = registerDto.BloodGroup,
+                //BloodGroup = registerDto.BloodGroup,
                 Gender = registerDto.Gender,
                 UserName = registerDto.UserName
             };

@@ -74,7 +74,9 @@ namespace AcilKan.Persistence.Services
         {
             return new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.Name, user.Name),
+                new Claim(ClaimTypes.Surname, user.Surname),
+                new Claim(ClaimTypes.MobilePhone, user.PhoneNumber),
                 new Claim(ClaimTypes.Email, user.Email),
                 //new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
                 //new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString())

@@ -1,11 +1,10 @@
 ﻿using AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands;
 using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
+using AcilKan.Domain.Enums;
 using MediatR;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
@@ -15,14 +14,22 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
         public async Task Handle(CreateBloodRequestCommand request, CancellationToken cancellationToken)
         {
             var userId = await _repository.GetCurrentUserIdAsync();
+
+            // Kan grubu seçimini enum olarak al
+            var bloodGroupEnum = (BloodGroupType)request.BloodGroupId;
+
+            // Türkiye saat dilimini kullan
+            TimeZoneInfo turkeyTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Turkey Standard Time");
+            DateTime currentDateTimeInTurkey = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, turkeyTimeZone);
+
             var value = new BloodRequest
             {
                 AppUserId = userId,
                 HospitalId = request.HospitalId,
-                BloodGroupId = request.BloodGroupId,
+                BloodGroup = bloodGroupEnum,
                 PatientName = request.PatientName,
                 PatientSurname = request.PatientSurname,
-                RequestDate = DateTime.UtcNow.Date,
+                RequestDate = currentDateTimeInTurkey, // Türkiye saati ile tarih
                 IsActive = true,
                 Status = "Beklemede"
             };

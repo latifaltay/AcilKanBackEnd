@@ -1,7 +1,9 @@
-﻿using AcilKan.Application.Features.Mediator.Queries.BloodRequestQueries;
+﻿using AcilKan.Application.Extensions;
+using AcilKan.Application.Features.Mediator.Queries.BloodRequestQueries;
 using AcilKan.Application.Features.Mediator.Results.BloodRequestResults;
 using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
+using AcilKan.Domain.Enums;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -16,12 +18,13 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
         public async Task<List<GetBloodRequestQueryResult>> Handle(GetBloodRequestQuery request, CancellationToken cancellationToken)
         {
             var values = await _service.GetBloodRequestsAsync();
+
             return values.Select(x => new GetBloodRequestQueryResult 
             {
                 
                 Id = x.Id,
                 AppUserFullName = x.AppUser.Name + " " + x.AppUser.Surname,
-                BloodGroupName = x.BloodGroup.GroupName,
+                BloodGroupName = ((BloodGroupType)x.BloodGroup).GetDescription(),
                 City = x.Hospital.District.City.Name,
                 District = x.Hospital.District.Name,
                 HospitalName = x.Hospital.Name,

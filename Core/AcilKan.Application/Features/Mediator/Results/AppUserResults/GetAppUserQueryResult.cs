@@ -15,9 +15,9 @@ namespace AcilKan.Application.Features.Mediator.Results.AppUserResults
         public string PhoneNumber { get; set; }
         public string Surname { get; set; }
         public string BloodGroup { get; set; }
-        public string ImageUrl { get; set; }
         public string City { get; set; }
         public string District { get; set; }
         public bool Gender { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AcilKan.Domain.Enums;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,12 @@ namespace AcilKan.Domain.Entities
     {
         public string Name { get; set; }
         public string Surname { get; set; }
-        public string BloodGroup { get; set; }
+        public BloodGroupType BloodGroup { get; set; } // Enum
         public bool Gender { get; set; }
         public bool? IsOnline { get; set; }
         public string PhoneNumber { get; set; }
+        public DateTime RegisterDate { get; set; }
+        public DateTime BirthDate { get; set; }
 
         public int CityId { get; set; }
         public City City { get; set; }

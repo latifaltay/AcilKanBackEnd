@@ -16,7 +16,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
         {
             var value = await _repository.GetByIdAsync(request.Id);
 
-            value.BloodGroupId = request.BloodGroupId;
+            //value.BloodGroupId = request.BloodGroupId;
             value.HospitalId = request.HospitalId;
             value.PatientName = request.PatientName;
             value.PatientSurname = request.PatientSurname;

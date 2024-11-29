@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AcilKan.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class inital_mig : Migration
+    public partial class initial_mig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -363,13 +363,15 @@ namespace AcilKan.Persistence.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Surname = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BloodGroup = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    BloodGroup = table.Column<int>(type: "int", nullable: false),
                     Gender = table.Column<bool>(type: "bit", nullable: false),
-                    IsOnline = table.Column<bool>(type: "bit", nullable: false),
+                    IsOnline = table.Column<bool>(type: "bit", nullable: true),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RegisterDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    BirthDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CityId = table.Column<int>(type: "int", nullable: false),
                     DistrictId = table.Column<int>(type: "int", nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false, computedColumnSql: "[Email]"),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     NormalizedEmail = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -406,7 +408,7 @@ namespace AcilKan.Persistence.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AppUserId = table.Column<int>(type: "int", nullable: false),
                     HospitalId = table.Column<int>(type: "int", nullable: false),
-                    BloodGroupId = table.Column<int>(type: "int", nullable: false),
+                    BloodGroup = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PatientName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PatientSurname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     RequestDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -416,12 +418,6 @@ namespace AcilKan.Persistence.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_BloodRequests", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_BloodRequests_BloodGroups_BloodGroupId",
-                        column: x => x.BloodGroupId,
-                        principalTable: "BloodGroups",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_BloodRequests_Hospitals_HospitalId",
                         column: x => x.HospitalId,
@@ -543,11 +539,6 @@ namespace AcilKan.Persistence.Migrations
                 column: "AppUserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_BloodRequests_BloodGroupId",
-                table: "BloodRequests",
-                column: "BloodGroupId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_BloodRequests_HospitalId",
                 table: "BloodRequests",
                 column: "HospitalId");
@@ -599,6 +590,9 @@ namespace AcilKan.Persistence.Migrations
                 name: "BloodDonationApproves");
 
             migrationBuilder.DropTable(
+                name: "BloodGroups");
+
+            migrationBuilder.DropTable(
                 name: "Chats");
 
             migrationBuilder.DropTable(
@@ -645,9 +639,6 @@ namespace AcilKan.Persistence.Migrations
 
             migrationBuilder.DropTable(
                 name: "BloodRequests");
-
-            migrationBuilder.DropTable(
-                name: "BloodGroups");
 
             migrationBuilder.DropTable(
                 name: "Hospitals");
