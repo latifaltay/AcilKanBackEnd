@@ -1,4 +1,5 @@
-﻿using AcilKan.Domain.Entities;
+﻿using AcilKan.Application.Features.Mediator.Results.ChatResults;
+using AcilKan.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace AcilKan.Application.Interfaces
     public interface IChatService
     {
         Task<List<Chat>> GetChatsByUserOrderedByDateAsync(int userId, int toUserId);
+        Task<List<Chat>> GetChatsPreviewAsync(int userId);
     }
 }

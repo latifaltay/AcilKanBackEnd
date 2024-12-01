@@ -398,6 +398,9 @@ namespace AcilKan.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("FromUserId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Message")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -408,10 +411,11 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<int>("ToUserId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("FromUserId");
+
+                    b.HasIndex("ToUserId");
 
                     b.ToTable("Chats");
                 });
@@ -810,6 +814,25 @@ namespace AcilKan.Persistence.Migrations
                     b.Navigation("AppUser");
 
                     b.Navigation("Hospital");
+                });
+
+            modelBuilder.Entity("AcilKan.Domain.Entities.Chat", b =>
+                {
+                    b.HasOne("AcilKan.Domain.Entities.AppUser", "FromUser")
+                        .WithMany()
+                        .HasForeignKey("FromUserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("AcilKan.Domain.Entities.AppUser", "ToUser")
+                        .WithMany()
+                        .HasForeignKey("ToUserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("FromUser");
+
+                    b.Navigation("ToUser");
                 });
 
             modelBuilder.Entity("AcilKan.Domain.Entities.ContactPage", b =>

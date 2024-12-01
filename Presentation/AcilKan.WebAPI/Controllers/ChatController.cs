@@ -18,19 +18,22 @@ namespace AcilKan.WebAPI.Controllers
     public class ChatController(IMediator _mediator, IHubContext<ChatHub> _hubContext) : ControllerBase
     {
 
-        //[HttpGet]
-        //public async Task<IActionResult> GetUsers()
-        //{
-        //    List<AppUser> users = await context.Users.OrderBy(p => p.Name).ToListAsync();
-        //    return Ok(users);
-        //}
+
 
         [HttpGet]
-        public async Task<IActionResult> GetChats(int toUserId) 
+        public async Task<IActionResult> GetContacts()
         {
-            var values = await _mediator.Send(new GetChatsQuery(toUserId));
+            var values = await _mediator.Send(new GetContactsQuery());
             return Ok(values);
         }
+
+        [HttpGet("{toUserId}")]
+        public async Task<IActionResult> GetChats(int toUserId)
+        {
+            var values = await _mediator.Send(new GetChatsToUserIdQuery(toUserId));
+            return Ok(values);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> SendMessage(SendMessageCommand command)

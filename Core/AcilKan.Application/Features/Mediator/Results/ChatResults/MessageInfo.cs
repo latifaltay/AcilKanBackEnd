@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Results.ChatResults
 {
-    public class GetChatQueryResult
+    public class MessageInfo
     {
-        public int Id { get; set; }
-        public int UserId { get; set; }
-        public int ToUserId { get; set; }
-        public string Message { get; set; } = string.Empty;
+        public string Content { get; set; }
         public DateTime SendDate { get; set; }
     }
 }

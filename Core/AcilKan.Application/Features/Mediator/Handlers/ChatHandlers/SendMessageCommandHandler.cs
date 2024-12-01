@@ -17,7 +17,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.ChatHandlers
                 Message = request.Message,
                 SendDate = DateTime.UtcNow,
                 ToUserId = request.ToUserId,
-                UserId = userId,
+                FromUserId = userId,
             });
 
             //string connectionId = ChatHub.Users.FirstOrDefault(p => p.Value == chat.ToUserId).Key;

@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Queries.ChatQueries
 {
-    public class GetChatsQuery(int toUserId) : IRequest<List<GetChatQueryResult>>
+    public class GetChatsToUserIdQuery(int id) : IRequest<GetChatsToUserIdQueryResult>
     {
-        public int ToUserId { get; set; } = toUserId;
+        public int ToUserId { get; set; } = id;
     }
 }

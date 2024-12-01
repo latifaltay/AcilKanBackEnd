@@ -11,5 +11,6 @@ namespace AcilKan.Application.Interfaces
     {
         Task<BloodRequest> GetBloodRequestWithDetailsByIdAsync(int id);
         Task<List<BloodRequest>> GetBloodRequestsAsync();
+        Task<BloodRequest> GetRequesterUserIdByBloodRequestIdAsync(int id);
     }
 }

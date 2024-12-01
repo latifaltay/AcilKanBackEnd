@@ -53,6 +53,13 @@ namespace AcilKan.WebAPI.Controllers
             return Ok("Kan talebi iptal edildi");
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetChatByBloodRequestId(int id) 
+        {
+            var value = await _mediator.Send(new GetChatByBloodRequestIdQuery(id));
+            return Ok(value);
+        }
+
     }
 }
       

@@ -376,102 +376,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
-    "Method": "ChangePassword",
-    "RelativePath": "api/Authentication/ChangePassword",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "changePasswordDto",
-        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.ChangePasswordDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
-    "Method": "ChangePasswordUsingToken",
-    "RelativePath": "api/Authentication/ChangePasswordUsingToken",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "changePasswordUsingTokenDto",
-        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.ChangePasswordUsingTokenDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
-    "Method": "ForgotPassword",
-    "RelativePath": "api/Authentication/ForgotPassword",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
-    "Method": "Login",
-    "RelativePath": "api/Authentication/Login",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginDto",
-        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.LoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
-    "Method": "LoginWithSignInManager",
-    "RelativePath": "api/Authentication/LoginWithSignInManager",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginDto",
-        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.LoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AcilKan.WebAPI.Controllers.AuthenticationController",
-    "Method": "Register",
-    "RelativePath": "api/Authentication/Register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "registerDto",
-        "Type": "AcilKan.Application.DTOs.LoginRegisterOperations.RegisterDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "AcilKan.WebAPI.Controllers.BannerController",
     "Method": "BannerList",
     "RelativePath": "api/Banner",
@@ -735,6 +639,22 @@
   },
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
+    "Method": "GetChatByBloodRequestId",
+    "RelativePath": "api/BloodRequest/GetChatByBloodRequestId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.BloodRequestController",
     "Method": "UpdateBloodRequest",
     "RelativePath": "api/BloodRequest/UpdateBloodRequest",
     "HttpMethod": "PUT",
@@ -752,7 +672,7 @@
   {
     "ContainingType": "AcilKan.WebAPI.Controllers.ChatController",
     "Method": "GetChats",
-    "RelativePath": "api/Chat/GetChats",
+    "RelativePath": "api/Chat/GetChats/{toUserId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -760,9 +680,19 @@
       {
         "Name": "toUserId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ChatController",
+    "Method": "GetContacts",
+    "RelativePath": "api/Chat/GetContacts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -1223,6 +1153,22 @@
     "ContainingType": "AcilKan.WebAPI.Controllers.MissionController",
     "Method": "GetMission",
     "RelativePath": "api/Mission/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.ProfileController",
+    "Method": "GetProfileInfo",
+    "RelativePath": "api/Profile/GetProfileInfo/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

@@ -123,6 +123,21 @@ namespace AcilKan.Persistence.Context
                 .HasForeignKey(bda => bda.DonorId) // Foreign Key tanımı
                 .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
 
+
+            // FromUserId ile ilişkili olan ve ToUserId ile ilişkili olan yabancı anahtarlar için NoAction ekliyoruz
+            modelBuilder.Entity<Chat>()
+                .HasOne(chat => chat.FromUser) // FromUserId ilişkisi
+                .WithMany() // Bir kullanıcı birden fazla sohbet başlatabilir
+                .HasForeignKey(chat => chat.FromUserId) // FromUserId dış anahtar
+                .OnDelete(DeleteBehavior.NoAction); // Silme işlemi yapılmaz
+
+            modelBuilder.Entity<Chat>()
+                .HasOne(chat => chat.ToUser) // ToUserId ilişkisi
+                .WithMany() // Bir kullanıcıya birden fazla mesaj gidebilir
+                .HasForeignKey(chat => chat.ToUserId) // ToUserId dış anahtar
+                .OnDelete(DeleteBehavior.NoAction); // Silme işlemi yapılmaz
+
+
         }
 
 

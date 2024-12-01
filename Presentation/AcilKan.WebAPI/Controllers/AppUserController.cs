@@ -4,10 +4,12 @@ using AcilKan.Application.Features.Mediator.Commands.AboutBloodDonationCommands;
 using AcilKan.Application.Features.Mediator.Commands.AppUserCommands;
 using AcilKan.Application.Features.Mediator.Queries.AboutBloodDonationQueries;
 using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
+using AcilKan.Application.Features.Mediator.Queries.ProfileQueries;
 using AcilKan.Domain.Entities;
 using AcilKan.Persistence.Services;
 using Azure.Core;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
@@ -88,7 +90,7 @@ namespace AcilKan.WebAPI.Controllers
         public async Task<IActionResult> Login(LoginCommand loginCommand)
         {
             var result = await _mediator.Send(loginCommand);
-            return Ok(new { message = result.Message, accessToken = result.AccessToken, refreshToken = result.RefreshToken});
+            return Ok(new { message = result.Message, accessToken = result.AccessToken, refreshToken = result.RefreshToken });
         }
 
 
@@ -99,6 +101,7 @@ namespace AcilKan.WebAPI.Controllers
             var tokenResult = await _jwtTokenService.RefreshAccessToken(request.RefreshToken);
             return Ok(tokenResult);
         }
+
 
     }
 }

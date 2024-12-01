@@ -33,5 +33,14 @@ namespace AcilKan.Persistence.Repositories
                 .FirstOrDefaultAsync(x => x.Id == id);
             return bloodRequest;
         }
+
+        public async Task<BloodRequest> GetRequesterUserIdByBloodRequestIdAsync(int id)
+        {
+            var value = await _context.BloodRequests
+                .Where(x => x.Id == id)
+                .Include(x => x.AppUser)
+                .FirstOrDefaultAsync();
+            return value;
+        }
     }
 }
