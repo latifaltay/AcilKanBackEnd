@@ -34,7 +34,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.ChatHandlers
             {
                 UserFullName = x.ToUser.Name + ' ' + x.ToUser.Surname,  // Karşı kullanıcının adı soyadı
                 SendDate = x.SendDate,  // Son mesajın tarihi
-                LastMessageInfo = x.Message // Son mesajın ilk 20 karakteri
+                LastMessageInfo = x.Message, // Son mesajın ilk 20 karakteri
+                ToUserId = x.ToUserId
             }).ToList();
         }
     }

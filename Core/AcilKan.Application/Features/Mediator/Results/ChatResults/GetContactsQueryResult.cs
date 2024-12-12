@@ -11,5 +11,6 @@ namespace AcilKan.Application.Features.Mediator.Results.ChatResults
         public string UserFullName { get; set; }
         public DateTime SendDate { get; set; }
         public string LastMessageInfo { get; set; }
+        public int ToUserId { get; set; }
     }
 }

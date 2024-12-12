@@ -295,7 +295,6 @@ C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\ne
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\net8.0\AcilKan.WebAPI.AssemblyInfoInputs.cache
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\net8.0\AcilKan.WebAPI.AssemblyInfo.cs
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\net8.0\AcilKan.WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\net8.0\AcilKan.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\net8.0\AcilKan.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\net8.0\AcilKan.WebAPI.sourcelink.json
 C:\Users\ELEYDEV\Desktop\AcilKanBackEnd\Presentation\AcilKan.WebAPI\obj\Debug\net8.0\staticwebassets.build.json

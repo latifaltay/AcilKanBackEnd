@@ -1166,22 +1166,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AcilKan.WebAPI.Controllers.ProfileController",
-    "Method": "GetProfileInfo",
-    "RelativePath": "api/Profile/GetProfileInfo/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "AcilKan.WebAPI.Controllers.RoleController",
     "Method": "CreateAppRole",
     "RelativePath": "api/Role/CreateAppRole",
@@ -1427,6 +1411,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AcilKan.WebAPI.Controllers.UserProfileController",
+    "Method": "GetUserProfileInfo",
+    "RelativePath": "api/UserProfile/GetUserProfileInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

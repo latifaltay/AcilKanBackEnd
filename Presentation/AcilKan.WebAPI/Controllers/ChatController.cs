@@ -19,13 +19,14 @@ namespace AcilKan.WebAPI.Controllers
     {
 
 
-
+        // bu endpoint son mesajlarım kısmını getiriyor
         [HttpGet]
         public async Task<IActionResult> GetContacts()
         {
             var values = await _mediator.Send(new GetContactsQuery());
             return Ok(values);
         }
+
 
         [HttpGet("{toUserId}")]
         public async Task<IActionResult> GetChats(int toUserId)
@@ -35,18 +36,16 @@ namespace AcilKan.WebAPI.Controllers
         }
 
 
+        // mesaj gönderme refaktör edilecek
         [HttpPost]
         public async Task<IActionResult> SendMessage(SendMessageCommand command)
         {
-            // Komutu gönder (iç işleme)
             await _mediator.Send(command);
 
-            // Kullanıcı ID'si ile bağlantı ID'sini bulma
             string connectionId = ChatHub.Users.FirstOrDefault(p => p.Value == command.ToUserId.ToString()).Key;
 
             if (!string.IsNullOrEmpty(connectionId))
             {
-                // Bağlantı ID'si ile mesajı gönder
                 await _hubContext.Clients.Client(connectionId).SendAsync(command.ToUserId.ToString(), command.Message);
             }
 

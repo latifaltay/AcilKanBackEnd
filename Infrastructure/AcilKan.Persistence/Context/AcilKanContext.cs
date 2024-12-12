@@ -22,6 +22,7 @@ namespace AcilKan.Persistence.Context
             _configuration = configuration;
         }
 
+
         public DbSet<About> Abouts { get; set; }
         public DbSet<AboutBloodDonation> AboutBloodDonations { get; set; }
         public DbSet<AboutUs> AboutUses { get; set; }
@@ -81,15 +82,33 @@ namespace AcilKan.Persistence.Context
                 .HasForeignKey(u => u.DistrictId)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            // AppUser ile BloodDonation ilişkisi
+            modelBuilder.Entity<BloodDonation>()
+                .HasOne(bd => bd.Donor)
+                .WithMany(u => u.BloodDonations)
+                .HasForeignKey(bd => bd.DonorId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            //modelBuilder.Entity<AppUser>()
-            //    .Property(u => u.UserName)
-            //    .HasDefaultValueSql("Email"); // Email ile eşleşmesini sağlıyoruz.
+            // AppUser ile BloodDonationApprove ilişkisi
+            modelBuilder.Entity<BloodDonationApprove>()
+                .HasOne(bda => bda.Donor)
+                .WithMany(u => u.BloodDonationApproves)
+                .HasForeignKey(bda => bda.DonorId)
+                .OnDelete(DeleteBehavior.NoAction);
 
-            //// Email alanının benzersiz olmasını sağlıyoruz
-            //modelBuilder.Entity<AppUser>()
-            //    .HasIndex(u => u.Email)
-            //    .IsUnique();
+            modelBuilder.Entity<BloodDonationApprove>()
+                .HasOne(bda => bda.RequestCreator)
+                .WithMany()
+                .HasForeignKey(bda => bda.RequestCreatorId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            // BloodDonation ile BloodDonationApprove ilişkisi
+            modelBuilder.Entity<BloodDonationApprove>()
+                .HasOne(bda => bda.BloodDontaion)
+                .WithMany()
+                .HasForeignKey(bda => bda.BloodDontaionId)
+                .OnDelete(DeleteBehavior.NoAction);
+
 
             // Kan grubu enumunu string olarak veritabanında tutmak
             modelBuilder.Entity<BloodRequest>()
@@ -116,14 +135,6 @@ namespace AcilKan.Persistence.Context
                 .HasForeignKey(bda => bda.RequestCreatorId) // Foreign Key tanımı
                 .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
 
-
-            modelBuilder.Entity<BloodDonation>()
-                .HasOne(bda => bda.Donor) // BloodDonationApprove tablosundaki Donor ile ilişki
-                .WithMany() // AppUser tablosunda bir koleksiyon yok
-                .HasForeignKey(bda => bda.DonorId) // Foreign Key tanımı
-                .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
-
-
             // FromUserId ile ilişkili olan ve ToUserId ile ilişkili olan yabancı anahtarlar için NoAction ekliyoruz
             modelBuilder.Entity<Chat>()
                 .HasOne(chat => chat.FromUser) // FromUserId ilişkisi
@@ -136,7 +147,6 @@ namespace AcilKan.Persistence.Context
                 .WithMany() // Bir kullanıcıya birden fazla mesaj gidebilir
                 .HasForeignKey(chat => chat.ToUserId) // ToUserId dış anahtar
                 .OnDelete(DeleteBehavior.NoAction); // Silme işlemi yapılmaz
-
 
         }
 

@@ -32,5 +32,10 @@ namespace AcilKan.Domain.Entities
             get => Email;  // Email'i UserName olarak kullanıyoruz
             set => base.UserName = value;
         }
+
+
+        public List<BloodDonation> BloodDonations { get; set; }
+        public List<BloodDonationApprove> BloodDonationApproves { get; set; }
+
     }
 }

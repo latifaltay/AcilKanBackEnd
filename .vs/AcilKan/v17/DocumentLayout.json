@@ -3,44 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241201042055__mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\AcilKan.Persistence\\Migrations\\20241201042055__mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|solutionrelative:infrastructure\\acilkan.persistence\\context\\acilkancontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241201041814__mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\AcilKan.Persistence\\Migrations\\20241201041814__mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\chathandlers\\sendmessagecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\chathandlers\\sendmessagecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\infrastructure\\acilkan.persistence\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B06418C9-E883-497D-A315-BB43C93F1AC0}|Infrastructure\\AcilKan.Persistence\\AcilKan.Persistence.csproj|solutionrelative:infrastructure\\acilkan.persistence\\repositories\\chatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\interfaces\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\interfaces\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\handlers\\chathandlers\\getcontactsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\handlers\\chathandlers\\getcontactsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.application\\features\\mediator\\results\\chatresults\\getcontactsqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C64E89A-CFD2-4049-B142-0CC368DACF97}|Core\\AcilKan.Application\\AcilKan.Application.csproj|solutionrelative:core\\acilkan.application\\features\\mediator\\results\\chatresults\\getcontactsqueryresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\core\\acilkan.domain\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9B0C885-F6A0-4052-BCDE-F82B67E2C15B}|Core\\AcilKan.Domain\\AcilKan.Domain.csproj|solutionrelative:core\\acilkan.domain\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|c:\\users\\eleydev\\desktop\\acilkanbackend\\presentation\\acilkan.webapi\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B21CCB4-2955-4759-BF78-97D03161371A}|Presentation\\AcilKan.WebAPI\\AcilKan.WebAPI.csproj|solutionrelative:presentation\\acilkan.webapi\\controllers\\userprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,87 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 228,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Controllers\\ChatController.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Controllers\\ChatController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:29:45.884Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241201042055__mig.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241201042055__mig.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241201042055__mig.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241201042055__mig.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241201042055__mig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T04:20:55.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AcilKanContext.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Context\\AcilKanContext.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAwwIkAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T04:18:44.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20241201041814__mig.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241201041814__mig.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241201041814__mig.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Migrations\\20241201041814__mig.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Migrations\\20241201041814__mig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T04:18:14.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SendMessageCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\SendMessageCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\SendMessageCommandHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\SendMessageCommandHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\SendMessageCommandHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAxwB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T04:17:32.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Chat.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\Chat.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Domain\\Entities\\Chat.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Domain\\Entities\\Chat.cs",
-              "RelativeToolTip": "Core\\AcilKan.Domain\\Entities\\Chat.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:44:21.177Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -141,54 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetContactsQueryResult.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\ChatResults\\GetContactsQueryResult.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\ChatResults\\GetContactsQueryResult.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Results\\ChatResults\\GetContactsQueryResult.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Results\\ChatResults\\GetContactsQueryResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserProfileController.cs",
+              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\UserProfileController.cs",
+              "RelativeDocumentMoniker": "Presentation\\AcilKan.WebAPI\\Controllers\\UserProfileController.cs",
+              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Presentation\\AcilKan.WebAPI\\Controllers\\UserProfileController.cs",
+              "RelativeToolTip": "Presentation\\AcilKan.WebAPI\\Controllers\\UserProfileController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:37:40.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChatRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Repositories\\ChatRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\AcilKan.Persistence\\Repositories\\ChatRepository.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Infrastructure\\AcilKan.Persistence\\Repositories\\ChatRepository.cs",
-              "RelativeToolTip": "Infrastructure\\AcilKan.Persistence\\Repositories\\ChatRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:36:26.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IChatService.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Interfaces\\IChatService.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Interfaces\\IChatService.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Interfaces\\IChatService.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Interfaces\\IChatService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:32:03.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetContactsQueryHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\GetContactsQueryHandler.cs",
-              "RelativeDocumentMoniker": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\GetContactsQueryHandler.cs",
-              "ToolTip": "C:\\Users\\ELEYDEV\\Desktop\\AcilKanBackEnd\\Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\GetContactsQueryHandler.cs",
-              "RelativeToolTip": "Core\\AcilKan.Application\\Features\\Mediator\\Handlers\\ChatHandlers\\GetContactsQueryHandler.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCQAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:30:18.561Z",
+              "WhenOpened": "2024-12-12T10:30:34.216Z",
               "EditorCaption": ""
             }
           ]

@@ -4,7 +4,6 @@ using AcilKan.Application.Features.Mediator.Commands.AboutBloodDonationCommands;
 using AcilKan.Application.Features.Mediator.Commands.AppUserCommands;
 using AcilKan.Application.Features.Mediator.Queries.AboutBloodDonationQueries;
 using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
-using AcilKan.Application.Features.Mediator.Queries.ProfileQueries;
 using AcilKan.Domain.Entities;
 using AcilKan.Persistence.Services;
 using Azure.Core;
@@ -101,7 +100,6 @@ namespace AcilKan.WebAPI.Controllers
             var tokenResult = await _jwtTokenService.RefreshAccessToken(request.RefreshToken);
             return Ok(tokenResult);
         }
-
 
     }
 }
