@@ -24,7 +24,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
 
             var value = new BloodRequest
             {
-                AppUserId = userId,
+                RequesterId = userId,
                 HospitalId = request.HospitalId,
                 BloodGroup = bloodGroupEnum,
                 PatientName = request.PatientName,

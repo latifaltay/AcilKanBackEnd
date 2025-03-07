@@ -31,7 +31,6 @@ namespace AcilKan.Persistence.Context
         public DbSet<Banner> Banners { get; set; }
         public DbSet<BloodDonationApprove> BloodDonationApproves { get; set; }
         public DbSet<BloodDonation> BloodDontaions { get; set; }
-        public DbSet<BloodGroup> BloodGroups { get; set; }
         public DbSet<BloodRequest> BloodRequests { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<ContactInformation> ContactInformations { get; set; }

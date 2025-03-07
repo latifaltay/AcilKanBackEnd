@@ -10,7 +10,7 @@ namespace AcilKan.Domain.Entities
     public class BloodRequest
     {
         public int Id { get; set; }
-        public int AppUserId { get; set; }
+        public int RequesterId { get; set; }
         public int HospitalId { get; set; }
         public BloodGroupType BloodGroup { get; set; } // Enum
         public string PatientName { get; set; }

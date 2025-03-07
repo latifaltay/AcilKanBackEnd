@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcilKan.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb39837e46ea5c009a2107c7f65c207b1c6623c8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e37ff582c98d3409dc3383378c8ac0d97c5f6f0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcilKan.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcilKan.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

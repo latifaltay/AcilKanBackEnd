@@ -15,10 +15,12 @@ namespace AcilKan.Persistence.Repositories
         public async Task<List<BloodRequest>> GetBloodRequestsAsync()
         {
             var bloodRequest = await _context.BloodRequests
+                .Where(x => x.IsActive == true)
                 .Include(x => x.Hospital)
                     .ThenInclude(x => x.District)
                     .ThenInclude(x => x.City)
                 .Include(x => x.AppUser)
+                .OrderByDescending(x => x.RequestDate)
                 .ToListAsync();
             return bloodRequest;
         }
