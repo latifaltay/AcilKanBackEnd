@@ -333,23 +333,6 @@ namespace AcilKan.Persistence.Migrations
                     b.ToTable("BloodDonationApproves");
                 });
 
-            modelBuilder.Entity("AcilKan.Domain.Entities.BloodGroup", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("GroupName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("BloodGroups");
-                });
-
             modelBuilder.Entity("AcilKan.Domain.Entities.BloodRequest", b =>
                 {
                     b.Property<int>("Id")
@@ -381,6 +364,9 @@ namespace AcilKan.Persistence.Migrations
 
                     b.Property<DateTime>("RequestDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("RequesterId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Status")
                         .IsRequired()

@@ -31,7 +31,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
                 PatientSurname = request.PatientSurname,
                 RequestDate = currentDateTimeInTurkey, // Türkiye saati ile tarih
                 IsActive = true,
-                Status = "Beklemede"
+                Status = "Beklemede",
+             
             };
             await _repository.CreateAsync(value);
         }
