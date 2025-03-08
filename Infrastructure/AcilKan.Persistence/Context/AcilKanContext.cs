@@ -3,6 +3,7 @@ using AcilKan.Domain.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -30,7 +31,7 @@ namespace AcilKan.Persistence.Context
         public DbSet<ArticlesForAboutPage> ArticlesForAboutPages { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<BloodDonationApprove> BloodDonationApproves { get; set; }
-        public DbSet<BloodDonation> BloodDontaions { get; set; }
+        public DbSet<BloodDonation> BloodDonations { get; set; }
         public DbSet<BloodRequest> BloodRequests { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<ContactInformation> ContactInformations { get; set; }
@@ -38,7 +39,7 @@ namespace AcilKan.Persistence.Context
         public DbSet<ContactUs> ContactUses { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<DonationBenefit> DonationBenefits { get; set; }
-        public DbSet<BloodDonation> DonationHistories { get; set; }
+        //public DbSet<BloodDonation> DonationHistories { get; set; }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Hospital> Hospitals { get; set; }
         public DbSet<Mission> Missions { get; set; }
@@ -170,8 +171,18 @@ namespace AcilKan.Persistence.Context
             modelBuilder.Entity<BloodRequest>()
                 .Property(e => e.BloodGroup)
                 .HasConversion<byte>();  // ENUM değerini TINYINT olarak sakla
+              // ENUM'u TinyInt olarak saklamak için BloodRequest Tablosu
+            modelBuilder.Entity<BloodRequest>()
+                .Property(e => e.DemandReason)
+                .HasConversion<byte>();  // ENUM değerini TINYINT olarak sakla
 
-          
+             // ENUM'u TinyInt olarak saklamak için BloodRequest Tablosu
+            modelBuilder.Entity<BloodRequest>()
+                .Property(e => e.Status)
+                .HasConversion<byte>();  // ENUM değerini TINYINT olarak sakla
+
+         
+
         }
 
 

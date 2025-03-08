@@ -9,7 +9,7 @@ namespace AcilKan.Application.Features.Mediator.Results.BloodDonationResults
     public class GetBloodDonationQueryResult
     {
         public int Id { get; set; }
-        public DateTime DonationDate { get; set; }
+        public DateTime? DonationDate { get; set; }
         public string HospitalName { get; set; }
         public string PatientFullName { get; set; }
         public string DonorFullName { get; set; }

@@ -16,15 +16,15 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodDontaionHandlers
         {
             var values = await _service.GetBloodDonationsByDonorIdAsync(request.Id);
 
-            return values.Select(x => new GetBloodDonationByDonorIdQueryResult 
+            return values.Select(x => new GetBloodDonationByDonorIdQueryResult
             {
                 Id = x.Id,
-                DonationDate = x.DonationDate,
-                DonorFullName = x.Donor.Name + " " + x.Donor.Surname,
+                DonationDate = x.DonationCompletionDate ?? null, // Eğer `null` ise boş bırak
+                DonorFullName = $"{x.Donor.Name} {x.Donor.Surname}", // String formatlama daha iyi
                 HospitalName = x.BloodRequest.Hospital.Name,
-                PatientFullName = x.BloodRequest.PatientName + " " + x.BloodRequest.PatientSurname,
-                RequesterFullName = x.BloodRequest.AppUser.Name + " " + x.BloodRequest.AppUser.Surname,
-                Status = x.Status,
+                PatientFullName = $"{x.BloodRequest.PatientName} {x.BloodRequest.PatientSurname}",
+                RequesterFullName = $"{x.BloodRequest.AppUser.Name} {x.BloodRequest.AppUser.Surname}",
+                Status = x.Status.ToString(), // ✅ Enum'u string formatına çevir
             }).ToList();
 
         }
