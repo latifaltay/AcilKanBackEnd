@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcilKan.Persistence.Migrations
 {
     [DbContext(typeof(AcilKanContext))]
-    [Migration("20250308210624_FirstData")]
-    partial class FirstData
+    [Migration("20250308211508_FirstInitial")]
+    partial class FirstInitial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
