@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Persistence.Context
 {
-    public class AcilKanContext : IdentityDbContext<AppUser, AppRole, int>
+    public class AcilKanContext : IdentityDbContext<AppUser, IdentityRole<int>, int>
     {
         private readonly IConfiguration _configuration;
 
@@ -26,7 +26,7 @@ namespace AcilKan.Persistence.Context
         public DbSet<About> Abouts { get; set; }
         public DbSet<AboutBloodDonation> AboutBloodDonations { get; set; }
         public DbSet<AboutUs> AboutUses { get; set; }
-        public DbSet<AppUserRole> UserRoles { get; set; }
+    
         public DbSet<ArticlesForAboutPage> ArticlesForAboutPages { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<BloodDonationApprove> BloodDonationApproves { get; set; }
@@ -61,13 +61,24 @@ namespace AcilKan.Persistence.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AppUserRole>().HasKey(x => new { x.RoleId, x.UserId }); //composite key
+            //modelBuilder.Entity<AppUserRole>().HasKey(x => new { x.RoleId, x.UserId }); //composite key
 
-            modelBuilder.Ignore<IdentityUserLogin<int>>();
-            modelBuilder.Ignore<IdentityUserToken<int>>();
-            modelBuilder.Ignore<IdentityUserClaim<int>>();
-            modelBuilder.Ignore<IdentityRoleClaim<int>>();
-            modelBuilder.Ignore<IdentityUserRole<int>>();
+            // 📌 Varsayılan Identity tablolarını kullan (Güncelleme eklemiş olabilirsin)
+            modelBuilder.Entity<AppUser>().ToTable("AspNetUsers");
+            modelBuilder.Entity<IdentityRole<int>>().ToTable("AspNetRoles");
+            modelBuilder.Entity<IdentityUserRole<int>>().ToTable("AspNetUserRoles")
+                .HasKey(ur => new { ur.UserId, ur.RoleId });  // ✅ PK tanımlandı!
+
+            modelBuilder.Entity<IdentityUserClaim<int>>().ToTable("AspNetUserClaims");
+            modelBuilder.Entity<IdentityUserLogin<int>>().ToTable("AspNetUserLogins")
+                .HasKey(l => new { l.LoginProvider, l.ProviderKey });  // ✅ PK tanımlandı!
+
+            modelBuilder.Entity<IdentityUserToken<int>>().ToTable("AspNetUserTokens")
+                .HasKey(t => new { t.UserId, t.LoginProvider, t.Name });  // ✅ PK tanımlandı!
+
+            modelBuilder.Entity<IdentityRoleClaim<int>>().ToTable("AspNetRoleClaims");
+
+
 
             modelBuilder.Entity<AppUser>()
                 .HasOne(a => a.City)
@@ -109,14 +120,6 @@ namespace AcilKan.Persistence.Context
                 .OnDelete(DeleteBehavior.NoAction);
 
 
-            // Kan grubu enumunu string olarak veritabanında tutmak
-            modelBuilder.Entity<BloodRequest>()
-                .Property(b => b.BloodGroup)
-                .HasConversion(
-                    v => v.ToString(),  // Enum'ı string olarak saklama
-                    v => (BloodGroupType)Enum.Parse(typeof(BloodGroupType), v)  // String'i Enum'a dönüştürme
-                );
-
             modelBuilder.Entity<AppUser>()
                 .Property(u => u.UserName)
                 .HasComputedColumnSql("[Email]"); // Email'den türetilen bir hesaplanmış kolonu belirtir
@@ -147,6 +150,28 @@ namespace AcilKan.Persistence.Context
                 .HasForeignKey(chat => chat.ToUserId) // ToUserId dış anahtar
                 .OnDelete(DeleteBehavior.NoAction); // Silme işlemi yapılmaz
 
+
+            // TC Kimlik Numarası Unique Olmalı User Tablosu
+            modelBuilder.Entity<AppUser>()
+                .HasIndex(u => u.TC)
+                .IsUnique();
+
+            // Telefon Numarası Unique Olmalı (Identity'nin yapısını bozmadan!)
+            modelBuilder.Entity<AppUser>()
+                .HasIndex(u => u.PhoneNumber)
+                .IsUnique();
+
+            // ENUM'u TinyInt olarak saklamak için User Tablosu
+            modelBuilder.Entity<AppUser>()
+                .Property(e => e.BloodGroup)
+                .HasConversion<byte>();  // ENUM değerini TINYINT olarak sakla
+
+            // ENUM'u TinyInt olarak saklamak için BloodRequest Tablosu
+            modelBuilder.Entity<BloodRequest>()
+                .Property(e => e.BloodGroup)
+                .HasConversion<byte>();  // ENUM değerini TINYINT olarak sakla
+
+          
         }
 
 

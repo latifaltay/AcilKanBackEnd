@@ -1,12 +1,12 @@
 ﻿using AcilKan.Application.Interfaces;
-using AcilKan.Application.ValidationRules.FluentValidation.AboutValidators;
+using AcilKan.Application.ValidationRules.Behaviors;
+using AcilKan.Application.ValidationRules.FluentValidation.Validators.AppUserValidators;
 using AcilKan.Persistence.Context;
 using AcilKan.Persistence.Repositories;
 using AcilKan.Persistence.Services;
-using AcilKan.Persistence.Utilities;
 using FluentValidation;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace AcilKan.WebAPI.Extensions
 {
@@ -18,6 +18,13 @@ namespace AcilKan.WebAPI.Extensions
 
             // MediatR Registration
             Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
+
+            // FluentValidation - Application Katmanındaki Validatorları Tara!
+            Services.AddValidatorsFromAssembly(typeof(CreateAppUserCommandValidator).Assembly);
+
+            // Validation Pipeline Registration
+            Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
 
             // DbContext Registration
             Services.AddScoped<AcilKanContext>();
@@ -33,6 +40,7 @@ namespace AcilKan.WebAPI.Extensions
             Services.AddScoped<IBloodDonationApproveService, BloodDonationApproveRepository>();
             Services.AddScoped<IChatService, ChatRepository>();
             Services.AddTransient<IUserProfileService, UserProfileRepository>();
+            Services.AddScoped<ITCIdentityVerificationService, TCIdentityVerificationService>();
 
 
             // Validation Pipeline Registration

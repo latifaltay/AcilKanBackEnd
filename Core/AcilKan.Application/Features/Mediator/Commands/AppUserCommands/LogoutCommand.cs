@@ -9,7 +9,7 @@ namespace AcilKan.Application.Features.Mediator.Commands.AppUserCommands
 {
     public class LogoutCommand : IRequest<bool> 
     {
-        public string RefreshToken { get; set; }
-        public bool IsOnline { get; set; }
+    
+        public int UserId { get; set; }  // Kullanıcı ID'si
     }
 }

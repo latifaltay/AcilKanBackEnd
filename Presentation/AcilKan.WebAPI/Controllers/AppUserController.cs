@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 
 namespace AcilKan.WebAPI.Controllers
 {
@@ -100,6 +101,21 @@ namespace AcilKan.WebAPI.Controllers
             var tokenResult = await _jwtTokenService.RefreshAccessToken(request.RefreshToken);
             return Ok(tokenResult);
         }
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId)) return Unauthorized();
+
+            var result = await _mediator.Send(new LogoutCommand { UserId = int.Parse(userId) });
+
+            if (!result) return BadRequest("Çıkış yapılamadı.");
+
+            return Ok(new { message = "Başarıyla çıkış yapıldı." });
+        }
+
+
+
 
     }
 }
