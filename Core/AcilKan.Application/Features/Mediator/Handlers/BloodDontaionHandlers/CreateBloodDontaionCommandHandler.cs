@@ -1,6 +1,7 @@
 ﻿using AcilKan.Application.Features.Mediator.Commands.BloodDontaionCommands;
 using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
+using AcilKan.Domain.Enums;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -21,10 +22,10 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodDontaionHandlers
             {
                 // Sorulacak
                 BloodRequestId = request.BloodRequestId,
-                DonationDate = DateTime.Now,
+                RequestedDonationDate = DateTime.Now,
                 DonorId = userId,
                 IsActive = true,
-                Status = "Beklemede"
+                Status = BloodDonationStatus.Requested
             });
         }
     }

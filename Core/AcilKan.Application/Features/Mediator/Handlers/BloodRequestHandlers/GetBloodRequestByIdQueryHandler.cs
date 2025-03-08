@@ -28,7 +28,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
                 CreatedDate = value.RequestDate,
                 IsActive = value.IsActive,
                 PatientFullName = value.PatientName + " " + value.PatientSurname,
-                Status = value.Status,
+                Status = value.Status.ToString(),
             };
         }
     }

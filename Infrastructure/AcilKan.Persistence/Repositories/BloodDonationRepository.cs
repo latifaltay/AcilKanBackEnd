@@ -14,7 +14,7 @@ namespace AcilKan.Persistence.Repositories
     {
         public async Task<List<BloodDonation>> GetBloodDonationsAsync()
         {
-            var values = await _context.BloodDontaions
+            var values = await _context.BloodDonations
                 .Include(x => x.BloodRequest)
                     .ThenInclude(x => x.Hospital)
                 .Include(x => x.Donor).ToListAsync();
@@ -26,7 +26,7 @@ namespace AcilKan.Persistence.Repositories
 
         public async Task<List<BloodDonation>> GetBloodDonationsByDonorIdAsync(int DonorId)
         {
-            var values = await _context.BloodDontaions
+            var values = await _context.BloodDonations
                 .Where(x => x.DonorId == DonorId)
                 .Include(x => x.BloodRequest)
                     .ThenInclude(x => x.Hospital)

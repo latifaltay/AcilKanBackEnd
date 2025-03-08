@@ -23,10 +23,11 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserProfileHandlers
 
 
             var lastDonation = values.BloodDonations != null && values.BloodDonations.Any()
-                ? values.BloodDonations
-                    .OrderByDescending(x => x.DonationDate)
-                    .FirstOrDefault()?.DonationDate.ToShortDateString()
-                : "Daha önce hiç bağış yapılmamış";
+     ? values.BloodDonations
+         .OrderByDescending(x => x.DonationCompletionDate) // ✅ Son Bağış Tarihi
+         .FirstOrDefault()?.DonationCompletionDate?.ToShortDateString() // ✅ `null` güvenliği sağlandı
+     : "Daha önce hiç bağış yapılmamış";
+
 
             return new GetUserProfileInfoByUserIdQueryResult
             {

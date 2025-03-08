@@ -9,8 +9,19 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
 {
-    public class CreateBloodRequestCommandHandler(IRepository<BloodRequest> _repository) : IRequestHandler<CreateBloodRequestCommand>
+    public class CreateBloodRequestCommandHandler : IRequestHandler<CreateBloodRequestCommand>
     {
+        private readonly IRepository<BloodRequest> _repository;
+        private readonly IDateTimeService _dateTimeService;
+
+        public CreateBloodRequestCommandHandler(
+            IRepository<BloodRequest> repository,
+            IDateTimeService dateTimeService)
+        {
+            _repository = repository;
+            _dateTimeService = dateTimeService;
+        }
+
         public async Task Handle(CreateBloodRequestCommand request, CancellationToken cancellationToken)
         {
             var userId = await _repository.GetCurrentUserIdAsync();
@@ -18,9 +29,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
             // Kan grubu seçimini enum olarak al
             var bloodGroupEnum = (BloodGroupType)request.BloodGroupId;
 
-            // Türkiye saat dilimini kullan
-            TimeZoneInfo turkeyTimeZone = TimeZoneInfo.FindSystemTimeZoneById("Turkey Standard Time");
-            DateTime currentDateTimeInTurkey = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, turkeyTimeZone);
+            // Türkiye saat dilimini merkezi servis üzerinden al
+            DateTime currentDateTimeInTurkey = _dateTimeService.GetCurrentTimeInTurkey();
 
             var value = new BloodRequest
             {
@@ -29,11 +39,12 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
                 BloodGroup = bloodGroupEnum,
                 PatientName = request.PatientName,
                 PatientSurname = request.PatientSurname,
-                RequestDate = currentDateTimeInTurkey, // Türkiye saati ile tarih
+                RequestDate = _dateTimeService.GetCurrentTimeInTurkey(),
+                ExpiryDate = _dateTimeService.GetCurrentTimeInTurkey().AddHours(24),
                 IsActive = true,
-                Status = "Beklemede",
-             
+                Status = BloodRequestStatus.Requested // Enum kullanımı
             };
+
             await _repository.CreateAsync(value);
         }
     }

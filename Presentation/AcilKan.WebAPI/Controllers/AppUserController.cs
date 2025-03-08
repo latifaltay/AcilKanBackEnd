@@ -1,19 +1,9 @@
-﻿using AcilKan.Application.DTOs.LoginRegisterOperations;
-using AcilKan.Application.DTOs.TokenDtos;
-using AcilKan.Application.Features.Mediator.Commands.AboutBloodDonationCommands;
+﻿using AcilKan.Application.DTOs.TokenDtos;
 using AcilKan.Application.Features.Mediator.Commands.AppUserCommands;
-using AcilKan.Application.Features.Mediator.Queries.AboutBloodDonationQueries;
 using AcilKan.Application.Features.Mediator.Queries.AppUserQueries;
-using AcilKan.Domain.Entities;
 using AcilKan.Persistence.Services;
-using Azure.Core;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 
 namespace AcilKan.WebAPI.Controllers

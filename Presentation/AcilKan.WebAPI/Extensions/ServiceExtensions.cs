@@ -41,6 +41,7 @@ namespace AcilKan.WebAPI.Extensions
             Services.AddScoped<IChatService, ChatRepository>();
             Services.AddTransient<IUserProfileService, UserProfileRepository>();
             Services.AddScoped<ITCIdentityVerificationService, TCIdentityVerificationService>();
+            Services.AddSingleton<IDateTimeService, DateTimeService>();
 
 
             // Validation Pipeline Registration
