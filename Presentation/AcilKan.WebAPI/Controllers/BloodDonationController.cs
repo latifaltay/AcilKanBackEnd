@@ -5,6 +5,7 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Claims;
 
 namespace AcilKan.WebAPI.Controllers
 {
@@ -14,10 +15,24 @@ namespace AcilKan.WebAPI.Controllers
     public class BloodDonationController(IMediator _mediator) : ControllerBase
     {
         [HttpGet]
-        public async Task<IActionResult> GetBloodDonations() 
+        public async Task<IActionResult> GetBloodDonations()
         {
             var values = await _mediator.Send(new GetBloodDonationQuery());
             return Ok(values);
+        }
+
+        [Authorize] // JWT gerektirir
+
+        [HttpGet("donation-stats")]
+        public async Task<IActionResult> GetUserDonationStats()
+        {
+            // Kullanıcı ID'sini JWT Token'dan al
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+
+            var query = new GetUserDonationStatsQuery { UserId = userId };
+            var result = _mediator.Send(query);
+
+            return Ok(result);
         }
 
         [HttpPost]
