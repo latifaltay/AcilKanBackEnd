@@ -13,6 +13,13 @@ namespace AcilKan.Application.ValidationRules.FluentValidation.Validators.AppUse
                 .Length(11).WithMessage("TC Kimlik Numarası 11 haneli olmalıdır.")
                 .Matches("^[0-9]+$").WithMessage("TC Kimlik Numarası sadece rakamlardan oluşmalıdır.");
 
+            // Telefon Numarası Validasyonu
+            RuleFor(x => x.PhoneNumber)
+                .NotEmpty().WithMessage("Telefon numarası zorunludur.")
+                .Matches(@"^(\+90|90|0)?[0-9]{10}$").WithMessage("Telefon numarası geçerli formatta olmalıdır. (Örn: 905438194976 veya 05438194976)");
+
+
+
             // **18 yaş altındaki kullanıcıları engelleme**
             RuleFor(x => x.BirthDate)
                 .NotEmpty().WithMessage("Doğum tarihi zorunludur.")

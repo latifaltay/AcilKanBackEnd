@@ -21,19 +21,6 @@ namespace AcilKan.WebAPI.Controllers
             return Ok(values);
         }
 
-        [Authorize] // JWT gerektirir
-
-        [HttpGet("donation-stats")]
-        public async Task<IActionResult> GetUserDonationStats()
-        {
-            // Kullanıcı ID'sini JWT Token'dan al
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
-
-            var query = new GetUserDonationStatsQuery { UserId = userId };
-            var result = _mediator.Send(query);
-
-            return Ok(result);
-        }
 
         [HttpPost]
         public async Task<IActionResult> CreateBloodDonation(CreateBloodDontaionCommand command)
