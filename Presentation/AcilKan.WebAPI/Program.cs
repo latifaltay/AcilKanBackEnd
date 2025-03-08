@@ -1,16 +1,16 @@
-using AcilKan.Application.Interfaces;
+﻿using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
 using AcilKan.Persistence.Context;
-using AcilKan.Persistence.Repositories;
 using AcilKan.Persistence.Services;
 using AcilKan.Persistence.Utilities;
 using AcilKan.WebAPI.Extensions;
 using AcilKan.WebAPI.Hubs;
-using MediatR;
+using AcilKan.WebAPI.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,14 +24,13 @@ builder.Services.AddDbContext<AcilKanContext>(options =>
 
 
 
-builder.Services.AddIdentity<AppUser, AppRole>(options =>
+builder.Services.AddIdentity<AppUser, IdentityRole<int>>(options =>
 {
     options.Password.RequireNonAlphanumeric = false;
     options.Password.RequireDigit = false;
     options.Password.RequireLowercase = false;
     options.Password.RequireUppercase = false;
     options.Password.RequiredLength = 1;
-
     options.User.RequireUniqueEmail = true;
 
     //options.SignIn.RequireConfirmedEmail = true;
@@ -39,26 +38,6 @@ builder.Services.AddIdentity<AppUser, AppRole>(options =>
     //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
 
 }).AddEntityFrameworkStores<AcilKanContext>().AddDefaultTokenProviders();
-
-
-
-
-//// JWT Bearer Authentication i�in yap?land?rma
-//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-//    .AddJwtBearer(options =>
-//    {
-//        options.TokenValidationParameters = new TokenValidationParameters
-//        {
-//            ValidateIssuer = true,  // Issuer (Token'? veren)
-//            ValidateAudience = true,  // Audience (Token'? alacak)
-//            ValidateLifetime = true,  // Token'?n s�resi dolmu? mu
-//            ClockSkew = TimeSpan.Zero,  // Token'?n ge�erlilik s�resi i�in tolerans (iste?e ba?l?)
-
-//            ValidIssuer = builder.Configuration["Jwt:Issuer"],  // appsettings.json'dan al?yoruz
-//            ValidAudience = builder.Configuration["Jwt:Audience"],  // appsettings.json'dan al?yoruz
-//            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"])) // Secret key'i kullanarak imzalama
-//        };
-//    });
 
 
 builder.Services.AddAuthentication(options => {
@@ -108,7 +87,42 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "KanDostum API",
+        Version = "v1"
+    });
+
+    // Swagger'da JWT Token girişi için Security Tanımlaması
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "JWT Token kullanarak API'yi test etmek için 'Bearer {token}' formatında giriniz."
+    });
+
+    // Tüm isteklerde JWT zorunlu olduğunu belirt
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
+
 
 var app = builder.Build();
 
@@ -116,13 +130,18 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "KanDostumV1");
+        c.RoutePrefix = "swagger"; // Swagger'ı /swagger altında aç
+    });
 }
 
 app.UseCors("AllowFrontend");  
 
 app.MapHub<ChatHub>("/chatHub");
 
+app.UseMiddleware<JwtMiddleware>();
 
 app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 

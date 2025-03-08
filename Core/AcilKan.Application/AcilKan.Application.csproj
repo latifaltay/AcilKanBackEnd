@@ -7,6 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ValidationRules\FluentValidation\BannerValidators\**" />
+    <Compile Remove="ValidationRules\FluentValidation\ContactValidators\**" />
+    <Compile Remove="ValidationRules\FluentValidation\DonationBenefitValidators\**" />
+    <Compile Remove="ValidationRules\FluentValidation\FooterAddressValidators\**" />
+    <Compile Remove="ValidationRules\FluentValidation\SupporterValidators\**" />
+    <Compile Remove="ValidationRules\FluentValidation\TestimonialValidators\**" />
+    <EmbeddedResource Remove="ValidationRules\FluentValidation\BannerValidators\**" />
+    <EmbeddedResource Remove="ValidationRules\FluentValidation\ContactValidators\**" />
+    <EmbeddedResource Remove="ValidationRules\FluentValidation\DonationBenefitValidators\**" />
+    <EmbeddedResource Remove="ValidationRules\FluentValidation\FooterAddressValidators\**" />
+    <EmbeddedResource Remove="ValidationRules\FluentValidation\SupporterValidators\**" />
+    <EmbeddedResource Remove="ValidationRules\FluentValidation\TestimonialValidators\**" />
+    <None Remove="ValidationRules\FluentValidation\BannerValidators\**" />
+    <None Remove="ValidationRules\FluentValidation\ContactValidators\**" />
+    <None Remove="ValidationRules\FluentValidation\DonationBenefitValidators\**" />
+    <None Remove="ValidationRules\FluentValidation\FooterAddressValidators\**" />
+    <None Remove="ValidationRules\FluentValidation\SupporterValidators\**" />
+    <None Remove="ValidationRules\FluentValidation\TestimonialValidators\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.10.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
@@ -16,15 +37,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AcilKan.Domain\AcilKan.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ValidationRules\FluentValidation\BannerValidators\" />
-    <Folder Include="ValidationRules\FluentValidation\ContactValidators\" />
-    <Folder Include="ValidationRules\FluentValidation\DonationBenefitValidators\" />
-    <Folder Include="ValidationRules\FluentValidation\FooterAddressValidators\" />
-    <Folder Include="ValidationRules\FluentValidation\TestimonialValidators\" />
-    <Folder Include="ValidationRules\FluentValidation\SupporterValidators\" />
   </ItemGroup>
 
 </Project>

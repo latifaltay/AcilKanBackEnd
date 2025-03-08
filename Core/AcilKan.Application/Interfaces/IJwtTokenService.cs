@@ -13,5 +13,7 @@ namespace AcilKan.Application.Interfaces
         Task<TokenResult> GenerateTokens(AppUser user);
         Task<TokenResult> RefreshAccessToken(string refreshToken);
         Task InvalidateTokens(string accessToken, string refreshToken);
+        Task<bool> LogoutAsync(AppUser user, string accessToken);
+
     }
 }

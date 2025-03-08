@@ -1,8 +1,8 @@
-﻿using FluentValidation; 
+﻿using FluentValidation;
 using MediatR;
 
 
-namespace AcilKan.Application.ValidationRules.FluentValidation.AboutValidators
+namespace AcilKan.Application.ValidationRules.Behaviors
 {
     public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {

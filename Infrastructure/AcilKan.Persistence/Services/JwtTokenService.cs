@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.JsonWebTokens;
+using Microsoft.IdentityModel.Protocols.WsTrust;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -30,16 +31,34 @@ namespace AcilKan.Persistence.Services
         // Token oluşturma
         public async Task<TokenResult> GenerateTokens(AppUser user)
         {
-            var claims = GetClaims(user);
+            var claims = await GetClaims(user);
             var accessToken = GenerateAccessToken(claims);
             var refreshToken = GenerateRefreshToken(claims);
-
+            // ✅ Kullanıcının Refresh Token'ını ve süresini güncelle
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7); // 7 gün geçerli
             return new TokenResult
             {
                 AccessToken = accessToken,
                 RefreshToken = refreshToken
             };
         }
+        public async Task<bool> LogoutAsync(AppUser user, string accessToken)
+        {
+            if (user == null) return false;
+
+            // Kullanıcının Refresh Token'ını sıfırla
+            user.RefreshToken = null;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow; // Hemen geçersiz kıl
+            await _userManager.UpdateAsync(user);
+
+            // Access Token'ı kara listeye ekle
+            TokenBlacklist.AddToBlacklist(accessToken);
+
+            return true;
+        }
+
+
 
         public async Task<TokenResult> RefreshAccessToken(string refreshToken)
         {
@@ -70,19 +89,25 @@ namespace AcilKan.Persistence.Services
 
 
         // Kullanıcı bilgilerini claim olarak döndürme
-        private List<Claim> GetClaims(AppUser user)
+        private async Task<List<Claim>> GetClaims(AppUser user)
         {
-            return new List<Claim>
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.Name, user.Name),
+        new Claim(ClaimTypes.Surname, user.Surname),
+        new Claim(ClaimTypes.MobilePhone, user.PhoneNumber ?? ""),
+        new Claim(ClaimTypes.Email, user.Email),
+        new Claim("sub", user.Id.ToString())
+    };
+
+            // 📌 Kullanıcının rollerini çekip JWT'ye ekleyelim
+            var roles = await _userManager.GetRolesAsync(user);
+            foreach (var role in roles)
             {
-                new Claim(ClaimTypes.Name, user.Name),
-                new Claim(ClaimTypes.Surname, user.Surname),
-                new Claim(ClaimTypes.MobilePhone, user.PhoneNumber),
-                new Claim(ClaimTypes.Email, user.Email),
-                //new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
-                //new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString())
-                //new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-                new Claim("sub", user.Id.ToString())
-            };
+                claims.Add(new Claim(ClaimTypes.Role, role)); // 📌 Kullanıcının rollerini claim olarak ekle
+            }
+
+            return claims;
         }
 
         // Access Token üretme

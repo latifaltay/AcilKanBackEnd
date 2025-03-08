@@ -1,4 +1,5 @@
 ﻿using AcilKan.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,12 +9,12 @@ namespace AcilKan.WebAPI.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class RoleController(RoleManager<AppRole> _roleManager) : ControllerBase
+    public class RoleController(RoleManager<IdentityRole<int>> _roleManager) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> CreateAppRole(string name, CancellationToken cancellationToken) 
         {
-            AppRole appRole = new() 
+            IdentityRole<int> appRole = new() 
             {
                 Name = name,    
             };
