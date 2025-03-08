@@ -20,7 +20,10 @@ namespace AcilKan.Persistence.Repositories
         {
             return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
-
+        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().Where(predicate).ToListAsync();
+        }
         public async Task<T?> GetByFilterAsync(Expression<Func<T, bool>> filter)
         {
             return await _context.Set<T>().AsNoTracking().SingleOrDefaultAsync(filter);

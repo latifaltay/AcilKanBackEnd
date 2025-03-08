@@ -9,7 +9,7 @@ namespace AcilKan.Application.Interfaces
 {
     public interface IBloodDonationService
     {
-        Task<List<BloodDonation>> GetBloodDonationsAsync();
-        Task<List<BloodDonation>> GetBloodDonationsByDonorIdAsync(int DonorId);
+        Task<List<BloodDonation>> GetBloodDonationsAsync(); // 🛠 Tüm bağışları getir
+        Task<List<BloodDonation>> GetBloodDonationsByDonorIdAsync(int donorId); // 🛠 Kullanıcının bağışlarını getir
     }
 }
