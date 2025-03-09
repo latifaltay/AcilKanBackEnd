@@ -1,4 +1,4 @@
-﻿using AcilKan.Application.Features.Mediator.Results.UserProfileResults;
+﻿using AcilKan.Application.Features.Mediator.Results.UserInformationResults;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcilKan.Application.Features.Mediator.Queries.UserProfileQueries
+namespace AcilKan.Application.Features.Mediator.Queries.UserInformationQueries
 {
     public class GetUserProfileInfoByUserIdQuery() : IRequest<GetUserProfileInfoByUserIdQueryResult>
     {

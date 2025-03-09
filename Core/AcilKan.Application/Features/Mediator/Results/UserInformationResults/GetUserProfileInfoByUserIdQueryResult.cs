@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcilKan.Application.Features.Mediator.Results.UserProfileResults
+namespace AcilKan.Application.Features.Mediator.Results.UserInformationResults
 {
     public class GetUserProfileInfoByUserIdQueryResult
     {

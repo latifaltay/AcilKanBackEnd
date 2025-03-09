@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AcilKan.Application.Features.Mediator.Handlers.UserProfileHandlers
+namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
 {
     public class GetUserProfileInfoByUserIdQueryHandler(IRepository<AppUser> _repository, IUserProfileService _service) : IRequestHandler<GetUserProfileInfoByUserIdQuery, GetUserProfileInfoByUserIdQueryResult>
     {
@@ -24,8 +24,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserProfileHandlers
 
             var lastDonation = values.BloodDonations != null && values.BloodDonations.Any()
                  ? values.BloodDonations
-                     .OrderByDescending(x => x.DonationCompletionDate) 
-                     .FirstOrDefault()?.DonationCompletionDate?.ToShortDateString()
+                     .OrderByDescending(x => x.DonationCompletionDate)
+                     .FirstOrDefault()?.DonationCompletionDate?.ToShortDateString() 
                  : "Daha önce hiç bağış yapılmamış";
 
 

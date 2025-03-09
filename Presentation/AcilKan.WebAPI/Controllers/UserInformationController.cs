@@ -1,5 +1,7 @@
 ﻿using AcilKan.Application.Features.Mediator.Queries.BloodDonationQueries;
-using AcilKan.Application.Features.Mediator.Queries.UserProfileQueries;
+using AcilKan.Application.Features.Mediator.Queries.BloodRequestQueries;
+using AcilKan.Application.Features.Mediator.Queries.UserInformationQueries;
+using AcilKan.Application.Features.Mediator.Results.UserInformationResults;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -11,7 +13,7 @@ namespace AcilKan.WebAPI.Controllers
     [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class UserProfileController(IMediator _mediator) : ControllerBase
+    public class UserInformationController(IMediator _mediator) : ControllerBase
     {
         [HttpGet]
         public async Task<IActionResult> GetUserProfileInfo()
@@ -21,21 +23,11 @@ namespace AcilKan.WebAPI.Controllers
         }
 
 
-
-        [Authorize] // JWT gerektirir
-
-        [HttpGet("donation-stats")]
-        public async Task<IActionResult> GetUserDonationStats()
+        [HttpGet]
+        public async Task<IActionResult> GetHomePageChartByUserId() 
         {
-            // Kullanıcı ID'sini JWT Token'dan al
-            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
-
-            var query = new GetUserDonationStatsQuery { UserId = userId };
-            var result = _mediator.Send(query);
-
-            return Ok(result);
+            var value = await _mediator.Send(new GetHomePageChartByUserIdQuery());
+            return Ok(value);
         }
-
-
     }
 }

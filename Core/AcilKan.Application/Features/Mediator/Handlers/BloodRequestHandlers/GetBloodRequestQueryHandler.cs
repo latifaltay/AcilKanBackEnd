@@ -16,15 +16,15 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodRequestHandlers
             return values.Select(x => new GetBloodRequestQueryResult
             {
                 Id = x.Id,
-                AppUserFullName = $"{x.AppUser.Name} {x.AppUser.Surname}", // ✅ Daha okunaklı string formatlama
-                BloodGroupName = x.BloodGroup.GetDescription(), // ✅ Enum description almak için
+                AppUserFullName = $"{x.AppUser.Name} {x.AppUser.Surname}", 
+                BloodGroupName = x.BloodGroup.GetDescription(), 
                 City = x.Hospital.District.City.Name,
                 District = x.Hospital.District.Name,
                 HospitalName = x.Hospital.Name,
                 CreatedDate = x.RequestDate,
                 IsActive = x.IsActive,
                 PatientFullName = $"{x.PatientName} {x.PatientSurname}",
-                Status = x.Status.ToString(), // ✅ Enum string'e çevrildi
+                Status = x.Status.ToString(), 
             }).ToList();
         }
     }

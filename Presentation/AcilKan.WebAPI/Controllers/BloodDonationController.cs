@@ -30,8 +30,6 @@ namespace AcilKan.WebAPI.Controllers
         }
 
         [HttpPut]
-
-
         public async Task<IActionResult> CancelBloodDonation(CancelBloodDonationCommand command)
         {
             await _mediator.Send(command);
