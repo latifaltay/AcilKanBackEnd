@@ -15,7 +15,9 @@ namespace AcilKan.Application.Features.Mediator.Results.UserInformationResults
         public string BloodGroupName { get; set; }
         public string City { get; set; }
         public string District { get; set; }
-        public string? LastDonation { get; set; }
+        public string LastDonationDate { get; set; }
+        public string NextDonationDate { get; set; }
         public int TotalDonationCount { get; set; }
+
     }
 }

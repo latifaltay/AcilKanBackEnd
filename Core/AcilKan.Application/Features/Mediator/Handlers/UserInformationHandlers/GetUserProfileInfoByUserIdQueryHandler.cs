@@ -19,15 +19,27 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
         {
             var userId = await _repository.GetCurrentUserIdAsync();
             var values = await _service.GetUserProfileWithDetailAsync(userId);
+
+
             var totalDonationCount = await _bloodService.GetTotalDonationCountByUserIdAsync(userId);
+            var lastDonationDate = await _bloodService.GetLastDonationDateByUserIdAsync(userId);
 
+            string lastDonationMessage;
+            string nextDonationMessage;
 
-            var lastDonation = values.BloodDonations != null && values.BloodDonations.Any()
-                 ? values.BloodDonations
-                     .OrderByDescending(x => x.DonationCompletionDate)
-                     .FirstOrDefault()?.DonationCompletionDate?.ToShortDateString() 
-                 : "Daha önce hiç bağış yapılmamış";
+            if (lastDonationDate == null)
+            {
+                lastDonationMessage = "Henüz bağış yapılmamış.";
+                nextDonationMessage = "Bir bağış yapıldıktan sonra hesaplanacaktır.";
+            }
+            else
+            {
+                var lastDonation = lastDonationDate.Value.ToDateTime(TimeOnly.MinValue);
+                var nextDonation = lastDonation.AddDays(90);
 
+                lastDonationMessage = lastDonation.ToString("dd.MM.yyyy");
+                nextDonationMessage = nextDonation.ToString("dd.MM.yyyy");
+            }
 
             return new GetUserProfileInfoByUserIdQueryResult
             {
@@ -37,7 +49,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
                 BloodGroupName = ((BloodGroupType)values.BloodGroup).GetDescription(),
                 City = values.City.Name,
                 District = values.District.Name,
-                LastDonation = lastDonation,
+                LastDonationDate = lastDonationMessage,
+                NextDonationDate = nextDonationMessage,
                 TotalDonationCount = totalDonationCount
             };
         }
