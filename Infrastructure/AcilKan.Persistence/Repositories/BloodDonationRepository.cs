@@ -49,13 +49,14 @@ namespace AcilKan.Persistence.Repositories
 
         public async Task<DateOnly?> GetLastCompletedDonationDateByUserIdAsync(int userId)
         {
-            return await _context.BloodDonations
-                .Where(x => x.DonorId == userId && x.DonationCompletionDate.HasValue)
+           var values= await _context.BloodDonations
+                .Where(x => x.DonorId == userId && x.DonationCompletionDate)
                 .OrderByDescending(x => x.DonationCompletionDate)
                 .Select(x => x.DonationCompletionDate.HasValue
                     ? DateOnly.FromDateTime(x.DonationCompletionDate.Value)
                     : (DateOnly?)null)
                 .FirstOrDefaultAsync();
+                return values;
         }
 
 
