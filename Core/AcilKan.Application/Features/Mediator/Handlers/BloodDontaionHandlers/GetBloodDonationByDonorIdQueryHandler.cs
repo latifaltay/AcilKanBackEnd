@@ -19,12 +19,12 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodDontaionHandlers
             return values.Select(x => new GetBloodDonationByDonorIdQueryResult
             {
                 Id = x.Id,
-                DonationDate = x.DonationCompletionDate ?? null, // Eğer `null` ise boş bırak
-                DonorFullName = $"{x.Donor.Name} {x.Donor.Surname}", // String formatlama daha iyi
+                DonationDate = x.DonationCompletionDate ?? null, 
+                DonorFullName = $"{x.Donor.Name} {x.Donor.Surname}", 
                 HospitalName = x.BloodRequest.Hospital.Name,
                 PatientFullName = $"{x.BloodRequest.PatientName} {x.BloodRequest.PatientSurname}",
                 RequesterFullName = $"{x.BloodRequest.AppUser.Name} {x.BloodRequest.AppUser.Surname}",
-                Status = x.Status.ToString(), // ✅ Enum'u string formatına çevir
+                Status = x.Status.ToString(), 
             }).ToList();
 
         }

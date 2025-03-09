@@ -43,7 +43,6 @@ namespace AcilKan.Domain.Entities
         public string? RefreshToken { get; set; }  // ✅ Refresh Token saklamak için
         public DateTime? RefreshTokenExpiryTime { get; set; } // ✅ Refresh Token'in geçerlilik süresi
         public List<BloodDonation> BloodDonations { get; set; }
-        public List<BloodDonationApprove> BloodDonationApproves { get; set; }
 
     }
 }

@@ -36,7 +36,7 @@ namespace AcilKan.Persistence.Repositories
         }
 
         
-        public async Task<int> GetTotalDonationCountByUserId(int userId) 
+        public async Task<int> GetTotalDonationCountByUserIdAsync(int userId) 
         {
             var values = await _context.BloodDonations
                 .Include(x => x.BloodRequest)
@@ -47,7 +47,7 @@ namespace AcilKan.Persistence.Repositories
         }
 
 
-        public async Task<DateOnly?> GetLastDonationDateByUserId(int userId)
+        public async Task<DateOnly?> GetLastDonationDateByUserIdAsync(int userId)
         {
             var values = await _context.BloodDonations
                 .Where(x => x.DonorId == userId)

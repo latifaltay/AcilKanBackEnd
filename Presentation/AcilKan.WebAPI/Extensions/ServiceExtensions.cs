@@ -37,7 +37,7 @@ namespace AcilKan.WebAPI.Extensions
             Services.AddScoped<IBloodRequestService, BloodRequestRepository>();
             Services.AddScoped<IBloodDonationService, BloodDonationRepository>();
             Services.AddScoped<IAppUserService, AppUserRepository>();
-            Services.AddScoped<IBloodDonationApproveService, BloodDonationApproveRepository>();
+
             Services.AddScoped<IChatService, ChatRepository>();
             Services.AddTransient<IUserProfileService, UserProfileRepository>();
             Services.AddScoped<ITCIdentityVerificationService, TCIdentityVerificationService>();

@@ -13,13 +13,13 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
 {
-    public class GetUserProfileInfoByUserIdQueryHandler(IRepository<AppUser> _repository, IUserProfileService _service) : IRequestHandler<GetUserProfileInfoByUserIdQuery, GetUserProfileInfoByUserIdQueryResult>
+    public class GetUserProfileInfoByUserIdQueryHandler(IRepository<AppUser> _repository, IUserProfileService _service, IBloodDonationService _bloodService) : IRequestHandler<GetUserProfileInfoByUserIdQuery, GetUserProfileInfoByUserIdQueryResult>
     {
         public async Task<GetUserProfileInfoByUserIdQueryResult> Handle(GetUserProfileInfoByUserIdQuery request, CancellationToken cancellationToken)
         {
             var userId = await _repository.GetCurrentUserIdAsync();
             var values = await _service.GetUserProfileWithDetailAsync(userId);
-            var totalDonationCount = await _service.GetTotalDonationCountAsync(userId);
+            var totalDonationCount = await _bloodService.GetTotalDonationCountByUserIdAsync(userId);
 
 
             var lastDonation = values.BloodDonations != null && values.BloodDonations.Any()

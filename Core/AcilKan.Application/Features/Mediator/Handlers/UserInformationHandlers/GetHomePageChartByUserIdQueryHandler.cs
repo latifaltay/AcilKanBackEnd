@@ -3,13 +3,7 @@ using AcilKan.Application.Features.Mediator.Results.UserInformationResults;
 using AcilKan.Application.Interfaces;
 using AcilKan.Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
 {
@@ -19,8 +13,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
         {
             var userId = await _repository.GetCurrentUserIdAsync();
 
-            var totalDonationCount = await _service.GetTotalDonationCountByUserId(userId);
-            var lastDonationDate = await _service.GetLastDonationDateByUserId(userId);
+            var totalDonationCount = await _service.GetTotalDonationCountByUserIdAsync(userId);
+            var lastDonationDate = await _service.GetLastDonationDateByUserIdAsync(userId);
 
             string lastDonationMessage;
             string nextDonationMessage;

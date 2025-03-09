@@ -10,6 +10,5 @@ namespace AcilKan.Application.Interfaces
     public interface IUserProfileService
     {
         Task<AppUser> GetUserProfileWithDetailAsync(int userId);
-        Task<int> GetTotalDonationCountAsync(int userId);
     }
 }

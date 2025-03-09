@@ -13,20 +13,16 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.UserProfileHandlers
 {
-    public class GetUserProfileInfoByUserIdQueryHandler(IRepository<AppUser> _repository, IUserProfileService _service) : IRequestHandler<GetUserProfileInfoByUserIdQuery, GetUserProfileInfoByUserIdQueryResult>
+    public class GetUserProfileInfoByUserIdQueryHandler(IRepository<AppUser> _repository, IUserProfileService _service, IBloodDonationService _bloodService) : IRequestHandler<GetUserProfileInfoByUserIdQuery, GetUserProfileInfoByUserIdQueryResult>
     {
         public async Task<GetUserProfileInfoByUserIdQueryResult> Handle(GetUserProfileInfoByUserIdQuery request, CancellationToken cancellationToken)
         {
             var userId = await _repository.GetCurrentUserIdAsync();
             var values = await _service.GetUserProfileWithDetailAsync(userId);
-            var totalDonationCount = await _service.GetTotalDonationCountAsync(userId);
+            var totalDonationCount = await _bloodService.GetTotalDonationCountByUserIdAsync(userId);
 
 
-            var lastDonation = values.BloodDonations != null && values.BloodDonations.Any()
-                 ? values.BloodDonations
-                     .OrderByDescending(x => x.DonationCompletionDate) 
-                     .FirstOrDefault()?.DonationCompletionDate?.ToShortDateString()
-                 : "Daha önce hiç bağış yapılmamış";
+            var lastDonation =await _bloodService.GetLastDonationDateByUserIdAsync(userId) ?? DateOnly.MinValue;
 
 
             return new GetUserProfileInfoByUserIdQueryResult
@@ -37,7 +33,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserProfileHandlers
                 BloodGroupName = ((BloodGroupType)values.BloodGroup).GetDescription(),
                 City = values.City.Name,
                 District = values.District.Name,
-                LastDonation = lastDonation,
+                LastDonation =  null,
                 TotalDonationCount = totalDonationCount
             };
         }
