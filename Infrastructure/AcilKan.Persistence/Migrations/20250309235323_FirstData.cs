@@ -1266,18 +1266,39 @@ namespace AcilKan.Persistence.Migrations
                 values: new object[,]
                 {
         {
-            37, "53995182114", "Devrim Mehmet", "Pattabanoğlu", 8, true,
+            37, "55544477766", "Devrim Mehmet", "Pattabanoğlu", 8, true,
             new DateTime(2025, 3, 8), new DateTime(1993, 8, 20, 14, 11, 14),
             37, 505, "devrimmehmet@gmail.com", "DEVRIMMEHMET@GMAIL.COM", "DEVRIMMEHMET@GMAIL.COM",
             false, "AQAAAAIAAYagAAAAECRKePcTH/jr8q31oj/QldLNZT8ZS6Ii1OosntVP4wzVCzppAxfgBZlyIbAAtPb2tQ==",
             "02d7edda-8c94-4d20-a57c-4c08528ed567", "905438194976", false, false, 0, false
         },
         {
-            54, "16028771204", "Latif", "Altay", 8, true,
+            54, "44455566677", "Latif", "Altay", 8, true,
             new DateTime(2025, 3, 8, 14, 52, 21), new DateTime(2001, 7, 11, 14, 11, 14),
             54, 718, "latifaltay00@gmail.com", "LATIFALTAY00@GMAIL.COM", "LATIFALTAY00@GMAIL.COM",
             false, "AQAAAAIAAYagAAAAEDaGSer3gSVZYD3YjyNLxJRckcynznLu87SXD9wPx9b02WFXBIC48dTkDaT2eezjaA==",
             "CZFR46CIIWYDE34VHUVDELFYIEJZSRZD", "905435849370", false, false, 0, false
+        },
+          {
+            1, "44155566677", "Testad1", "Soyad1", 8, true,
+            new DateTime(2025, 3, 8, 14, 52, 21), new DateTime(2001, 7, 11, 14, 11, 14),
+            54, 718, "TEST1@gmail.com", "TEST1@GMAIL.COM", "TEST1@GMAIL.COM",
+            false, "AQAAAAIAAYagAAAAEDaGSer3gSVZYD3YjyNLxJRckcynznLu87SXD9wPx9b02WFXBIC48dTkDaT2eezjaA==",
+            "CZFR46CIIWYDE34VHUVDELFYIEJZSRZD", "905555555551", false, false, 0, false
+        },
+            {
+            2, "44255566677", "Testad2", "Soyad2", 8, true,
+            new DateTime(2025, 3, 8, 14, 52, 21), new DateTime(2001, 7, 11, 14, 11, 14),
+            54, 718, "TEST2@gmail.com", "TEST2@GMAIL.COM", "TEST2@GMAIL.COM",
+            false, "AQAAAAIAAYagAAAAEDaGSer3gSVZYD3YjyNLxJRckcynznLu87SXD9wPx9b02WFXBIC48dTkDaT2eezjaA==",
+            "CZFR46CIIWYDE34VHUVDELFYIEJZSRZD", "905555555554", false, false, 0, false
+        },
+              {
+            3, "44355566677", "Testad3", "Soyad3", 8, true,
+            new DateTime(2025, 3, 8, 14, 52, 21), new DateTime(2001, 7, 11, 14, 11, 14),
+            54, 718, "TEST3@gmail.com", "TEST3@GMAIL.COM", "TEST3@GMAIL.COM",
+            false, "AQAAAAIAAYagAAAAEDaGSer3gSVZYD3YjyNLxJRckcynznLu87SXD9wPx9b02WFXBIC48dTkDaT2eezjaA==",
+            "CZFR46CIIWYDE34VHUVDELFYIEJZSRZD", "905555555553", false, false, 0, false
         }
                 }
             );
@@ -1303,7 +1324,10 @@ namespace AcilKan.Persistence.Migrations
     values: new object[,]
     {
         { 37, 1 }, // 📌 37 numaralı kullanıcıya SuperAdmin rolü
-        { 54, 1 }  // 📌 54 numaralı kullanıcıya SuperAdmin rolü
+        { 54, 1 },  // 📌 54 numaralı kullanıcıya SuperAdmin rolü
+        { 1, 2 },  // 📌 54 numaralı kullanıcıya SuperAdmin rolü
+        { 2, 3 },  // 📌 54 numaralı kullanıcıya SuperAdmin rolü
+        { 3, 3 },  // 📌 54 numaralı kullanıcıya SuperAdmin rolü
     }
 );
             #endregion
@@ -1415,60 +1439,82 @@ namespace AcilKan.Persistence.Migrations
             );
             #endregion
 
-            #region Blood Requests
-            migrationBuilder.InsertData(
-                table: "BloodRequests",
-                columns: new[]
-                {
-        "Id", "RequesterId", "HospitalId", "IsIndependentDonation", "BloodGroup", "RequiredUnits",
-        "PatientName", "PatientSurname", "PatientAge", "PatientGender", "DemandReason",
-        "IsActive", "Status", "RequestDate", "ExpiryDate", "CompletionDate", "LastUpdatedDate"
-                },
-                values: new object[,]
-                {
-        { 1, 37, 1, false, 1, 3, "Mehmet", "Kaya", 45, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 2, 54, 2, true, 4, 2, "Ahmet", "Demir", 52, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 3, 37, 3, false, 7, 5, "Ali", "Yılmaz", 30, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 4, 54, 4, true, 5, 4, "Hasan", "Çelik", 60, false, 4, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 5, 37, 5, false, 2, 6, "Fatih", "Koç", 25, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 6, 54, 6, false, 3, 3, "Murat", "Şahin", 40, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 7, 37, 7, true, 8, 5, "Kemal", "Öztürk", 35, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 8, 54, 8, false, 6, 4, "Serkan", "Aydın", 55, false, 4, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 9, 37, 9, true, 1, 6, "Can", "Yıldırım", 28, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 10, 54, 10, false, 4, 3, "Okan", "Erdoğan", 42, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 11, 37, 11, false, 7, 5, "Levent", "Arslan", 37, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 12, 54, 12, true, 5, 4, "Tuncay", "Demirtaş", 50, false, 4, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 13, 37, 13, false, 2, 6, "Cem", "Tan", 22, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 14, 54, 14, false, 3, 3, "Barış", "Güner", 46, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
-        { 15, 37, 15, true, 8, 5, "Selim", "Eroğlu", 31, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow }
-                }
-            );
-            #endregion
+        //    #region Blood Requests
+        //    migrationBuilder.InsertData(
+        //        table: "BloodRequests",
+        //        columns: new[]
+        //        {
+        //"Id", "RequesterId", "HospitalId", "IsIndependentDonation", "BloodGroup", "RequiredUnits",
+        //"PatientName", "PatientSurname", "PatientAge", "PatientGender", "DemandReason",
+        //"IsActive", "Status", "RequestDate", "ExpiryDate", "CompletionDate", "LastUpdatedDate"
+        //        },
+        //        values: new object[,]
+        //        {
+        //{ 1, 37, 1, false, 1, 3, "Mehmet", "Kaya", 45, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 2, 54, 2, true, 4, 2, "Ahmet", "Demir", 52, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 3, 37, 3, false, 7, 5, "Ali", "Yılmaz", 30, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 4, 54, 4, true, 5, 4, "Hasan", "Çelik", 60, false, 4, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 5, 37, 5, false, 2, 6, "Fatih", "Koç", 25, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 6, 54, 6, false, 3, 3, "Murat", "Şahin", 40, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 7, 37, 7, true, 8, 5, "Kemal", "Öztürk", 35, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 8, 54, 8, false, 6, 4, "Serkan", "Aydın", 55, false, 4, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 9, 37, 9, true, 1, 6, "Can", "Yıldırım", 28, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 10, 54, 10, false, 4, 3, "Okan", "Erdoğan", 42, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 11, 37, 11, false, 7, 5, "Levent", "Arslan", 37, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 12, 54, 12, true, 5, 4, "Tuncay", "Demirtaş", 50, false, 4, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 13, 37, 13, false, 2, 6, "Cem", "Tan", 22, true, 1, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 14, 54, 14, false, 3, 3, "Barış", "Güner", 46, false, 2, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //{ 15, 37, 15, true, 8, 5, "Selim", "Eroğlu", 31, true, 3, true, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(24), null, DateTime.UtcNow },
+        //    { 16, 2, 38, true, 3, 1, "Ayşe", "Yılmaz", 1, true, 4, true, 2, "2025-03-09T14:13:44.867488", "2025-03-10T14:13:44.867488", "2025-03-10T00:13:44.867488", "2025-03-09T14:13:44.867500" },
+        //{ 17, 2, 85, true, 1, 2, "Ayşe", "Öztürk", 85, false, 3, true, 2, "2025-03-09T14:13:44.867509", "2025-03-10T14:13:44.867509", "2025-03-10T07:13:44.867509", "2025-03-09T14:13:44.867513" },
+        //{ 18, 1, 71, false, 3, 3, "Ahmet", "Çelik", 16, true, 2, true, 2, "2025-03-09T14:13:44.867521", "2025-03-10T14:13:44.867521", "2025-03-09T18:13:44.867521", "2025-03-09T14:13:44.867525" },
+        //{ 19, 1, 71, true, 1, 3, "Fatma", "Çelik", 38, true, 3, true, 3, "2025-03-09T14:13:44.867532", "2025-03-10T14:13:44.867532", null, "2025-03-09T14:13:44.867534" },
+        //{ 20, 3, 55, true, 6, 5, "Ahmet", "Şahin", 19, true, 4, true, 1, "2025-03-09T14:13:44.867541", "2025-03-10T14:13:44.867541", null, "2025-03-09T14:13:44.867543" },
+        //{ 21, 2, 43, true, 2, 2, "Ayşe", "Yılmaz", 79, false, 2, true, 1, "2025-03-09T14:13:44.867550", "2025-03-10T14:13:44.867550", null, "2025-03-09T14:13:44.867552" },
+        //{ 22, 3, 6, true, 3, 4, "Mehmet", "Kaya", 74, true, 2, true, 2, "2025-03-09T14:13:44.867559", "2025-03-10T14:13:44.867559", "2025-03-11T13:13:44.867559", "2025-03-09T14:13:44.867563" },
+        //{ 23, 2, 36, true, 2, 5, "Ayşe", "Çelik", 12, true, 2, true, 1, "2025-03-09T14:13:44.867573", "2025-03-10T14:13:44.867573", "2025-03-10T11:13:44.867573", "2025-03-09T14:13:44.867578" },
+        //{ 24, 1, 71, true, 8, 5, "Zeynep", "Şahin", 78, true, 1, true, 3, "2025-03-09T14:13:44.867585", "2025-03-10T14:13:44.867585", "2025-03-10T11:13:44.867585", "2025-03-09T14:13:44.867589" },
+        //{ 25, 1, 37, true, 6, 1, "Ayşe", "Öztürk", 5, true, 1, true, 3, "2025-03-09T14:13:44.867596", "2025-03-10T14:13:44.867596", "2025-03-10T19:13:44.867596", "2025-03-09T14:13:44.867600" }
 
-            #region Insert Blood Donations
-            migrationBuilder.InsertData(
-                table: "BloodDonations",
-                columns: new[]
-                {
-        "Id", "BloodRequestId", "DonorId", "UnitsDonated", "RequestedDonationDate",
-        "ArrivalDate", "DonationCompletionDate", "ApprovalDate", "LastUpdatedDate",
-        "Status", "RejectedReason", "Notes", "IsActive"
-                },
-                values: new object[,]
-                {
-        { 1, 1, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), DateTime.UtcNow.AddHours(3), null, DateTime.UtcNow, 5, null, "Bağış başarıyla tamamlandı.", true },
-        { 2, 2, 54, 2, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), DateTime.UtcNow.AddHours(3), DateTime.UtcNow.AddHours(4), DateTime.UtcNow, 6, null, "Bağış yapıldı ve onaylandı.", true },
-        { 3, 3, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), null, null, DateTime.UtcNow, 2, null, "Bağış noktasına ulaştı, işlem devam ediyor.", true },
-        { 4, 4, 54, 1, DateTime.UtcNow, null, null, null, DateTime.UtcNow, 1, null, "Bağış isteği gönderildi, beklemede.", true },
-        { 5, 5, 37, 2, DateTime.UtcNow, DateTime.UtcNow.AddHours(3), null, null, DateTime.UtcNow, 3, "Bağışçı sağlık sorunu nedeniyle bağış yapamadı.", "Tansiyon problemi yaşandı.", false },
-        { 6, 6, 54, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), DateTime.UtcNow.AddHours(3), null, DateTime.UtcNow, 5, null, "Bağış başarıyla tamamlandı.", true },
-        { 7, 7, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), null, null, DateTime.UtcNow, 4, "Bağış yapmaktan vazgeçti.", "Son anda iptal etti.", false },
-        { 8, 8, 54, 2, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), DateTime.UtcNow.AddHours(3), DateTime.UtcNow.AddHours(4), DateTime.UtcNow, 6, null, "Bağış yapıldı ve onaylandı.", true },
-        { 9, 9, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), null, null, DateTime.UtcNow, 1, null, "Bağış isteği oluşturuldu, bağışçı bekleniyor.", true },
-        { 10, 10, 54, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), DateTime.UtcNow.AddHours(2), null, DateTime.UtcNow, 5, null, "Bağış tamamlandı, onay bekleniyor.", true }
-                }
-            );
-            #endregion
+        //        }
+        //    );
+        //    #endregion
+
+        //    #region Insert Blood Donations
+        //    migrationBuilder.InsertData(
+        //        table: "BloodDonations",
+        //        columns: new[]
+        //        {
+        //"Id", "BloodRequestId", "DonorId", "UnitsDonated", "RequestedDonationDate",
+        //"ArrivalDate", "DonationCompletionDate", "ApprovalDate", "LastUpdatedDate",
+        //"Status", "RejectedReason", "Notes", "IsActive"
+        //        },
+        //        values: new object[,]
+        //        {
+        //{ 1, 1, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), DateTime.UtcNow.AddHours(3), null, DateTime.UtcNow, 5, null, "Bağış başarıyla tamamlandı.", true },
+        //{ 2, 2, 54, 2, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), DateTime.UtcNow.AddHours(3), DateTime.UtcNow.AddHours(4), DateTime.UtcNow, 6, null, "Bağış yapıldı ve onaylandı.", true },
+        //{ 3, 3, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), null, null, DateTime.UtcNow, 2, null, "Bağış noktasına ulaştı, işlem devam ediyor.", true },
+        //{ 4, 4, 54, 1, DateTime.UtcNow, null, null, null, DateTime.UtcNow, 1, null, "Bağış isteği gönderildi, beklemede.", true },
+        //{ 5, 5, 37, 2, DateTime.UtcNow, DateTime.UtcNow.AddHours(3), null, null, DateTime.UtcNow, 3, "Bağışçı sağlık sorunu nedeniyle bağış yapamadı.", "Tansiyon problemi yaşandı.", false },
+        //{ 6, 6, 54, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), DateTime.UtcNow.AddHours(3), null, DateTime.UtcNow, 5, null, "Bağış başarıyla tamamlandı.", true },
+        //{ 7, 7, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), null, null, DateTime.UtcNow, 4, "Bağış yapmaktan vazgeçti.", "Son anda iptal etti.", false },
+        //{ 8, 8, 54, 2, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), DateTime.UtcNow.AddHours(3), DateTime.UtcNow.AddHours(4), DateTime.UtcNow, 6, null, "Bağış yapıldı ve onaylandı.", true },
+        //{ 9, 9, 37, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(2), null, null, DateTime.UtcNow, 1, null, "Bağış isteği oluşturuldu, bağışçı bekleniyor.", true },
+        //{ 10, 10, 54, 1, DateTime.UtcNow, DateTime.UtcNow.AddHours(1), DateTime.UtcNow.AddHours(2), null, DateTime.UtcNow, 5, null, "Bağış tamamlandı, onay bekleniyor.", true },
+        // { 11, 15, 2, 3, "2025-03-09T14:33:51.874857", "2025-03-09T18:33:51.874857", "2025-03-09T19:33:51.874857", null, "2025-03-09T14:33:51.874874", 1, null, "Donör zamanında gelmedi.", true },
+        //{ 12, 9, 1, 3, "2025-03-09T14:33:51.874883", "2025-03-09T18:33:51.874883", "2025-03-09T20:33:51.874883", null, "2025-03-09T14:33:51.874891", 1, null, "Bağış başarıyla tamamlandı.", true },
+        //{ 13, 5, 1, 3, "2025-03-09T14:33:51.874895", "2025-03-09T16:33:51.874895", "2025-03-09T17:33:51.874895", null, "2025-03-09T14:33:51.874900", 4, "Donör uygun bulunmadı", "Eksik evrak nedeniyle bağış tamamlanamadı.", true },
+        //{ 14, 1, 1, 3, "2025-03-09T14:33:51.874904", "2025-03-09T16:33:51.874904", "2025-03-09T17:33:51.874904", null, "2025-03-09T14:33:51.874908", 4, "Donör uygun bulunmadı", "Donör zamanında gelmedi.", true },
+        //{ 15, 4, 2, 1, "2025-03-09T14:33:51.874912", "2025-03-09T15:33:51.874912", "2025-03-09T17:33:51.874912", null, "2025-03-09T14:33:51.874917", 3, null, "Donör zamanında gelmedi.", true },
+        //{ 16, 20, 2, 2, "2025-03-09T14:33:51.874921", "2025-03-09T16:33:51.874921", "2025-03-09T18:33:51.874921", null, "2025-03-09T14:33:51.874926", 4, "Donör uygun bulunmadı", "Eksik evrak nedeniyle bağış tamamlanamadı.", true },
+        //{ 17, 17, 3, 2, "2025-03-09T14:33:51.874930", "2025-03-09T15:33:51.874930", "2025-03-09T16:33:51.874930", "2025-03-09T18:33:51.874930", "2025-03-09T14:33:51.874936", 2, null, "Bağış başarıyla tamamlandı.", true },
+        //{ 18, 9, 1, 2, "2025-03-09T14:33:51.874943", "2025-03-09T17:33:51.874943", "2025-03-09T19:33:51.874943", "2025-03-09T21:33:51.874943", "2025-03-09T14:33:51.874950", 4, "Donör uygun bulunmadı", "Bağış başarıyla tamamlandı.", true },
+        //{ 19, 9, 3, 2, "2025-03-09T14:33:51.874955", "2025-03-09T15:33:51.874955", "2025-03-09T17:33:51.874955", "2025-03-09T20:33:51.874955", "2025-03-09T14:33:51.874961", 5, null, "Bağış başarıyla tamamlandı.", true },
+        //{ 20, 14, 2, 3, "2025-03-09T14:33:51.874966", "2025-03-09T18:33:51.874966", "2025-03-09T19:33:51.874966", null, "2025-03-09T14:33:51.874974", 2, null, "Bağış başarıyla tamamlandı.", true }
+
+        //        }
+        //    );
+        //    #endregion
 
         }
 

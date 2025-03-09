@@ -12,9 +12,10 @@ namespace AcilKan.Domain.Entities
         [Column(TypeName = "tinyint")]  // ENUM değerini tinyint olarak sakla
         public BloodGroupType BloodGroup { get; set; } // Kan Grubu Enum
         public int RequiredUnits { get; set; } // Kaç ünite kan gerekiyor?
-        public string PatientName { get; set; }
-        public string PatientSurname { get; set; }
-        public int? PatientAge { get; set; } // Hasta yaşı
+        public string PatientName { get; set; } // Hasta Adı
+        public string PatientSurname { get; set; } // Hasta Soyadı
+        public string PatientTC { get; set; } // Hasta TC
+        public DateTime PatientBirthDate { get; set; } // Hasta Doğum Tarihi
         public bool? PatientGender { get; set; } // Hasta cinsiyeti (Erkek: true, Kadın: false)
         
         [Column(TypeName = "tinyint")]  // ENUM değerini tinyint olarak sakla

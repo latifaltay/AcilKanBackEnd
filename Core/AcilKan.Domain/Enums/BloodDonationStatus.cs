@@ -26,9 +26,12 @@ namespace AcilKan.Domain.Enums
 
         [Description("Bağış tamamlandı")]
         ApprovedByRequester = 6,
+       
+        [Description("Donor Bağış Yapmadı")]
+        RejectedByRequester = 7,
 
         [Description("Kan bağışı süresi doldu")]
-        Expired = 7
+        Expired = 8
     }
 
 

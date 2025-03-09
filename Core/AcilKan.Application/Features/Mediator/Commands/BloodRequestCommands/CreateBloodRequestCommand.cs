@@ -13,5 +13,11 @@ namespace AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands
         public int BloodGroupId { get; set; }
         public string PatientName { get; set; }
         public string PatientSurname { get; set; }
+        public string PatientTC { get; set; }
+        public bool? PatientGender { get; set; }
+        public DateTime PatientBirtDate { get; set; }
+        public int RequiredUnits { get; set; }
+        public bool IsIndependentDonation { get; set; }
+        public int DemandReasonTypeId { get; set; }
     }
 }
