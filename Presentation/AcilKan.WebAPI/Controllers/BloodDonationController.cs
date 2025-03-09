@@ -29,6 +29,7 @@ namespace AcilKan.WebAPI.Controllers
             return Ok("Kan Bağışı oluşturuldu");
         }
 
+
         [HttpPut]
         public async Task<IActionResult> CancelBloodDonation(CancelBloodDonationCommand command)
         {

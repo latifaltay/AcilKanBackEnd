@@ -20,9 +20,9 @@ namespace AcilKan.Persistence.Repositories
         {
             return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
-        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> predicate)
+        public async Task<List<T>> GetAllByFilterAsync(Expression<Func<T, bool>> filter)
         {
-            return await _context.Set<T>().Where(predicate).ToListAsync();
+            return await _context.Set<T>().Where(filter).ToListAsync();
         }
         public async Task<T?> GetByFilterAsync(Expression<Func<T, bool>> filter)
         {
@@ -54,80 +54,5 @@ namespace AcilKan.Persistence.Repositories
             int.TryParse(userIdClaim.Value, out int userId);
             return Task.FromResult(userId);
         }
-
-        //public Task<int> GetCurrentUserIdAsync()
-        //{
-        //    // Kullanıcı kimliği claim'ini al
-        //    //var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier);
-        //    //var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier");
-
-
-        //    var userIdClaim = _httpContextAccessor.HttpContext?.User?.FindFirst(JwtRegisteredClaimNames.Sub);
-        //    //var userIdClaim = _httpContextAccessor.HttpContext?.User?();
-
-
-        //    // Eğer claim yoksa veya null ise, 0 dönebilirsiniz veya exception fırlatabilirsiniz
-        //    if (userIdClaim == null)
-        //    {
-        //        // Global error handling ile zaten hatayı yönettiğiniz için burada exception fırlatmaya gerek yok
-        //        return Task.FromResult(0); // Veya bir default değer dönebilirsiniz
-        //    }
-
-        //    // Claim değerini integer'a dönüştür
-        //    int.TryParse(userIdClaim.Value, out int userId);
-
-        //    // Başarıyla dönüştürülmemişse, yine default değer dönebilir
-        //    return Task.FromResult(userId);
-        //}
-
-        //public Task<int> GetCurrentUserIdAsync()
-        //{
-        //    // HTTPContext ve User nesnelerini kontrol et
-        //    var context = _httpContextAccessor.HttpContext;
-        //    if (context == null)
-        //    {
-        //        // HttpContext null ise, burada hata alıyorsunuz demektir
-        //        // Burada loglama yapabilir veya hata mesajı dönebilirsiniz
-        //        Console.WriteLine("HttpContext null");
-        //        return Task.FromResult(0);
-        //    }
-
-        //    //var user = context.User;
-        //    var user = context.User as ClaimsPrincipal;
-        //    string username = user.Claims.Where(c => c.Type == "sub")
-        //        .Select(x => x.Value).FirstOrDefault();
-        //    if (user == null)
-        //    {
-        //        // User null ise, kullanıcının kimliği (authentication) mevcut değil demektir
-        //        Console.WriteLine("User null");
-        //        return Task.FromResult(0);
-        //    }
-
-        //    // Claim listesinin boş olup olmadığını kontrol et
-        //    var userIdClaim = user.FindFirst(JwtRegisteredClaimNames.Sub);
-        //    //var userIdClaim = user.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier");
-        //    if (userIdClaim == null)
-        //    {
-        //        // userIdClaim null ise, "sub" claim'i bulunamadı demektir
-        //        Console.WriteLine("userIdClaim null");
-        //        return Task.FromResult(0);
-        //    }
-
-        //    // Claim değerini integer'a dönüştürme işlemi
-        //    int userId = 0;
-        //    bool isParsed = int.TryParse(userIdClaim.Value, out userId);
-        //    if (!isParsed)
-        //    {
-        //        // Eğer dönüşüm başarısız olursa, hata mesajı yazdırabilirsiniz
-        //        Console.WriteLine("Claim değeri integer'a dönüştürülemedi");
-        //        return Task.FromResult(0);
-        //    }
-
-        //    // Başarıyla işlenen kullanıcı ID'si döndürülüyor
-        //    return Task.FromResult(userId);
-        //}
-
-
-
     }
 }

@@ -10,7 +10,7 @@ namespace AcilKan.Application.Interfaces
     public interface IRepository<T> where T : class
     {
         Task<List<T>> GetAllAsync();
-        Task<List<T>> GetAllAsync(Expression<Func<T, bool>> predicate); // 🛠 Şarta göre filtreleme desteği
+        Task<List<T>> GetAllByFilterAsync(Expression<Func<T, bool>> filter);
         Task<T> GetByIdAsync(int id);
         Task CreateAsync(T entity);
         Task UpdateAsync(T entity);
