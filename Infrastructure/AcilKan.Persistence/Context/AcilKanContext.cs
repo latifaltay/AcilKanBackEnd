@@ -27,7 +27,6 @@ namespace AcilKan.Persistence.Context
         public DbSet<About> Abouts { get; set; }
         public DbSet<AboutBloodDonation> AboutBloodDonations { get; set; }
         public DbSet<AboutUs> AboutUses { get; set; }
-    
         public DbSet<ArticlesForAboutPage> ArticlesForAboutPages { get; set; }
         public DbSet<Banner> Banners { get; set; }
         public DbSet<BloodDonation> BloodDonations { get; set; }

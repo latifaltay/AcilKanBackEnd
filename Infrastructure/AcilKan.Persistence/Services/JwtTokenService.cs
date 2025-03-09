@@ -5,13 +5,10 @@ using AcilKan.Persistence.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.JsonWebTokens;
-using Microsoft.IdentityModel.Protocols.WsTrust;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 
 namespace AcilKan.Persistence.Services
 {
@@ -20,12 +17,14 @@ namespace AcilKan.Persistence.Services
         private readonly JwtSettings _jwtSettings;
         private readonly UserManager<AppUser> _userManager; // UserManager eklenmeli
         private readonly IConfiguration _configuration;
+        private readonly IRepository<AppUser> _repository;
 
-        public JwtTokenService(IOptions<JwtSettings> jwtSettings, UserManager<AppUser> userManager, IConfiguration configuration)
+        public JwtTokenService(IOptions<JwtSettings> jwtSettings, UserManager<AppUser> userManager, IConfiguration configuration, IRepository<AppUser> repository)
         {
             _jwtSettings = jwtSettings.Value;
             _userManager = userManager; // Constructor'a UserManager eklenmeli
             _configuration = configuration;
+            _repository = repository;
         }
 
         // Token oluşturma
@@ -34,7 +33,7 @@ namespace AcilKan.Persistence.Services
             var claims = await GetClaims(user);
             var accessToken = GenerateAccessToken(claims);
             var refreshToken = GenerateRefreshToken(claims);
-            // ✅ Kullanıcının Refresh Token'ını ve süresini güncelle
+            // Kullanıcının Refresh Token'ını ve süresini güncelle
             user.RefreshToken = refreshToken;
             user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7); // 7 gün geçerli
             return new TokenResult
@@ -49,9 +48,9 @@ namespace AcilKan.Persistence.Services
 
             // Kullanıcının Refresh Token'ını sıfırla
             user.RefreshToken = null;
-            user.RefreshTokenExpiryTime = DateTime.UtcNow; // Hemen geçersiz kıl
+            user.RefreshTokenExpiryTime = null;
             await _userManager.UpdateAsync(user);
-
+            
             // Access Token'ı kara listeye ekle
             TokenBlacklist.AddToBlacklist(accessToken);
 
@@ -62,12 +61,19 @@ namespace AcilKan.Persistence.Services
 
         public async Task<TokenResult> RefreshAccessToken(string refreshToken)
         {
+            var userId = await _repository.GetCurrentUserIdAsync();
+
+            var user = await _repository.GetByIdAsync(userId);
+
+            if (user.RefreshToken != refreshToken || user.RefreshTokenExpiryTime <= DateTime.UtcNow)
+            {
+                throw new SecurityTokenException("Geçersiz veya süresi dolmuş refresh token.");
+            }
+
             // Refresh Token'ı doğrula ve geçerliliğini kontrol et
             var principal = GetPrincipalFromExpiredToken(refreshToken);
-            var email = principal.FindFirstValue(ClaimTypes.Email); // Email bilgisini claim'den alıyoruz
+            
 
-            // Kullanıcıyı email ile bul
-            var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
             {
                 throw new SecurityTokenException("Geçersiz refresh token.");
@@ -100,11 +106,11 @@ namespace AcilKan.Persistence.Services
         new Claim("sub", user.Id.ToString())
     };
 
-            // 📌 Kullanıcının rollerini çekip JWT'ye ekleyelim
+            // Kullanıcının rollerini çekip JWT'ye ekleyelim
             var roles = await _userManager.GetRolesAsync(user);
             foreach (var role in roles)
             {
-                claims.Add(new Claim(ClaimTypes.Role, role)); // 📌 Kullanıcının rollerini claim olarak ekle
+                claims.Add(new Claim(ClaimTypes.Role, role)); // Kullanıcının rollerini claim olarak ekle
             }
 
             return claims;

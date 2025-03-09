@@ -91,6 +91,9 @@ namespace AcilKan.WebAPI.Controllers
             var tokenResult = await _jwtTokenService.RefreshAccessToken(request.RefreshToken);
             return Ok(tokenResult);
         }
+
+
+
         [HttpPost("logout")]
         public async Task<IActionResult> Logout()
         {

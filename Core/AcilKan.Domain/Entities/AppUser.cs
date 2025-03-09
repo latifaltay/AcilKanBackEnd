@@ -33,15 +33,14 @@ namespace AcilKan.Domain.Entities
         public District District { get; set; }
 
 
-        // UserName'ı Email ile eşitleme (username kullanmadığım için maili username gibi kullanıyorum)
         public override string UserName
         {
-            get => Email;  // Email'i UserName olarak kullanıyoruz
+            get => Email;  
             set => base.UserName = value;
         }
 
-        public string? RefreshToken { get; set; }  // ✅ Refresh Token saklamak için
-        public DateTime? RefreshTokenExpiryTime { get; set; } // ✅ Refresh Token'in geçerlilik süresi
+        public string? RefreshToken { get; set; } 
+        public DateTime? RefreshTokenExpiryTime { get; set; } 
         public List<BloodDonation> BloodDonations { get; set; }
 
     }

@@ -17,6 +17,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
     {
         public async Task<bool> Handle(LogoutCommand request, CancellationToken cancellationToken)
         {
+            //var userId = await _userManager
             var user = await _userManager.FindByIdAsync(request.UserId.ToString());
             if (user == null) return false;
 

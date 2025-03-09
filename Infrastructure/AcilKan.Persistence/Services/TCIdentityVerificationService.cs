@@ -22,7 +22,7 @@ namespace AcilKan.Persistence.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine("❌ TC Kimlik Doğrulama Hatası: " + ex.Message);
+                Console.WriteLine("TC Kimlik Doğrulama Hatası: " + ex.Message);
                 return false;
             }
         }

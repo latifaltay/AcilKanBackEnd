@@ -2,11 +2,6 @@
 using AcilKan.Domain.Entities;
 using AcilKan.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AcilKan.Persistence.Repositories
 {
@@ -36,21 +31,21 @@ namespace AcilKan.Persistence.Repositories
         }
 
         
-        public async Task<int> GetTotalDonationCountByUserIdAsync(int userId) 
+        public async Task<int> GetCompletedTotalDonationCountByUserIdAsync(int userId) 
         {
             var values = await _context.BloodDonations
                 .Include(x => x.BloodRequest)
-                .Where(x => x.DonorId == userId)
+                .Where(x => x.DonorId == userId && x.Status== Domain.Enums.BloodDonationStatus.ApprovedByRequester)
                 .CountAsync();
 
             return values;
         }
 
 
-        public async Task<DateOnly?> GetLastDonationDateByUserIdAsync(int userId)
+        public async Task<DateOnly?> GetCompletedLastDonationDateByUserIdAsync(int userId)
         {
             var values = await _context.BloodDonations
-                .Where(x => x.DonorId == userId)
+                .Where(x => x.DonorId == userId && x.Status== Domain.Enums.BloodDonationStatus.CompletedByDonor)
                 .OrderByDescending(x => x.DonationCompletionDate)
                 .Select(x => x.DonationCompletionDate.HasValue
                     ? DateOnly.FromDateTime(x.DonationCompletionDate.Value)

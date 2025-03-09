@@ -14,17 +14,15 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
     {
         public async Task Handle(CreateAppUserCommand request, CancellationToken cancellationToken)
         {
-            // ✅ TC Kimlik doğrulaması yap (MERNIS API çağrısı)
             bool isValidTC = await _tcVerificationService.ValidateTCIdentity(
                 request.TC, request.Name, request.Surname, request.BirthDate.Year
             );
 
             if (!isValidTC)
             {
-                throw new Exception("❌ Geçersiz TC Kimlik Numarası! Lütfen doğru bilgileri giriniz.");
+                throw new Exception("Geçersiz TC Kimlik Numarası! Lütfen doğru bilgileri giriniz.");
             }
 
-            // ✅ Kullanıcı nesnesini oluştur
             AppUser appUser = new()
             {
                 UserName = request.Email,
@@ -37,18 +35,16 @@ namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
                 Gender = request.Gender,
                 CityId = request.CityId,
                 DistrictId = request.DistrictId,
-                RegisterDate = DateTime.UtcNow, // UTC tarih kullan
+                RegisterDate = DateTime.UtcNow, 
                 BirthDate = request.BirthDate,
             };
 
-            // ✅ Kullanıcıyı oluştur
             var result = await _userManager.CreateAsync(appUser, request.Password);
 
-            // ✅ Kullanıcı oluşturulamazsa hata fırlat
             if (!result.Succeeded)
             {
                 string errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                throw new Exception($"❌ Kullanıcı oluşturulamadı: {errors}");
+                throw new Exception($"Kullanıcı oluşturulamadı: {errors}");
             }
         }
     }

@@ -16,7 +16,7 @@ namespace AcilKan.Application.ValidationRules.FluentValidation.Validators.AppUse
             // Telefon Numarası Validasyonu
             RuleFor(x => x.PhoneNumber)
                 .NotEmpty().WithMessage("Telefon numarası zorunludur.")
-                .Matches(@"^(\+90|90|0)?[0-9]{10}$").WithMessage("Telefon numarası geçerli formatta olmalıdır. (Örn: 905438194976 veya 05438194976)");
+                .Matches(@"^(\+90|90|0)?[0-9]{10}$").WithMessage("Telefon numarası geçerli formatta olmalıdır. (Örn: 905XXXXXXXXX veya 05XXXXXXXXX)");
 
 
 
@@ -28,7 +28,8 @@ namespace AcilKan.Application.ValidationRules.FluentValidation.Validators.AppUse
 
         private bool BeAtLeast18YearsOld(DateTime birthDate)
         {
-            return birthDate <= DateTime.UtcNow.AddYears(-18);
+            var status = birthDate <= DateTime.UtcNow.AddYears(-18);
+            return status;
         }
     }
 }

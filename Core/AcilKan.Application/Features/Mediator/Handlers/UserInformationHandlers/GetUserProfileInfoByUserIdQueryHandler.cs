@@ -21,8 +21,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
             var values = await _service.GetUserProfileWithDetailAsync(userId);
 
 
-            var totalDonationCount = await _bloodService.GetTotalDonationCountByUserIdAsync(userId);
-            var lastDonationDate = await _bloodService.GetLastDonationDateByUserIdAsync(userId);
+            var totalDonationCount = await _bloodService.GetCompletedTotalDonationCountByUserIdAsync(userId);
+            var lastDonationDate = await _bloodService.GetCompletedLastDonationDateByUserIdAsync(userId);
 
             string lastDonationMessage;
             string nextDonationMessage;
