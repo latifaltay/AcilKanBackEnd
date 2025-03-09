@@ -20,7 +20,6 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodDontaionHandlers
 
             await _repository.CreateAsync(new BloodDonation 
             {
-                // Sorulacak
                 BloodRequestId = request.BloodRequestId,
                 RequestedDonationDate = DateTime.Now,
                 DonorId = userId,

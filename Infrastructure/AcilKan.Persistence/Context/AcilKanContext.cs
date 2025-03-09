@@ -30,7 +30,6 @@ namespace AcilKan.Persistence.Context
     
         public DbSet<ArticlesForAboutPage> ArticlesForAboutPages { get; set; }
         public DbSet<Banner> Banners { get; set; }
-        public DbSet<BloodDonationApprove> BloodDonationApproves { get; set; }
         public DbSet<BloodDonation> BloodDonations { get; set; }
         public DbSet<BloodRequest> BloodRequests { get; set; }
         public DbSet<City> Cities { get; set; }
@@ -39,7 +38,6 @@ namespace AcilKan.Persistence.Context
         public DbSet<ContactUs> ContactUses { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<DonationBenefit> DonationBenefits { get; set; }
-        //public DbSet<BloodDonation> DonationHistories { get; set; }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Hospital> Hospitals { get; set; }
         public DbSet<Mission> Missions { get; set; }
@@ -64,18 +62,18 @@ namespace AcilKan.Persistence.Context
         {
             //modelBuilder.Entity<AppUserRole>().HasKey(x => new { x.RoleId, x.UserId }); //composite key
 
-            // 📌 Varsayılan Identity tablolarını kullan (Güncelleme eklemiş olabilirsin)
+            // Varsayılan Identity tablolarını kullan 
             modelBuilder.Entity<AppUser>().ToTable("AspNetUsers");
             modelBuilder.Entity<IdentityRole<int>>().ToTable("AspNetRoles");
             modelBuilder.Entity<IdentityUserRole<int>>().ToTable("AspNetUserRoles")
-                .HasKey(ur => new { ur.UserId, ur.RoleId });  // ✅ PK tanımlandı!
+                .HasKey(ur => new { ur.UserId, ur.RoleId });  
 
             modelBuilder.Entity<IdentityUserClaim<int>>().ToTable("AspNetUserClaims");
             modelBuilder.Entity<IdentityUserLogin<int>>().ToTable("AspNetUserLogins")
-                .HasKey(l => new { l.LoginProvider, l.ProviderKey });  // ✅ PK tanımlandı!
+                .HasKey(l => new { l.LoginProvider, l.ProviderKey }); 
 
             modelBuilder.Entity<IdentityUserToken<int>>().ToTable("AspNetUserTokens")
-                .HasKey(t => new { t.UserId, t.LoginProvider, t.Name });  // ✅ PK tanımlandı!
+                .HasKey(t => new { t.UserId, t.LoginProvider, t.Name }); 
 
             modelBuilder.Entity<IdentityRoleClaim<int>>().ToTable("AspNetRoleClaims");
 
@@ -100,43 +98,10 @@ namespace AcilKan.Persistence.Context
                 .HasForeignKey(bd => bd.DonorId)
                 .OnDelete(DeleteBehavior.NoAction);
 
-            // AppUser ile BloodDonationApprove ilişkisi
-            modelBuilder.Entity<BloodDonationApprove>()
-                .HasOne(bda => bda.Donor)
-                .WithMany(u => u.BloodDonationApproves)
-                .HasForeignKey(bda => bda.DonorId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-            modelBuilder.Entity<BloodDonationApprove>()
-                .HasOne(bda => bda.RequestCreator)
-                .WithMany()
-                .HasForeignKey(bda => bda.RequestCreatorId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-            // BloodDonation ile BloodDonationApprove ilişkisi
-            modelBuilder.Entity<BloodDonationApprove>()
-                .HasOne(bda => bda.BloodDontaion)
-                .WithMany()
-                .HasForeignKey(bda => bda.BloodDontaionId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-
             modelBuilder.Entity<AppUser>()
                 .Property(u => u.UserName)
                 .HasComputedColumnSql("[Email]"); // Email'den türetilen bir hesaplanmış kolonu belirtir
 
-
-            modelBuilder.Entity<BloodDonationApprove>()
-                .HasOne(bda => bda.Donor) // BloodDonationApprove tablosundaki Donor ile ilişki
-                .WithMany() // AppUser tablosunda bir koleksiyon yok
-                .HasForeignKey(bda => bda.DonorId) // Foreign Key tanımı
-                .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
-
-            modelBuilder.Entity<BloodDonationApprove>()
-                .HasOne(bda => bda.RequestCreator) // BloodDonationApprove tablosundaki Donor ile ilişki
-                .WithMany() // AppUser tablosunda bir koleksiyon yok
-                .HasForeignKey(bda => bda.RequestCreatorId) // Foreign Key tanımı
-                .OnDelete(DeleteBehavior.NoAction); // Cascade Delete yerine NoAction kullan
 
             // FromUserId ile ilişkili olan ve ToUserId ile ilişkili olan yabancı anahtarlar için NoAction ekliyoruz
             modelBuilder.Entity<Chat>()
@@ -180,12 +145,6 @@ namespace AcilKan.Persistence.Context
             modelBuilder.Entity<BloodRequest>()
                 .Property(e => e.Status)
                 .HasConversion<byte>();  // ENUM değerini TINYINT olarak sakla
-
-         
-
         }
-
-
-
     }
 }
