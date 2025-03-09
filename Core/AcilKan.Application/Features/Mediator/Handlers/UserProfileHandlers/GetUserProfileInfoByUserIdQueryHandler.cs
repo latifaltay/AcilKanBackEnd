@@ -19,10 +19,10 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserProfileHandlers
         {
             var userId = await _repository.GetCurrentUserIdAsync();
             var values = await _service.GetUserProfileWithDetailAsync(userId);
-            var totalDonationCount = await _bloodService.GetTotalDonationCountByUserIdAsync(userId);
+            var totalDonationCount = await _bloodService.GetCompletedDonationCountByUserIdAsync(userId);
 
 
-            var lastDonation =await _bloodService.GetLastDonationDateByUserIdAsync(userId) ?? DateOnly.MinValue;
+            var lastDonation =await _bloodService.GetLastCompletedDonationDateByUserIdAsync(userId) ?? DateOnly.MinValue;
 
 
             return new GetUserProfileInfoByUserIdQueryResult

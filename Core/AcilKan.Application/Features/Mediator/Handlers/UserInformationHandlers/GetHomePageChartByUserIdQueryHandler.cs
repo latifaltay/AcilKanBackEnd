@@ -13,8 +13,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
         {
             var userId = await _repository.GetCurrentUserIdAsync();
 
-            var totalDonationCount = await _service.GetTotalDonationCountByUserIdAsync(userId);
-            var lastDonationDate = await _service.GetLastDonationDateByUserIdAsync(userId);
+            var totalDonationCount = await _service.GetCompletedDonationCountByUserIdAsync(userId);
+            var lastDonationDate = await _service.GetLastCompletedDonationDateByUserIdAsync(userId);
 
             string lastDonationMessage;
             string nextDonationMessage;

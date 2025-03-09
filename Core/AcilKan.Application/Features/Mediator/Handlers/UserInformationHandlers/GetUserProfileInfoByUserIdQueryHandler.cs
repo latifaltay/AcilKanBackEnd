@@ -19,7 +19,7 @@ namespace AcilKan.Application.Features.Mediator.Handlers.UserInformationHandlers
         {
             var userId = await _repository.GetCurrentUserIdAsync();
             var values = await _service.GetUserProfileWithDetailAsync(userId);
-            var totalDonationCount = await _bloodService.GetTotalDonationCountByUserIdAsync(userId);
+            var totalDonationCount = await _bloodService.GetCompletedDonationCountByUserIdAsync(userId);
 
 
             var lastDonation = values.BloodDonations != null && values.BloodDonations.Any()

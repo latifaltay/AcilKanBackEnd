@@ -36,29 +36,29 @@ namespace AcilKan.Persistence.Repositories
         }
 
         
-        public async Task<int> GetTotalDonationCountByUserIdAsync(int userId) 
+        public async Task<int> GetCompletedDonationCountByUserIdAsync(int userId) 
         {
             var values = await _context.BloodDonations
                 .Include(x => x.BloodRequest)
-                .Where(x => x.DonorId == userId)
+                .Where(x => x.DonorId == userId && x.Status==Domain.Enums.BloodDonationStatus.ApprovedByRequester)
                 .CountAsync();
 
             return values;
         }
 
 
-        public async Task<DateOnly?> GetLastDonationDateByUserIdAsync(int userId)
+        public async Task<DateOnly?> GetLastCompletedDonationDateByUserIdAsync(int userId)
         {
-            var values = await _context.BloodDonations
-                .Where(x => x.DonorId == userId)
+            return await _context.BloodDonations
+                .Where(x => x.DonorId == userId && x.DonationCompletionDate.HasValue)
                 .OrderByDescending(x => x.DonationCompletionDate)
                 .Select(x => x.DonationCompletionDate.HasValue
                     ? DateOnly.FromDateTime(x.DonationCompletionDate.Value)
                     : (DateOnly?)null)
                 .FirstOrDefaultAsync();
-
-            return values;
         }
+
+
 
     }
 }

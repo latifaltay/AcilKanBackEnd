@@ -11,7 +11,8 @@ namespace AcilKan.Application.Interfaces
     {
         Task<List<BloodDonation>> GetBloodDonationsAsync(); 
         Task<List<BloodDonation>> GetBloodDonationsByDonorIdAsync(int donorId);
-        Task<int> GetTotalDonationCountByUserIdAsync(int userId);
-        Task<DateOnly?> GetLastDonationDateByUserIdAsync(int userId);
+        Task<int> GetCompletedDonationCountByUserIdAsync(int userId);
+        Task<DateOnly?> GetLastCompletedDonationDateByUserIdAsync(int userId);
+
     }
 }
