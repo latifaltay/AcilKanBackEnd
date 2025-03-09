@@ -12,13 +12,14 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Handlers.AppUserHandlers
 {
-    public class LogoutCommandHandler(UserManager<AppUser> _userManager, IJwtTokenService _jwtTokenService, IHttpContextAccessor _httpContextAccessor)
+    public class LogoutCommandHandler(UserManager<AppUser> _userManager, IJwtTokenService _jwtTokenService, IHttpContextAccessor _httpContextAccessor, IRepository<AppUser> _repository)
      : IRequestHandler<LogoutCommand, bool>
     {
         public async Task<bool> Handle(LogoutCommand request, CancellationToken cancellationToken)
         {
-            //var userId = await _userManager
-            var user = await _userManager.FindByIdAsync(request.UserId.ToString());
+            var userId = await _repository.GetCurrentUserIdAsync();
+            //var user = await _userManager.FindByIdAsync(request.UserId.ToString());
+            var user = await _userManager.FindByIdAsync(userId.ToString());
             if (user == null) return false;
 
             var token = _httpContextAccessor.HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");

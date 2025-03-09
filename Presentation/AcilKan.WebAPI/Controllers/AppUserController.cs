@@ -94,20 +94,14 @@ namespace AcilKan.WebAPI.Controllers
 
 
 
-        [HttpPost("logout")]
+        [HttpPost]
         public async Task<IActionResult> Logout()
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (string.IsNullOrEmpty(userId)) return Unauthorized();
 
-            var result = await _mediator.Send(new LogoutCommand { UserId = int.Parse(userId) });
-
+            var result = await _mediator.Send(new LogoutCommand());
             if (!result) return BadRequest("Çıkış yapılamadı.");
-
-            return Ok(new { message = "Başarıyla çıkış yapıldı." });
+            return Ok("Başarıyla çıkış yapıldı.");
         }
-
-
 
 
     }
