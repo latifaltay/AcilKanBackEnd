@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcilKan.Persistence.Migrations
 {
     [DbContext(typeof(AcilKanContext))]
-    [Migration("20250309033033_BloodDonationApprove_Removed")]
-    partial class BloodDonationApprove_Removed
+    [Migration("20250309235316_FirstInitial")]
+    partial class FirstInitial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -330,8 +330,8 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<DateTime?>("LastUpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PatientAge")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("PatientBirthDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool?>("PatientGender")
                         .HasColumnType("bit");
@@ -341,6 +341,10 @@ namespace AcilKan.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PatientSurname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PatientTC")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -1,4 +1,6 @@
-﻿using AcilKan.Application.Features.Mediator.Results.BloodDonationResults;
+﻿using AcilKan.Application.DTOs.BloodDonation;
+using AcilKan.Application.Features.Mediator.Results.BloodDonationResults;
+using AcilKan.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace AcilKan.Application.Features.Mediator.Results.BloodRequestResults
 {
-    public class GetBloodRequestQueryResult
+
+    public class GetBloodRequestQueryWithDonorsResult
     {
         public int RequestId { get; set; }
         public string RequesterFullName { get; set; }
@@ -21,6 +24,8 @@ namespace AcilKan.Application.Features.Mediator.Results.BloodRequestResults
         public string HospitalName { get; set; }
         public string City { get; set; }
         public string District { get; set; }
+        public DateTime? ExpiryDate { get; set; }
+        public List<GetDonorForRequester> Donations { get; set; } = new();
     }
 
 }

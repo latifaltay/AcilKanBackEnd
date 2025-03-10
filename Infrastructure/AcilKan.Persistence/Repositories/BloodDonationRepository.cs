@@ -55,5 +55,16 @@ namespace AcilKan.Persistence.Repositories
             return values;
         }
 
+        public async Task<BloodDonation> GetBloodDonationWithRequestAsync(int bloodDonationId)
+        {
+            return await _context.BloodDonations
+                .Where(d => d.Id == bloodDonationId)
+                .Include(d => d.BloodRequest) // **Bağış isteğiyle birlikte getir**
+                    .ThenInclude(br => br.AppUser) // **Requester'ı getir**
+                .FirstOrDefaultAsync();
+        }
+
+
+
     }
 }
