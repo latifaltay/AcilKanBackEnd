@@ -35,7 +35,12 @@ namespace AcilKan.Persistence.Repositories
             return bloodRequests;
 
         }
-
+        public async Task<BloodRequest> GetBloodRequestByIdAsync(int requestId)
+        {
+            return await _context.BloodRequests
+                .Where(x => x.Id == requestId && x.IsActive && x.Status != BloodRequestStatus.Completed && x.Status!=BloodRequestStatus.CanceledByAdmin && x.Status!=BloodRequestStatus.Expired)
+                .FirstOrDefaultAsync() ?? throw new Exception("Kan bağışı isteği bulunamadı.");
+        }
         public async Task<BloodRequest> GetBloodRequestWithDetailsByIdAsync(int id)
         {
             var bloodRequest = await _context.BloodRequests
