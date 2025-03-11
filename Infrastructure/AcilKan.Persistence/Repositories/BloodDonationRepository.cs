@@ -21,7 +21,17 @@ namespace AcilKan.Persistence.Repositories
                 
         }
 
-
+        public async Task<List<BloodDonation>> GetMyActiveBloodDonationsAsync(int userId)
+        {
+            return await _context.BloodDonations
+                .Where(x => x.DonorId == userId && x.IsActive)
+                .Include(x => x.BloodRequest) // Bağış isteğini dahil et
+                    .ThenInclude(x => x.Hospital) // Hastane bilgisini ekle
+                .Include(x => x.Donor) // Bağışçıyı dahil et
+                .Include(x => x.BloodRequest.AppUser) // Bağış isteğini yapan kullanıcıyı dahil et
+                .OrderByDescending(x => x.RequestedDonationDate)
+                .ToListAsync();
+        }
         public async Task<List<BloodDonation>> GetBloodDonationsByDonorIdAsync(int DonorId)
         {
             var values = await _context.BloodDonations
@@ -66,7 +76,17 @@ namespace AcilKan.Persistence.Repositories
                     .ThenInclude(br => br.AppUser) // **Requester'ı getir**
                 .FirstOrDefaultAsync();
         }
-
+        public async Task<List<BloodDonation>> GetMyBloodDonationsAsync(int userId)
+        {
+            return await _context.BloodDonations
+                .Where(x => x.DonorId == userId && x.IsActive)
+                .Include(x => x.BloodRequest)
+                    .ThenInclude(x => x.Hospital)
+                .Include(x => x.Donor)
+                .Include(x => x.BloodRequest.AppUser)
+                .OrderByDescending(x => x.RequestedDonationDate)
+                .ToListAsync();
+        }
         // 🩸 Kullanıcının kan grubunu Identity üzerinden al
         public async Task<string> GetUserBloodGroupAsync(int userId)
         {
