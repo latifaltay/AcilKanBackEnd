@@ -14,13 +14,18 @@ namespace AcilKan.WebAPI.Controllers
     [ApiController]
     public class BloodDonationController(IMediator _mediator) : ControllerBase
     {
+        //[HttpGet]
+        //public async Task<IActionResult> GetBloodDonations()
+        //{
+        //    var values = await _mediator.Send(new GetBloodDonationQuery());
+        //    return Ok(values);
+        //}
         [HttpGet]
-        public async Task<IActionResult> GetBloodDonations()
+        public async Task<IActionResult> GetMyBloodDonations()
         {
-            var values = await _mediator.Send(new GetBloodDonationQuery());
+            var values = await _mediator.Send(new GetMyBloodDonationsQuery());
             return Ok(values);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> CreateBloodDonation(CreateBloodDontaionCommand command)

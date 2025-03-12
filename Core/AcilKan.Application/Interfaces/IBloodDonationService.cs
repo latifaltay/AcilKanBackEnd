@@ -13,5 +13,16 @@ namespace AcilKan.Application.Interfaces
         Task<List<BloodDonation>> GetBloodDonationsByDonorIdAsync(int donorId);
         Task<int> GetCompletedTotalDonationCountByUserIdAsync(int userId);
         Task<DateOnly?> GetCompletedLastDonationDateByUserIdAsync(int userId);
+        Task<BloodDonation> GetBloodDonationWithRequestAsync(int bloodDonationId);
+
+        // Kullanıcının son bağış tarihini al
+        Task<DateTime?> GetLastDonationDateAsync(int userId);
+
+
+        // Kullanıcının kan grubunu getirir
+        Task<string> GetUserBloodGroupAsync(int userId);
+        Task<List<BloodDonation>> GetMyBloodDonationsAsync(int userId);
+
+
     }
 }

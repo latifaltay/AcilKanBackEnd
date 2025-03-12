@@ -1,4 +1,5 @@
-﻿using AcilKan.Domain.Entities;
+﻿using AcilKan.Application.Features.Mediator.Results.BloodRequestResults;
+using AcilKan.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,11 @@ namespace AcilKan.Application.Interfaces
         Task<BloodRequest> GetBloodRequestWithDetailsByIdAsync(int id);
         Task<List<BloodRequest>> GetBloodRequestsAsync();
         Task<BloodRequest> GetRequesterUserIdByBloodRequestIdAsync(int id);
+        Task<bool> IsActiveAndBloodRequestStatusByTCAsync(string tc);
+        Task<List<BloodRequest>> GetBloodRequestsByUserIdAsync(int userId);
+        // request idden requesti getirme 
+        Task<BloodRequest> GetBloodRequestByIdAsync(int requestId);
+
+
     }
 }

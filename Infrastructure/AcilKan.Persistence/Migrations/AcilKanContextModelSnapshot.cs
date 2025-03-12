@@ -327,8 +327,8 @@ namespace AcilKan.Persistence.Migrations
                     b.Property<DateTime?>("LastUpdatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PatientAge")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("PatientBirthDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool?>("PatientGender")
                         .HasColumnType("bit");
@@ -338,6 +338,10 @@ namespace AcilKan.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PatientSurname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PatientTC")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

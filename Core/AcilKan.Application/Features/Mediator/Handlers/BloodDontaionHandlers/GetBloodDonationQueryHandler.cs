@@ -20,8 +20,8 @@ namespace AcilKan.Application.Features.Mediator.Handlers.BloodDontaionHandlers
             return values.Select(x => new GetBloodDonationQueryResult
             {
                 Id = x.Id,
-                DonationDate = x.DonationCompletionDate ?? null, // ✅ `DonationDate` yerine `DonationCompletionDate`
-                DonorFullName = $"{x.Donor.Name} {x.Donor.Surname}", // ✅ Daha okunaklı string formatlama
+                DonationCompletionDate = x.DonationCompletionDate ?? null, 
+                DonorFullName = $"{x.Donor.Name} {x.Donor.Surname}",
                 HospitalName = x.BloodRequest.Hospital.Name,
                 PatientFullName = $"{x.BloodRequest.PatientName} {x.BloodRequest.PatientSurname}",
                 RequesterFullName = $"{x.BloodRequest.AppUser.Name} {x.BloodRequest.AppUser.Surname}",
