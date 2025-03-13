@@ -35,11 +35,19 @@ namespace AcilKan.WebAPI.Controllers
             return Ok("Kan Bağışı iptal edildi");
         }
         
-        [HttpPost("arrived")]
+        [HttpPost("arrived")]  // ben geldim olarak işaretleme
         public async Task<IActionResult> MarkAsArrived(MarkAsArrivedCommand command)
         {
             await _mediator.Send(command);
             return Ok("Bağışçı merkeze geldi olarak işaretlendi.");
         }
+
+        [HttpPost("donated")] // bağış yapıldı olarak işaretleme
+        public async Task<IActionResult> MarkAsDonated(MarkAsDonatedCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Bağış başarıyla tamamlandı.");
+        }
+
     }
 }

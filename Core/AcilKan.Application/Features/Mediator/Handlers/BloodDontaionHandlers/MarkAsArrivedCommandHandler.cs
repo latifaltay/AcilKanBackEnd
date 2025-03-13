@@ -32,6 +32,7 @@ namespace AcilKan.Application.Features.Mediator.Commands.BloodDonationCommands
             }
 
             bloodDonation.Status = BloodDonationStatus.ArrivedAtDonationPoint; // Bağışçının geldiğini işaretle
+        
             await _bloodDonationRepository.UpdateAsync(bloodDonation);
             return true;
         }
