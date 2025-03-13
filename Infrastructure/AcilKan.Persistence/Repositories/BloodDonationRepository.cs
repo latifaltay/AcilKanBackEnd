@@ -136,6 +136,7 @@ namespace AcilKan.Persistence.Repositories
         {
             return await _context.BloodDonations
                 .AsNoTracking()
+                .Include(b => b.BloodRequest)
                 .FirstOrDefaultAsync(b => b.Id == id);
         }
     }

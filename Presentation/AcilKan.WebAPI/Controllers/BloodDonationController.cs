@@ -49,5 +49,11 @@ namespace AcilKan.WebAPI.Controllers
             return Ok("Bağış başarıyla tamamlandı.");
         }
 
+        [HttpPost("accept-donation")] // bağış yapıldı olarak onaylama requester tarafından
+        public async Task<IActionResult> AcceptDonation(AcceptDonationCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Bağış başarıyla kabul edildi.");
+        }
     }
 }
