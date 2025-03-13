@@ -22,7 +22,8 @@ namespace AcilKan.Application.Interfaces
         // Kullanıcının kan grubunu getirir
         Task<string> GetUserBloodGroupAsync(int userId);
         Task<List<BloodDonation>> GetMyBloodDonationsAsync(int userId);
-
+        Task<BloodDonation> GetByIdAsync(int id);
+        Task UpdateAsync(BloodDonation bloodDonation);
 
     }
 }
