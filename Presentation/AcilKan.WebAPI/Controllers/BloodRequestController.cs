@@ -68,6 +68,8 @@ namespace AcilKan.WebAPI.Controllers
             return Ok("Talebin Süresi 1 gün uzatıldı");
         }
         
+      
+
         [HttpPut]
         public async Task<IActionResult> RejectDonor(RejectDonorCommand command) //talebi 1 gün uzat
         {

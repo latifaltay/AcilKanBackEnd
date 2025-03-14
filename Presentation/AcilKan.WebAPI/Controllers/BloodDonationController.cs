@@ -1,11 +1,9 @@
-﻿using AcilKan.Application.Features.Mediator.Commands.BloodDontaionCommands;
-using AcilKan.Application.Features.Mediator.Commands.BloodRequestCommands;
+﻿using AcilKan.Application.Features.Mediator.Commands.BloodDonationCommands;
+using AcilKan.Application.Features.Mediator.Commands.BloodDontaionCommands;
 using AcilKan.Application.Features.Mediator.Queries.BloodDonationQueries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.IdentityModel.Claims;
 
 namespace AcilKan.WebAPI.Controllers
 {
@@ -14,12 +12,7 @@ namespace AcilKan.WebAPI.Controllers
     [ApiController]
     public class BloodDonationController(IMediator _mediator) : ControllerBase
     {
-        //[HttpGet]
-        //public async Task<IActionResult> GetBloodDonations()
-        //{
-        //    var values = await _mediator.Send(new GetBloodDonationQuery());
-        //    return Ok(values);
-        //}
+ 
         [HttpGet]
         public async Task<IActionResult> GetMyBloodDonations()
         {
@@ -41,6 +34,26 @@ namespace AcilKan.WebAPI.Controllers
             await _mediator.Send(command);
             return Ok("Kan Bağışı iptal edildi");
         }
+        
+        [HttpPost("arrived")]  // ben geldim olarak işaretleme
+        public async Task<IActionResult> MarkAsArrived(MarkAsArrivedCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Bağışçı merkeze geldi olarak işaretlendi.");
+        }
 
+        [HttpPost("donated")] // bağış yapıldı olarak işaretleme
+        public async Task<IActionResult> MarkAsDonated(MarkAsDonatedCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Bağış başarıyla tamamlandı.");
+        }
+
+        [HttpPost("accept-donation")] // bağış yapıldı olarak onaylama requester tarafından
+        public async Task<IActionResult> AcceptDonation(AcceptDonationCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Bağış başarıyla kabul edildi.");
+        }
     }
 }

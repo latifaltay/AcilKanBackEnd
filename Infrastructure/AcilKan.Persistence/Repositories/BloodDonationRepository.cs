@@ -127,5 +127,17 @@ namespace AcilKan.Persistence.Repositories
                 .Max(date => date.Value); // En büyük (en güncel) tarihi döndür
         }
 
+        public async Task UpdateAsync(BloodDonation bloodDonation)
+        {
+            _context.BloodDonations.Update(bloodDonation);
+            await _context.SaveChangesAsync();
+        }
+        public async Task<BloodDonation> GetByIdAsync(int id)
+        {
+            return await _context.BloodDonations
+                .AsNoTracking()
+                .Include(b => b.BloodRequest)
+                .FirstOrDefaultAsync(b => b.Id == id);
+        }
     }
 }
